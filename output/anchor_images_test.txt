@@ -1,0 +1,498 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+
+============================================================
+  Image Analysis — Anchor
+============================================================
+Loading workbook...
+Found 377 UNCERTAIN rows in 'Anchor'
+Processing 15 rows (limit=15)
+[Vision] Using LOCAL Ollama vision (free, unlimited)
+
+[1/15] Row 67: ANCHOR 9415 vs SKP SKM9411
+    Images: https://www.rockauto.com/info/28/9415-000.jpg
+            https://www.rockauto.com/info/983/SKM9411_1.jpg
+    Local CV: 0.381  {'phash': np.float64(0.5), 'orb': 0.082, 'hist': 0.739}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (23 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   ANCHOR: The image shows a black metal engine mount with four holes on the front side. It
+[LocalVision]   SKP: The image shows a black engine mount with a round center hole and a small circul
+[LocalVision] Jaccard similarity: 0.17  shared={'image', 'engine', 'black', 'top', 'shows', 'mount', 'metal'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.17
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [ANCHOR] The image shows a black metal engine mount with fou
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[2/15] Row 151: ANCHOR 3503 vs SKP SKM3503
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=18528
+[pid=18528][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=18528
+  - [pid=18528][out] Opening in existing browser session.
+  - [pid=18528] <gracefully close start>
+  - [pid=18528] <kill>
+  - [pid=18528] <will force kill>
+  - [pid=18528] taskkill stderr: ERROR: The process "18528" not found.
+  - [pid=18528] <process did exit: exitCode=0, signal=null>
+  - [pid=18528] starting temporary directories cleanup
+  - [pid=18528] finished temporary directories cleanup
+  - [pid=18528] <gracefully close end>
+ — retrying...
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=8160
+[pid=8160][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=8160
+  - [pid=8160][out] Opening in existing browser session.
+  - [pid=8160] <gracefully close start>
+  - [pid=8160] <kill>
+  - [pid=8160] <will force kill>
+  - [pid=8160] taskkill stderr: ERROR: The process "8160" not found.
+  - [pid=8160] <process did exit: exitCode=0, signal=null>
+  - [pid=8160] starting temporary directories cleanup
+  - [pid=8160] finished temporary directories cleanup
+  - [pid=8160] <gracefully close end>
+ — retrying...
+    No image for: ANCHOR 3503, SKP SKM3503 — skipping
+[3/15] Row 189: ANCHOR 2564 vs SKP SKM2564
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=19008
+[pid=19008][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=19008
+  - [pid=19008][out] Opening in existing browser session.
+  - [pid=19008] <gracefully close start>
+  - [pid=19008] <kill>
+  - [pid=19008] <will force kill>
+  - [pid=19008] taskkill stderr: ERROR: The process "19008" not found.
+  - [pid=19008] <process did exit: exitCode=0, signal=null>
+  - [pid=19008] starting temporary directories cleanup
+  - [pid=19008] finished temporary directories cleanup
+  - [pid=19008] <gracefully close end>
+ — retrying...
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=3136
+[pid=3136][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=3136
+  - [pid=3136][out] Opening in existing browser session.
+  - [pid=3136] <gracefully close start>
+  - [pid=3136] <kill>
+  - [pid=3136] <will force kill>
+  - [pid=3136] taskkill stderr: ERROR: The process "3136" not found.
+  - [pid=3136] <process did exit: exitCode=0, signal=null>
+  - [pid=3136] starting temporary directories cleanup
+  - [pid=3136] finished temporary directories cleanup
+  - [pid=3136] <gracefully close end>
+ — retrying...
+    No image for: ANCHOR 2564, SKP SKM2564 — skipping
+[4/15] Row 233: ANCHOR 3157 vs SKP SKM3157
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=16412
+[pid=16412][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=16412
+  - [pid=16412][out] Opening in existing browser session.
+  - [pid=16412] <gracefully close start>
+  - [pid=16412] <kill>
+  - [pid=16412] <will force kill>
+  - [pid=16412] taskkill stderr: ERROR: The process "16412" not found.
+  - [pid=16412] <process did exit: exitCode=0, signal=null>
+  - [pid=16412] starting temporary directories cleanup
+  - [pid=16412] finished temporary directories cleanup
+  - [pid=16412] <gracefully close end>
+ — retrying...
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=39140
+[pid=39140][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=39140
+  - [pid=39140][out] Opening in existing browser session.
+  - [pid=39140] <gracefully close start>
+  - [pid=39140] <kill>
+  - [pid=39140] <will force kill>
+  - [pid=39140] taskkill stderr: ERROR: The process "39140" not found.
+  - [pid=39140] <process did exit: exitCode=0, signal=null>
+  - [pid=39140] starting temporary directories cleanup
+  - [pid=39140] finished temporary directories cleanup
+  - [pid=39140] <gracefully close end>
+ — retrying...
+    No image for: SKP SKM3157 — skipping
+[5/15] Row 265: ANCHOR 9158 vs SKP SKM9158
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=24880
+[pid=24880][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=24880
+  - [pid=24880][out] Opening in existing browser session.
+  - [pid=24880] <gracefully close start>
+  - [pid=24880] <kill>
+  - [pid=24880] <will force kill>
+  - [pid=24880] taskkill stderr: ERROR: The process "24880" not found.
+  - [pid=24880] <process did exit: exitCode=0, signal=null>
+  - [pid=24880] starting temporary directories cleanup
+  - [pid=24880] finished temporary directories cleanup
+  - [pid=24880] <gracefully close end>
+ — retrying...
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=33468
+[pid=33468][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=33468
+  - [pid=33468][out] Opening in existing browser session.
+  - [pid=33468] <gracefully close start>
+  - [pid=33468] <kill>
+  - [pid=33468] <will force kill>
+  - [pid=33468] taskkill stderr: ERROR: The process "33468" not found.
+  - [pid=33468] <process did exit: exitCode=0, signal=null>
+  - [pid=33468] starting temporary directories cleanup
+  - [pid=33468] finished temporary directories cleanup
+  - [pid=33468] <gracefully close end>
+ — retrying...
+    No image for: ANCHOR 9158, SKP SKM9158 — skipping
+[6/15] Row 271: ANCHOR 2142 vs SKP SKM2142
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=11696
+[pid=11696][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=11696
+  - [pid=11696][out] Opening in existing browser session.
+  - [pid=11696] <gracefully close start>
+  - [pid=11696] <kill>
+  - [pid=11696] <will force kill>
+  - [pid=11696] taskkill stderr: ERROR: The process "11696" not found.
+  - [pid=11696] <process did exit: exitCode=0, signal=null>
+  - [pid=11696] starting temporary directories cleanup
+  - [pid=11696] finished temporary directories cleanup
+  - [pid=11696] <gracefully close end>
+ — retrying...
+    No image for: ANCHOR 2142 — skipping
+[7/15] Row 306: ANCHOR 2285 vs SKP SKM2285
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=37156
+[pid=37156][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=37156
+  - [pid=37156][out] Opening in existing browser session.
+  - [pid=37156] <gracefully close start>
+  - [pid=37156] <kill>
+  - [pid=37156] <will force kill>
+  - [pid=37156] taskkill stderr: ERROR: The process "37156" not found.
+  - [pid=37156] <process did exit: exitCode=0, signal=null>
+  - [pid=37156] starting temporary directories cleanup
+  - [pid=37156] finished temporary directories cleanup
+  - [pid=37156] <gracefully close end>
+ — retrying...
+    No image for: SKP SKM2285 — skipping
+[8/15] Row 321: ANCHOR 9194 vs SKP SKM9194
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=39148
+[pid=39148][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=39148
+  - [pid=39148][out] Opening in existing browser session.
+  - [pid=39148] <gracefully close start>
+  - [pid=39148] <kill>
+  - [pid=39148] <will force kill>
+  - [pid=39148] taskkill stderr: ERROR: The process "39148" not found.
+  - [pid=39148] <process did exit: exitCode=0, signal=null>
+  - [pid=39148] starting temporary directories cleanup
+  - [pid=39148] finished temporary directories cleanup
+  - [pid=39148] <gracefully close end>
+ — retrying...
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=39916
+[pid=39916][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=39916
+  - [pid=39916][out] Opening in existing browser session.
+  - [pid=39916] <gracefully close start>
+  - [pid=39916] <kill>
+  - [pid=39916] <will force kill>
+  - [pid=39916] taskkill stderr: ERROR: The process "39916" not found.
+  - [pid=39916] <process did exit: exitCode=0, signal=null>
+  - [pid=39916] starting temporary directories cleanup
+  - [pid=39916] finished temporary directories cleanup
+  - [pid=39916] <gracefully close end>
+ — retrying...
+    No image for: ANCHOR 9194 — skipping
+[9/15] Row 331: ANCHOR 3565 vs SKP SKMA5739
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=3748
+[pid=3748][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=3748
+  - [pid=3748][out] Opening in existing browser session.
+  - [pid=3748] <gracefully close start>
+  - [pid=3748] <kill>
+  - [pid=3748] <will force kill>
+  - [pid=3748] taskkill stderr: ERROR: The process "3748" not found.
+  - [pid=3748] <process did exit: exitCode=0, signal=null>
+  - [pid=3748] starting temporary directories cleanup
+  - [pid=3748] finished temporary directories cleanup
+  - [pid=3748] <gracefully close end>
+ — retrying...
+    No image for: SKP SKMA5739 — skipping
+[10/15] Row 332: ANCHOR 3149 vs SKP SKM3149
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=14480
+[pid=14480][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=14480
+  - [pid=14480][out] Opening in existing browser session.
+  - [pid=14480] <gracefully close start>
+  - [pid=14480] <kill>
+  - [pid=14480] <will force kill>
+  - [pid=14480] taskkill stderr: ERROR: The process "14480" not found.
+  - [pid=14480] <process did exit: exitCode=0, signal=null>
+  - [pid=14480] starting temporary directories cleanup
+  - [pid=14480] finished temporary directories cleanup
+  - [pid=14480] <gracefully close end>
+ — retrying...
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=35372
+[pid=35372][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=35372
+  - [pid=35372][out] Opening in existing browser session.
+  - [pid=35372] <gracefully close start>
+  - [pid=35372] <kill>
+  - [pid=35372] <will force kill>
+  - [pid=35372] taskkill stderr: ERROR: The process "35372" not found.
+  - [pid=35372] <process did exit: exitCode=0, signal=null>
+  - [pid=35372] starting temporary directories cleanup
+  - [pid=35372] finished temporary directories cleanup
+  - [pid=35372] <gracefully close end>
+ — retrying...
+    No image for: ANCHOR 3149, SKP SKM3149 — skipping
+[11/15] Row 338: ANCHOR 2257 vs SKP SKM2257
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=30904
+[pid=30904][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=30904
+  - [pid=30904][out] Opening in existing browser session.
+  - [pid=30904] <gracefully close start>
+  - [pid=30904] <kill>
+  - [pid=30904] <will force kill>
+  - [pid=30904] taskkill stderr: ERROR: The process "30904" not found.
+  - [pid=30904] <process did exit: exitCode=0, signal=null>
+  - [pid=30904] starting temporary directories cleanup
+  - [pid=30904] finished temporary directories cleanup
+  - [pid=30904] <gracefully close end>
+ — retrying...
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=2308
+[pid=2308][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=2308
+  - [pid=2308][out] Opening in existing browser session.
+  - [pid=2308] <gracefully close start>
+  - [pid=2308] <kill>
+  - [pid=2308] <will force kill>
+  - [pid=2308] taskkill stderr: ERROR: The process "2308" not found.
+  - [pid=2308] <process did exit: exitCode=0, signal=null>
+  - [pid=2308] starting temporary directories cleanup
+  - [pid=2308] finished temporary directories cleanup
+  - [pid=2308] <gracefully close end>
+ — retrying...
+    No image for: ANCHOR 2257, SKP SKM2257 — skipping
+[12/15] Row 343: ANCHOR 9797 vs SKP SKM9797
+    Images: https://www.rockauto.com/info/28/9797-000.jpg
+            https://www.rockauto.com/info/983/SKM9797_1.jpg
+    Local CV: 0.426  {'phash': np.float64(0.469), 'orb': 0.098, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   ANCHOR: The image shows the engine mount for a car. It's black with silver accents and h
+[LocalVision]   SKP: The image shows a black engine mount with a silver bolt head and a round rubber 
+[LocalVision] Jaccard similarity: 0.30  shared={'image', 'engine', 'front', 'black', 'silver', 'shows', 'round', 'mount'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.30
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows the engine mount for a car. It's bl
+    -> UPGRADED to LIKELY (70%)
+[13/15] Row 374: ANCHOR 9446 vs SKP SKM9446
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=30212
+[pid=30212][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=30212
+  - [pid=30212][out] Opening in existing browser session.
+  - [pid=30212] <gracefully close start>
+  - [pid=30212] <kill>
+  - [pid=30212] <will force kill>
+  - [pid=30212] taskkill stderr: ERROR: The process "30212" not found.
+  - [pid=30212] <process did exit: exitCode=0, signal=null>
+  - [pid=30212] starting temporary directories cleanup
+  - [pid=30212] finished temporary directories cleanup
+  - [pid=30212] <gracefully close end>
+ — retrying...
+    Images: https://www.rockauto.com/info/28/9446-000.jpg
+            https://www.rockauto.com/info/983/SKM9446_1.jpg
+    Local CV: 0.508  {'phash': np.float64(0.719), 'orb': 0.052, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   ANCHOR: The image shows a silver engine mount with a black center hole. It has a curved 
+[LocalVision]   SKP: The image shows a silver engine mount with a black center hole. The engine mount
+[LocalVision] Jaccard similarity: 0.34  shared={'curved', 'image', 'engine', 'black', 'center', 'block', 'silver', 'hole', 'top', 'shows', 'mount'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.34
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a silver engine mount with a black 
+    -> UPGRADED to LIKELY (70%)
+[14/15] Row 389: ANCHOR 9400 vs SKP SKM9400
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=38916
+[pid=38916][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=38916
+  - [pid=38916][out] Opening in existing browser session.
+  - [pid=38916] <gracefully close start>
+  - [pid=38916] <kill>
+  - [pid=38916] <will force kill>
+  - [pid=38916] taskkill stderr: ERROR: The process "38916" not found.
+  - [pid=38916] <process did exit: exitCode=0, signal=null>
+  - [pid=38916] starting temporary directories cleanup
+  - [pid=38916] finished temporary directories cleanup
+  - [pid=38916] <gracefully close end>
+ — retrying...
+    [Retry 1] Scrape error: Browser error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=39088
+[pid=39088][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --window-position=-32000,-32000 --window-size=1280,900 --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=39088
+  - [pid=39088][out] Opening in existing browser session.
+  - [pid=39088] <gracefully close start>
+  - [pid=39088] <kill>
+  - [pid=39088] <will force kill>
+  - [pid=39088] taskkill stderr: ERROR: The process "39088" not found.
+  - [pid=39088] <process did exit: exitCode=0, signal=null>
+  - [pid=39088] starting temporary directories cleanup
+  - [pid=39088] finished temporary directories cleanup
+  - [pid=39088] <gracefully close end>
+ — retrying...
+    No image for: ANCHOR 9400, SKP SKM9400 — skipping
+[15/15] Row 395: ANCHOR 9582 vs SKP SKM9582
+    Images: https://www.rockauto.com/info/28/9582-000.jpg
+            https://www.rockauto.com/info/983/SKM9582-_1.jpg
+    Local CV: 0.412  {'phash': np.float64(0.469), 'orb': 0.086, 'hist': 0.95}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   ANCHOR: The image shows a silver engine mount with a black rubber base. It has a rectang
+[LocalVision]   SKP: The image shows a black engine mount with silver metal parts attached to it. It 
+[LocalVision] Jaccard similarity: 0.35  shared={'image', 'base', 'engine', 'black', 'silver', 'shows', 'mount', 'metal'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.35
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a silver engine mount with a black 
+    -> UPGRADED to LIKELY (70%)
+
+============================================================
+  COMPLETED — Anchor Image Analysis
+============================================================
+  Rows processed:            15
+  No image available:        11
+  HIGH CV (>=0.75):           0
+  MEDIUM CV (0.35-0.75):      4
+  LOW CV (<0.35):             0
+  Gemini Vision calls:        4
+  Errors:                     0
+  --------------------------------------
+  UPGRADED to LIKELY:         3
+
+  Current counts for 'Anchor':
+    YES:           29  (4.9%)
+    LIKELY:       114  (19.3%)
+    UNCERTAIN:    446  (75.6%)
+    NO:             1  (0.2%)
+    ---------------------------------
+    Confirmed:    143  (24.2%)  [YES + LIKELY]
+    Pending:      446  (75.6%)  [UNCERTAIN]

@@ -1,0 +1,662 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Overview Section -->
+<div id="overview" class="content-section">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="fas fa-tachometer-alt me-2"></i>System Overview</h2>
+        <button class="btn btn-outline-primary" onclick="refreshOverview()">
+            <i class="fas fa-sync-alt"></i> Refresh
+        </button>
+    </div>
+
+    <!-- Status Cards -->
+    <div class="row mb-4">
+        <div class="col-md-3">
+            <div class="card metric-card h-100">
+                <div class="card-body text-center">
+                    <div class="h2 text-primary" id="total-rows">-</div>
+                    <div class="text-muted">Total Rows</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card metric-card h-100">
+                <div class="card-body text-center">
+                    <div class="h2 text-success" id="processed-rows">-</div>
+                    <div class="text-muted">Processed</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card metric-card h-100">
+                <div class="card-body text-center">
+                    <div class="h2 text-info" id="processing-rate">-</div>
+                    <div class="text-muted">Processing Rate</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card metric-card h-100">
+                <div class="card-body text-center">
+                    <div class="h2 text-warning" id="system-status">Ready</div>
+                    <div class="text-muted">System Status</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Match Distribution Chart -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Match Distribution</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="match-distribution-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Brand Statistics</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="brand-statistics-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Processing Section -->
+<div id="processing" class="content-section" style="display: none;">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="fas fa-play-circle me-2"></i>Processing Control</h2>
+        <div>
+            <button class="btn btn-success me-2" onclick="startProcessing()" id="start-btn">
+                <i class="fas fa-play"></i> Start Processing
+            </button>
+            <button class="btn btn-danger" onclick="stopProcessing()" id="stop-btn" disabled>
+                <i class="fas fa-stop"></i> Stop Processing
+            </button>
+        </div>
+    </div>
+
+    <!-- Processing Configuration -->
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Processing Configuration</h5>
+                </div>
+                <div class="card-body">
+                    <div class="mb-3">
+                        <label class="form-label">Sheet Selection</label>
+                        <select class="form-select" id="sheet-select">
+                            <option value="Anchor">Anchor</option>
+                            <option value="Dorman">Dorman</option>
+                            <option value="GMB">GMB</option>
+                            <option value="SMP">SMP</option>
+                            <option value="Four Seasons ">Four Seasons</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Row Limit</label>
+                        <input type="number" class="form-control" id="row-limit" value="50" min="1" max="1000">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Processing Mode</label>
+                        <select class="form-select" id="processing-mode">
+                            <option value="main">Main Processing</option>
+                            <option value="image">Image Analysis</option>
+                            <option value="both">Main + Image</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Current Processing Status</h5>
+                </div>
+                <div class="card-body">
+                    <div class="progress-container">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Progress</span>
+                            <span id="progress-text">0 / 0 (0%)</span>
+                        </div>
+                        <div class="progress mb-3">
+                            <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+                        </div>
+                        <div class="text-muted">
+                            <div>Sheet: <span id="current-sheet">None</span></div>
+                            <div>Status: <span id="processing-status">Idle</span></div>
+                            <div>Last Update: <span id="last-update">-</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Processing Log -->
+    <div class="card">
+        <div class="card-header d-flex justify-content-between">
+            <h5>Processing Log</h5>
+            <button class="btn btn-sm btn-outline-secondary" onclick="clearLog()">
+                <i class="fas fa-trash"></i> Clear Log
+            </button>
+        </div>
+        <div class="card-body">
+            <div class="log-output" id="processing-log">
+                <div>[INFO] Web dashboard initialized and ready for processing</div>
+                <div>[INFO] Select a sheet and click Start Processing to begin</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Analytics Section -->
+<div id="analytics" class="content-section" style="display: none;">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="fas fa-chart-bar me-2"></i>Advanced Analytics</h2>
+        <button class="btn btn-outline-primary" onclick="refreshAnalytics()">
+            <i class="fas fa-sync-alt"></i> Refresh
+        </button>
+    </div>
+
+    <!-- Analytics Charts -->
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Success Rate Trends</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="success-trends-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Confidence Distribution</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="confidence-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Performance Section -->
+<div id="performance" class="content-section" style="display: none;">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="fas fa-memory me-2"></i>System Performance</h2>
+        <button class="btn btn-outline-primary" onclick="refreshPerformance()">
+            <i class="fas fa-sync-alt"></i> Refresh
+        </button>
+    </div>
+
+    <!-- Performance Metrics -->
+    <div class="row mb-4">
+        <div class="col-md-2">
+            <div class="card metric-card text-center">
+                <div class="card-body">
+                    <div class="h4 text-primary" id="cpu-usage">-</div>
+                    <div class="text-muted small">CPU Usage</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card metric-card text-center">
+                <div class="card-body">
+                    <div class="h4 text-info" id="memory-usage">-</div>
+                    <div class="text-muted small">Memory</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card metric-card text-center">
+                <div class="card-body">
+                    <div class="h4 text-success" id="disk-usage">-</div>
+                    <div class="text-muted small">Disk</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card metric-card text-center">
+                <div class="card-body">
+                    <div class="h4 text-warning" id="chrome-processes">-</div>
+                    <div class="text-muted small">Chrome</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card metric-card text-center">
+                <div class="card-body">
+                    <div class="h4 text-danger" id="python-processes">-</div>
+                    <div class="text-muted small">Python</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="card metric-card text-center">
+                <div class="card-body">
+                    <div class="h4 text-secondary" id="uptime">-</div>
+                    <div class="text-muted small">Uptime</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Performance Charts -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>CPU & Memory Usage</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="system-performance-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Processing Speed</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="speed-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quality Section -->
+<div id="quality" class="content-section" style="display: none;">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="fas fa-check-circle me-2"></i>Data Quality Analysis</h2>
+        <button class="btn btn-outline-primary" onclick="refreshQuality()">
+            <i class="fas fa-sync-alt"></i> Refresh
+        </button>
+    </div>
+
+    <!-- Quality Score -->
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card text-center">
+                <div class="card-body">
+                    <div class="h1 mb-3" id="quality-score">-</div>
+                    <div class="h5">Overall Quality Score</div>
+                    <div class="text-muted" id="quality-grade">-</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Quality Breakdown</h5>
+                </div>
+                <div class="card-body">
+                    <div id="quality-metrics"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quality Charts -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Match Quality Distribution</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="match-quality-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>OEM Match Analysis</h5>
+                </div>
+                <div class="card-body">
+                    <div class="chart-container">
+                        <canvas id="oem-analysis-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Export Section -->
+<div id="export" class="content-section" style="display: none;">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2><i class="fas fa-download me-2"></i>Data Export</h2>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Export Options</h5>
+                </div>
+                <div class="card-body">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" onclick="exportData('overview')">
+                            <i class="fas fa-file-alt me-2"></i>Export Overview Data
+                        </button>
+                        <button class="btn btn-info" onclick="exportData('performance')">
+                            <i class="fas fa-memory me-2"></i>Export Performance Data
+                        </button>
+                        <button class="btn btn-success" onclick="exportData('quality')">
+                            <i class="fas fa-check-circle me-2"></i>Export Quality Data
+                        </button>
+                        <button class="btn btn-warning" onclick="exportData('trends')">
+                            <i class="fas fa-chart-line me-2"></i>Export Trend Data
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Export Log</h5>
+                </div>
+                <div class="card-body">
+                    <div class="log-output" id="export-log" style="height: 200px;">
+                        <div>[INFO] Export system ready</div>
+                        <div>[INFO] Click export buttons to download data as JSON files</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+    // Global chart instances
+    let charts = {};
+
+    // Initialize dashboard
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeCharts();
+        refreshOverview();
+
+        // Setup socket listeners
+        setupSocketListeners();
+
+        // Start with overview section
+        showSection('overview');
+    });
+
+    function setupSocketListeners() {
+        socket.on('status_update', function(data) {
+            updateSystemStatus(data);
+        });
+
+        socket.on('performance_update', function(data) {
+            updatePerformanceMetrics(data);
+        });
+    }
+
+    function updateSystemStatus(data) {
+        // Update processing status
+        document.getElementById('current-sheet').textContent = data.current_sheet || 'None';
+        document.getElementById('processing-status').textContent = data.processing_active ? 'Active' : 'Idle';
+        document.getElementById('last-update').textContent = new Date(data.last_update).toLocaleTimeString();
+
+        // Update progress
+        if (data.progress) {
+            const percentage = data.progress.percentage || 0;
+            document.getElementById('progress-bar').style.width = percentage + '%';
+            document.getElementById('progress-text').textContent =
+                `${data.progress.current || 0} / ${data.progress.total || 0} (${percentage.toFixed(1)}%)`;
+        }
+
+        // Update buttons
+        const startBtn = document.getElementById('start-btn');
+        const stopBtn = document.getElementById('stop-btn');
+
+        if (data.processing_active) {
+            startBtn.disabled = true;
+            stopBtn.disabled = false;
+        } else {
+            startBtn.disabled = false;
+            stopBtn.disabled = true;
+        }
+
+        // Update system status card
+        document.getElementById('system-status').textContent = data.processing_active ? 'Processing' : 'Ready';
+    }
+
+    function updatePerformanceMetrics(data) {
+        if (data.cpu_percent !== undefined) {
+            document.getElementById('cpu-usage').textContent = data.cpu_percent.toFixed(1) + '%';
+        }
+        if (data.memory_percent !== undefined) {
+            document.getElementById('memory-usage').textContent = data.memory_percent.toFixed(1) + '%';
+        }
+        if (data.disk_usage !== undefined) {
+            document.getElementById('disk-usage').textContent = data.disk_usage.toFixed(1) + '%';
+        }
+        if (data.chrome_processes !== undefined) {
+            document.getElementById('chrome-processes').textContent = data.chrome_processes;
+        }
+        if (data.python_processes !== undefined) {
+            document.getElementById('python-processes').textContent = data.python_processes;
+        }
+        if (data.uptime_hours !== undefined) {
+            document.getElementById('uptime').textContent = data.uptime_hours.toFixed(1) + 'h';
+        }
+    }
+
+    function initializeCharts() {
+        // Match Distribution Chart
+        const matchCtx = document.getElementById('match-distribution-chart');
+        charts.matchDistribution = new Chart(matchCtx, {
+            type: 'pie',
+            data: {
+                labels: ['YES', 'LIKELY', 'UNCERTAIN', 'NO'],
+                datasets: [{
+                    data: [0, 0, 0, 0],
+                    backgroundColor: ['#28a745', '#90EE90', '#ffc107', '#dc3545']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        // Brand Statistics Chart
+        const brandCtx = document.getElementById('brand-statistics-chart');
+        charts.brandStats = new Chart(brandCtx, {
+            type: 'bar',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Processed',
+                    data: [],
+                    backgroundColor: '#007bff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false
+            }
+        });
+
+        // Add other chart initializations here
+    }
+
+    function refreshOverview() {
+        fetch('/api/analytics/overview')
+            .then(response => response.json())
+            .then(data => {
+                // Update metric cards
+                document.getElementById('total-rows').textContent = formatNumber(data.total_rows || 0);
+                document.getElementById('processed-rows').textContent = formatNumber(data.processed_rows || 0);
+                document.getElementById('processing-rate').textContent = formatPercentage((data.processing_rate || 0) / 100);
+
+                // Update match distribution chart
+                if (data.match_distribution && charts.matchDistribution) {
+                    const matchData = [
+                        data.match_distribution.YES || 0,
+                        data.match_distribution.LIKELY || 0,
+                        data.match_distribution.UNCERTAIN || 0,
+                        data.match_distribution.NO || 0
+                    ];
+                    charts.matchDistribution.data.datasets[0].data = matchData;
+                    charts.matchDistribution.update();
+                }
+
+                // Update brand statistics chart
+                if (data.brand_statistics && charts.brandStats) {
+                    const brands = Object.keys(data.brand_statistics);
+                    const processedCounts = brands.map(brand => data.brand_statistics[brand].processed || 0);
+
+                    charts.brandStats.data.labels = brands;
+                    charts.brandStats.data.datasets[0].data = processedCounts;
+                    charts.brandStats.update();
+                }
+            })
+            .catch(error => {
+                console.error('Error refreshing overview:', error);
+                addLogMessage('ERROR', 'Failed to refresh overview data');
+            });
+    }
+
+    function refreshAnalytics() {
+        // Implementation for analytics refresh
+        addLogMessage('INFO', 'Analytics refresh not yet implemented');
+    }
+
+    function refreshPerformance() {
+        fetch('/api/analytics/performance')
+            .then(response => response.json())
+            .then(data => {
+                updatePerformanceMetrics(data);
+            })
+            .catch(error => {
+                console.error('Error refreshing performance:', error);
+            });
+    }
+
+    function refreshQuality() {
+        fetch('/api/analytics/quality')
+            .then(response => response.json())
+            .then(data => {
+                // Update quality score
+                document.getElementById('quality-score').textContent = data.overall_score || '-';
+                document.getElementById('quality-grade').textContent = data.grade || '-';
+
+                // Update quality metrics
+                const metricsDiv = document.getElementById('quality-metrics');
+                if (data.metrics) {
+                    metricsDiv.innerHTML = Object.entries(data.metrics)
+                        .map(([key, value]) => `
+                            <div class="d-flex justify-content-between mb-2">
+                                <span>${key}:</span>
+                                <strong>${value}</strong>
+                            </div>
+                        `).join('');
+                }
+            })
+            .catch(error => {
+                console.error('Error refreshing quality:', error);
+            });
+    }
+
+    function startProcessing() {
+        const sheetName = document.getElementById('sheet-select').value;
+        const rowLimit = parseInt(document.getElementById('row-limit').value);
+
+        fetch('/api/processing/start', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                sheet_name: sheetName,
+                limit: rowLimit
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            addLogMessage('INFO', `Processing started for ${data.sheet_name} with limit ${data.limit}`);
+        })
+        .catch(error => {
+            addLogMessage('ERROR', `Failed to start processing: ${error}`);
+        });
+    }
+
+    function stopProcessing() {
+        fetch('/api/processing/stop', {
+            method: 'POST'
+        })
+        .then(response => response.json())
+        .then(data => {
+            addLogMessage('INFO', 'Processing stopped');
+        })
+        .catch(error => {
+            addLogMessage('ERROR', `Failed to stop processing: ${error}`);
+        });
+    }
+
+    function exportData(dataType) {
+        window.open(`/api/export/${dataType}`, '_blank');
+        addExportLogMessage('INFO', `Exported ${dataType} data`);
+    }
+
+    function addLogMessage(level, message) {
+        const logDiv = document.getElementById('processing-log');
+        const timestamp = new Date().toLocaleTimeString();
+        const logEntry = document.createElement('div');
+        logEntry.textContent = `[${level}] ${timestamp}: ${message}`;
+        logDiv.appendChild(logEntry);
+        logDiv.scrollTop = logDiv.scrollHeight;
+    }
+
+    function addExportLogMessage(level, message) {
+        const logDiv = document.getElementById('export-log');
+        const timestamp = new Date().toLocaleTimeString();
+        const logEntry = document.createElement('div');
+        logEntry.textContent = `[${level}] ${timestamp}: ${message}`;
+        logDiv.appendChild(logEntry);
+        logDiv.scrollTop = logDiv.scrollHeight;
+    }
+
+    function clearLog() {
+        document.getElementById('processing-log').innerHTML = '';
+        addLogMessage('INFO', 'Log cleared');
+    }
+</script>
+{% endblock %}

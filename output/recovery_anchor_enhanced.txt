@@ -1,0 +1,66 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+\n>> ENHANCED IMAGE ANALYSIS: Anchor
+=======================================================
+Target: Improve 67% -> 74%+ upgrade rate
+Method: SSIM + CLIP + Enhanced comparison
+Limit: 40
+Mode: LIVE - will update Excel
+
+Loading Anchor UNCERTAIN rows...
+Found 8 UNCERTAIN rows in Anchor
+Processing 8 UNCERTAIN rows...
+
+[1/8] Row 2: 3217 vs SKP SKM3217
+  Scraping ANCHOR 3217... SKP SKM3217... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/3217-000.jpg vs https://www.rockauto.com/info/983/SKM3217_1_.jpg
+[Enhanced] CLIP model loaded successfully
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[2/8] Row 3: 2987 vs SKP SKM2987
+  Scraping ANCHOR 2987... SKP SKM2987... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/2987-000.jpg vs https://www.rockauto.com/info/983/SKM2987 (1).jpg
+  -> UPGRADE to LIKELY (score: 0.60, MEDIUM)
+[3/8] Row 4: 9247 vs SKP SKM9247
+  Scraping ANCHOR 9247... SKP SKM9247... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/9247-000.jpg vs https://www.rockauto.com/info/983/SKM9247_1.jpg
+  -> UPGRADE to LIKELY (score: 0.63, MEDIUM)
+[4/8] Row 5: 9415 vs SKP SKM9411
+  Scraping ANCHOR 9415... SKP SKM9411... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/9415-000.jpg vs https://www.rockauto.com/info/983/SKM9411_1.jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[5/8] Row 6: 2909 vs SKP SKM2909
+  Scraping ANCHOR 2909... SKP SKM2909... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/2909-000.jpg vs https://www.rockauto.com/info/983/SKM2909-_1.jpg
+  -> UPGRADE to LIKELY (score: 0.61, MEDIUM)
+[6/8] Row 7: 9297 vs SKP SKM9297
+  Scraping ANCHOR 9297... SKP SKM9297... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/9297-000.jpg vs https://www.rockauto.com/info/983/SKM9297_1.jpg
+  -> UPGRADE to LIKELY (score: 0.66, HIGH)
+[7/8] Row 8: 3542 vs SKP SKMA5631
+  Scraping ANCHOR 3542... SKP SKMA5631... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/3542-000.jpg vs https://www.rockauto.com/info/983/SKMA5631.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[8/8] Row 9: 3481 vs SKP SKMA4402
+  Scraping ANCHOR 3481... SKP SKMA4402... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/3481-000.jpg vs https://www.rockauto.com/info/983/SKMA4402_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+
+=======================================================
+ENHANCED ANALYSIS RESULTS
+=======================================================
+Processing time: 254.0s (31.8s per row)
+Total processed: 8
+
+Results breakdown:
+  Upgrade to LIKELY:   8 (100.0%)
+  Keep UNCERTAIN:      0 ( 0.0%)
+  No images:           0 ( 0.0%)
+  Errors:              0 ( 0.0%)
+
+Success rate: 100.0% of processable rows upgraded to LIKELY
+(Baseline moondream: ~67%, Enhanced target: 74%+)
+\n>> TARGET ACHIEVED! Enhanced system performing at 100.0% vs 67% baseline
+\nApplying 8 upgrades to Excel...
+Opening Excel file for updates...
+Successfully updated 8 rows to LIKELY
+[OK] Excel updated successfully
+\nEnhanced image analysis complete!

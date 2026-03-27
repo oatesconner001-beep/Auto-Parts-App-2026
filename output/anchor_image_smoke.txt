@@ -1,0 +1,21 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+
+--- Anchor ---
+  Current counts for 'Anchor':
+    YES:           25  (21.0%)
+    LIKELY:        13  (10.9%)
+    UNCERTAIN:     80  (67.2%)
+    NO:             1  (0.8%)
+    ---------------------------------
+    Confirmed:     38  (31.9%)  [YES + LIKELY]
+    Pending:       80  (67.2%)  [UNCERTAIN]
+
+--- Dorman ---
+  Current counts for 'Dorman':
+    YES:            0  (0.0%)
+    LIKELY:         9  (90.0%)
+    UNCERTAIN:      0  (0.0%)
+    NO:             1  (10.0%)
+    ---------------------------------
+    Confirmed:      9  (90.0%)  [YES + LIKELY]
+    Pending:        0  (0.0%)  [UNCERTAIN]

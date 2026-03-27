@@ -1,0 +1,291 @@
+{
+  "overview": {
+    "YES": 51,
+    "LIKELY": 751,
+    "UNCERTAIN": 741,
+    "NO": 83,
+    "total_rows": 49650,
+    "processed_rows": 1626,
+    "unprocessed_rows": 48024,
+    "confirmed_matches": 802,
+    "needs_review": 741,
+    "total_sheets": 5,
+    "success_rate": 49.32349323493235,
+    "review_rate": 45.571955719557195,
+    "processing_completion": 3.2749244712990935
+  },
+  "by_sheet": {
+    "GMB": {
+      "YES": 18,
+      "LIKELY": 179,
+      "UNCERTAIN": 66,
+      "NO": 37,
+      "total_rows": 9930,
+      "processed": 300,
+      "unprocessed": 9630,
+      "confirmed": 197,
+      "avg_confidence": 62.29,
+      "part_types_count": 10,
+      "unique_suppliers": 5,
+      "latest_processing": "2026-03-18 14:08:00",
+      "success_rate": 65.66666666666666
+    },
+    "Four Seasons ": {
+      "YES": 0,
+      "LIKELY": 0,
+      "UNCERTAIN": 1,
+      "NO": 0,
+      "total_rows": 9930,
+      "processed": 1,
+      "unprocessed": 9929,
+      "confirmed": 0,
+      "avg_confidence": 44.0,
+      "part_types_count": 10,
+      "unique_suppliers": 5,
+      "latest_processing": "2026-03-17 17:19:00",
+      "success_rate": 0.0
+    },
+    "SMP": {
+      "YES": 2,
+      "LIKELY": 0,
+      "UNCERTAIN": 1,
+      "NO": 0,
+      "total_rows": 9930,
+      "processed": 3,
+      "unprocessed": 9927,
+      "confirmed": 2,
+      "avg_confidence": 74.0,
+      "part_types_count": 10,
+      "unique_suppliers": 5,
+      "latest_processing": "2026-03-16 14:44:00",
+      "success_rate": 66.66666666666666
+    },
+    "Anchor": {
+      "YES": 28,
+      "LIKELY": 150,
+      "UNCERTAIN": 412,
+      "NO": 0,
+      "total_rows": 9930,
+      "processed": 590,
+      "unprocessed": 9340,
+      "confirmed": 178,
+      "avg_confidence": 51.623728813559325,
+      "part_types_count": 10,
+      "unique_suppliers": 5,
+      "latest_processing": "2026-03-22 21:01:00",
+      "success_rate": 30.16949152542373
+    },
+    "Dorman": {
+      "YES": 3,
+      "LIKELY": 422,
+      "UNCERTAIN": 261,
+      "NO": 46,
+      "total_rows": 9930,
+      "processed": 732,
+      "unprocessed": 9198,
+      "confirmed": 425,
+      "avg_confidence": 58.939890710382514,
+      "part_types_count": 10,
+      "unique_suppliers": 5,
+      "latest_processing": "2026-03-22 23:50:00",
+      "success_rate": 58.060109289617486
+    }
+  },
+  "by_category": {
+    "Engine": {
+      "count": 24595,
+      "processed": 1296,
+      "confirmed": 600,
+      "uncertain": 635,
+      "success_rate": 46.2962962962963,
+      "avg_confidence": 0,
+      "sheets": 5
+    },
+    "Other": {
+      "count": 25055,
+      "processed": 330,
+      "confirmed": 202,
+      "uncertain": 106,
+      "success_rate": 61.212121212121204,
+      "avg_confidence": 0,
+      "sheets": 5
+    }
+  },
+  "confidence_analysis": {
+    "total_samples": 1626,
+    "mean_confidence": 56.92189421894219,
+    "min_confidence": 0,
+    "max_confidence": 100,
+    "distribution": {
+      "0-20": 1,
+      "21-40": 290,
+      "41-60": 543,
+      "61-80": 732,
+      "81-100": 60
+    },
+    "by_verdict": {
+      "NO": {
+        "count": 83,
+        "mean": 31.83132530120482,
+        "min": 23,
+        "max": 34
+      },
+      "LIKELY": {
+        "count": 751,
+        "mean": 74.13448735019973,
+        "min": 60,
+        "max": 90
+      },
+      "YES": {
+        "count": 51,
+        "mean": 93.72549019607843,
+        "min": 81,
+        "max": 100
+      },
+      "UNCERTAIN": {
+        "count": 741,
+        "mean": 39.75438596491228,
+        "min": 0,
+        "max": 57
+      }
+    },
+    "by_sheet": {
+      "GMB": {
+        "count": 300,
+        "mean": 62.29,
+        "min": 29,
+        "max": 100
+      },
+      "Four Seasons ": {
+        "count": 1,
+        "mean": 44.0,
+        "min": 44,
+        "max": 44
+      },
+      "SMP": {
+        "count": 3,
+        "mean": 74.0,
+        "min": 29,
+        "max": 98
+      },
+      "Anchor": {
+        "count": 590,
+        "mean": 51.623728813559325,
+        "min": 0,
+        "max": 100
+      },
+      "Dorman": {
+        "count": 732,
+        "mean": 58.939890710382514,
+        "min": 23,
+        "max": 100
+      }
+    },
+    "calibration": {
+      "0-20": {
+        "sample_size": 1,
+        "actual_success_rate": 0.0,
+        "expected_confidence": 10.0
+      },
+      "21-40": {
+        "sample_size": 290,
+        "actual_success_rate": 0.0,
+        "expected_confidence": 30.5
+      },
+      "41-60": {
+        "sample_size": 543,
+        "actual_success_rate": 1.841620626151013,
+        "expected_confidence": 50.5
+      },
+      "61-80": {
+        "sample_size": 732,
+        "actual_success_rate": 100.0,
+        "expected_confidence": 70.5
+      },
+      "81-100": {
+        "sample_size": 60,
+        "actual_success_rate": 100.0,
+        "expected_confidence": 90.5
+      }
+    }
+  },
+  "processing_status": {
+    "completion_by_sheet": {
+      "GMB": {
+        "total": 9930,
+        "processed": 300,
+        "remaining": 9630,
+        "completion_percentage": 3.0211480362537766,
+        "uncertain_count": 66
+      },
+      "Four Seasons ": {
+        "total": 9930,
+        "processed": 1,
+        "remaining": 9929,
+        "completion_percentage": 0.010070493454179255,
+        "uncertain_count": 1
+      },
+      "SMP": {
+        "total": 9930,
+        "processed": 3,
+        "remaining": 9927,
+        "completion_percentage": 0.030211480362537763,
+        "uncertain_count": 1
+      },
+      "Anchor": {
+        "total": 9930,
+        "processed": 590,
+        "remaining": 9340,
+        "completion_percentage": 5.94159113796576,
+        "uncertain_count": 412
+      },
+      "Dorman": {
+        "total": 9930,
+        "processed": 732,
+        "remaining": 9198,
+        "completion_percentage": 7.371601208459215,
+        "uncertain_count": 261
+      }
+    },
+    "processing_velocity": {},
+    "bottlenecks": [
+      "GMB: 3.0% complete, 9630 rows remaining",
+      "Four Seasons : 0.0% complete, 9929 rows remaining",
+      "SMP: 0.0% complete, 9927 rows remaining",
+      "Anchor: 5.9% complete, 9340 rows remaining",
+      "Dorman: 7.4% complete, 9198 rows remaining"
+    ],
+    "recommendations": [
+      "Deploy Enhanced Image Analysis on 741 UNCERTAIN rows (100% upgrade rate expected)",
+      "Continue main processing on GMB, Four Seasons , SMP, Anchor, Dorman"
+    ],
+    "enhanced_analysis_ready": {
+      "GMB": {
+        "uncertain_rows": 66,
+        "estimated_upgrades": 66,
+        "priority": "MEDIUM"
+      },
+      "Four Seasons ": {
+        "uncertain_rows": 1,
+        "estimated_upgrades": 1,
+        "priority": "LOW"
+      },
+      "SMP": {
+        "uncertain_rows": 1,
+        "estimated_upgrades": 1,
+        "priority": "LOW"
+      },
+      "Anchor": {
+        "uncertain_rows": 412,
+        "estimated_upgrades": 412,
+        "priority": "HIGH"
+      },
+      "Dorman": {
+        "uncertain_rows": 261,
+        "estimated_upgrades": 261,
+        "priority": "HIGH"
+      }
+    }
+  },
+  "timestamp": "2026-03-24T11:44:42.400093"
+}

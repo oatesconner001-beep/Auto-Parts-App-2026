@@ -1,0 +1,418 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+\n>> ENHANCED IMAGE ANALYSIS: Dorman
+=======================================================
+Target: Improve 67% -> 74%+ upgrade rate
+Method: SSIM + CLIP + Enhanced comparison
+Limit: 100
+Mode: LIVE - will update Excel
+
+Loading Dorman UNCERTAIN rows...
+Found 100 UNCERTAIN rows in Dorman
+Processing 100 UNCERTAIN rows...
+
+[1/100] Row 2: 264-571 vs SKP SK264571
+  Scraping DORMAN 264-571... SKP SK264571... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-571-007.jpg vs https://www.rockauto.com/info/983/983_SK264571_putaway_1.jpg
+[Enhanced] CLIP model loaded successfully
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[2/100] Row 3: 264-342 vs SKP SK264342
+  Scraping DORMAN 264-342... SKP SK264342... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-342-007.jpg vs https://www.rockauto.com/info/983/SK264342(1).jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[3/100] Row 4: 746-259 vs SKP SK746259
+  Scraping DORMAN 746-259... SKP SK746259... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/746-259-007.jpg vs https://www.rockauto.com/info/983/SK746259(1).jpg
+  -> UPGRADE to LIKELY (score: 0.59, MEDIUM)
+[4/100] Row 5: 264-904 vs SKP SK264904
+  Scraping DORMAN 264-904... SKP SK264904... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-904-007.jpg vs https://www.rockauto.com/info/983/983_SK264904_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.51, MEDIUM)
+[5/100] Row 6: 698-221 vs SKP SK698221
+  Scraping DORMAN 698-221... SKP SK698221... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/698-221-007.jpg vs https://www.rockauto.com/info/983/SK698221_1.jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[6/100] Row 7: 263-211 vs SKP SK260040
+  Scraping DORMAN 263-211... SKP SK260040... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/263-211-001.jpg vs https://www.rockauto.com/info/983/SK260040_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[7/100] Row 8: 620-658 vs SKP SK620658
+  Scraping DORMAN 620-658... SKP SK620658... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/620-658-001.jpg vs https://www.rockauto.com/info/983/SK620658_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[8/100] Row 9: 264-249 vs SKP SK264249
+  Scraping DORMAN 264-249... SKP SK264249... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-249-003.jpg vs https://www.rockauto.com/info/983/SK264249(1).jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[9/100] Row 10: 264-539 vs SKP SK264539
+  Scraping DORMAN 264-539... SKP SK264539... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-539-007.jpg vs https://www.rockauto.com/info/983/983_SK264539_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[10/100] Row 11: 263-263 vs SKP SK263263
+  Scraping DORMAN 263-263... SKP SK263263... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/263-263-007.jpg vs https://www.rockauto.com/info/983/SK263263_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[11/100] Row 12: 264-065 vs SKP SKSUP06A
+  Scraping DORMAN 264-065... SKP SKSUP06A... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-065-007.jpg vs https://www.rockauto.com/info/983/983_SKSUP06A_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[12/100] Row 13: 264-969 vs SKP SK264969
+  Scraping DORMAN 264-969... SKP SK264969... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-969-001.jpg vs https://www.rockauto.com/info/983/983_SK264969_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[13/100] Row 14: 621-071 vs SKP SK621071
+  Scraping DORMAN 621-071... SKP SK621071... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/621-071-001.jpg vs https://www.rockauto.com/info/983/SK621071_1.jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[14/100] Row 15: 264-593 vs SKP SK264593
+  Scraping DORMAN 264-593... SKP SK264593... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-593-007.jpg vs https://www.rockauto.com/info/983/SK264593_1.jpg
+  -> UPGRADE to LIKELY (score: 0.53, MEDIUM)
+[15/100] Row 16: 264-410 vs SKP SK264410
+  Scraping DORMAN 264-410... SKP SK264410... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-410-007.jpg vs https://www.rockauto.com/info/983/SK264410(1).jpg
+  -> UPGRADE to LIKELY (score: 0.53, MEDIUM)
+[16/100] Row 17: 621-392 vs SKP SK621392
+  Scraping DORMAN 621-392... SKP SK621392... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/621-392-007.jpg vs https://www.rockauto.com/info/983/SK621392_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[17/100] Row 18: 264-529 vs SKP SK264529
+  Scraping DORMAN 264-529... SKP SK264529... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-529-007.jpg vs https://www.rockauto.com/info/983/SK264529_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[18/100] Row 19: 621-503 vs SKP SK621503
+  Scraping DORMAN 621-503... SKP SK621503... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/621-503-007.jpg vs https://www.rockauto.com/info/983/SK621503_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[19/100] Row 20: 264-452 vs SKP SK264452
+  Scraping DORMAN 264-452... SKP SK264452... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-452-007.jpg vs https://www.rockauto.com/info/983/SK264452_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[20/100] Row 21: 620-212 vs SKP SK620212
+  Scraping DORMAN 620-212... SKP SK620212... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/620-212-001.jpg vs https://www.rockauto.com/info/983/sk620212.jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[21/100] Row 22: 264-939 vs SKP SK264939
+  Scraping DORMAN 264-939... SKP SK264939... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-939-007.jpg vs https://www.rockauto.com/info/983/983_SK264939_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[22/100] Row 23: 264-378 vs SKP SK264378
+  Scraping DORMAN 264-378... SKP SK264378... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-378-007.jpg vs https://www.rockauto.com/info/983/SK264378(1).jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[23/100] Row 24: 264-380 vs SKP SK264380
+  Scraping DORMAN 264-380... SKP SK264380... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-380-007.jpg vs https://www.rockauto.com/info/983/SK264380(1).jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[24/100] Row 25: 621-586 vs SKP SK623760
+  Scraping DORMAN 621-586... SKP SK623760... No SKP images
+[25/100] Row 26: 264-363 vs SKP SK264363
+  Scraping DORMAN 264-363... SKP SK264363... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-363-007.jpg vs https://www.rockauto.com/info/983/SK264363_1_.jpg
+  -> UPGRADE to LIKELY (score: 0.53, MEDIUM)
+[26/100] Row 27: 264-365 vs SKP SK264365
+  Scraping DORMAN 264-365... SKP SK264365... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-365-001.jpg vs https://www.rockauto.com/info/983/SKP_SK264365_1.jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[27/100] Row 28: 264-474 vs SKP SK264474
+  Scraping DORMAN 264-474... SKP SK264474... No anchor images
+[28/100] Row 29: 264-982 vs SKP SK264982
+  Scraping DORMAN 264-982... SKP SK264982... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-982-007.jpg vs https://www.rockauto.com/info/983/SK264982_1.jpg
+  -> UPGRADE to LIKELY (score: 0.59, MEDIUM)
+[29/100] Row 30: 698-137 vs SKP SK698137
+  Scraping DORMAN 698-137... SKP SK698137... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/698-137-007.jpg vs https://www.rockauto.com/info/983/SK698137_1.jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[30/100] Row 31: 264-465 vs SKP SK264465
+  Scraping DORMAN 264-465... SKP SK264465... No anchor images
+[31/100] Row 32: 621-637 vs SKP SK621637
+  Scraping DORMAN 621-637... SKP SK621637... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/621-637-001.jpg vs https://www.rockauto.com/info/983/SK621637_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[32/100] Row 33: 264-340 vs SKP SK264340
+  Scraping DORMAN 264-340... SKP SK264340... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-340-007.jpg vs https://www.rockauto.com/info/983/SKP_SK264340_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[33/100] Row 34: 264-364 vs SKP SK264364
+  Scraping DORMAN 264-364... SKP SK264364... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-364-007.jpg vs https://www.rockauto.com/info/983/SKP_SK264364_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[34/100] Row 35: 264-507 vs SKP SK264507
+  Scraping DORMAN 264-507... SKP SK264507... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-507-007.jpg vs https://www.rockauto.com/info/983/SKP_SK264507_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[35/100] Row 36: 621-606 vs SKP SK621606
+  Scraping DORMAN 621-606... SKP SK621606... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/621-606-007.jpg vs https://www.rockauto.com/info/983/SK621606_1.jpg
+  -> UPGRADE to LIKELY (score: 0.52, MEDIUM)
+[36/100] Row 37: 264-357 vs SKP SK264357
+  Scraping DORMAN 264-357... SKP SK264357... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-357-007.jpg vs https://www.rockauto.com/info/983/SK264357_1.jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[37/100] Row 38: 264-505 vs SKP SK264505
+  Scraping DORMAN 264-505... SKP SK264505... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-505-007.jpg vs https://www.rockauto.com/info/983/SK264505_1_.jpg
+  -> UPGRADE to LIKELY (score: 0.53, MEDIUM)
+[38/100] Row 39: 264-382 vs SKP SK264382
+  Scraping DORMAN 264-382... SKP SK264382... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-382-007.jpg vs https://www.rockauto.com/info/983/SK264382_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[39/100] Row 40: 698-136 vs SKP SK698136
+  Scraping DORMAN 698-136... SKP SK698136... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/698-136-007.jpg vs https://www.rockauto.com/info/983/SK698136_1.jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[40/100] Row 41: 264-491 vs SKP SK264491
+  Scraping DORMAN 264-491... SKP SK264491... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/RB_264491_Ang.jpg vs https://www.rockauto.com/info/983/SK264491_1.jpg
+  -> UPGRADE to LIKELY (score: 0.53, MEDIUM)
+[41/100] Row 42: 264-042 vs SKP SK264042
+  Scraping DORMAN 264-042... SKP SK264042... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-042-007.jpg vs https://www.rockauto.com/info/983/SK264042_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[42/100] Row 43: 264-907 vs SKP SK264907
+  Scraping DORMAN 264-907... SKP SK264907... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-907-007.jpg vs https://www.rockauto.com/info/983/SK264907_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[43/100] Row 44: 264-239 vs SKP SK264239
+  Scraping DORMAN 264-239... SKP SK264239... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-239-007.jpg vs https://www.rockauto.com/info/983/SK264239_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[44/100] Row 45: 620-042 vs SKP SK620042
+  Scraping DORMAN 620-042... SKP SK620042... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/620-042-001.jpg vs https://www.rockauto.com/info/983/SK620042 (1).jpg
+  -> UPGRADE to LIKELY (score: 0.49, MEDIUM)
+[45/100] Row 46: 264-880 vs SKP SK264880
+  Scraping DORMAN 264-880... SKP SK264880... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-880-007.jpg vs https://www.rockauto.com/info/983/SK264880_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[46/100] Row 47: 620-039 vs SKP SK62039
+  Scraping DORMAN 620-039... SKP SK62039... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/620-039-001.jpg vs https://www.rockauto.com/info/983/SK62039_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[47/100] Row 48: 264-485 vs SKP SK264485
+  Scraping DORMAN 264-485... SKP SK264485... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-485-007.jpg vs https://www.rockauto.com/info/983/SK264485(1).jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[48/100] Row 49: 264-046 vs SKP SK264046
+  Scraping DORMAN 264-046... SKP SK264046... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-046-007.jpg vs https://www.rockauto.com/info/983/SK264046_1.jpg
+  -> UPGRADE to LIKELY (score: 0.52, MEDIUM)
+[49/100] Row 50: 264-344 vs SKP SK264344
+  Scraping DORMAN 264-344... SKP SK264344... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-344-007.jpg vs https://www.rockauto.com/info/983/SK264344(1).jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[50/100] Row 51: 620-473 vs SKP SK959355
+  Scraping DORMAN 620-473... SKP SK959355... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/620-473-007.jpg vs https://www.rockauto.com/info/983/SK959355_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[51/100] Row 52: 264-860 vs SKP SK264860
+  Scraping DORMAN 264-860... SKP SK264860... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-860-007.jpg vs https://www.rockauto.com/info/983/983_SK264860_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[52/100] Row 53: 264-205 vs SKP SK264205
+  Scraping DORMAN 264-205... SKP SK264205... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-205-007.jpg vs https://www.rockauto.com/info/983/SK264205_1.jpg
+  -> UPGRADE to LIKELY (score: 0.53, MEDIUM)
+[53/100] Row 54: 264-317 vs SKP SK264317
+  Scraping DORMAN 264-317... SKP SK264317... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-317-007.jpg vs https://www.rockauto.com/info/983/SK264317(1).jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[54/100] Row 55: 264-353 vs SKP SKFP67A
+  Scraping DORMAN 264-353... SKP SKFP67A... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-353-007.jpg vs https://www.rockauto.com/info/983/983_SKFP67A_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[55/100] Row 56: 264-375 vs SKP SK264375
+  Scraping DORMAN 264-375... SKP SK264375... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-375-007.jpg vs https://www.rockauto.com/info/983/SK264375_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[56/100] Row 57: 264-244 vs SKP SK264244
+  Scraping DORMAN 264-244... SKP SK264244... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-244-007.jpg vs https://www.rockauto.com/info/983/SK264244(1).jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[57/100] Row 58: 746-014 vs SKP SKDLA8
+  Scraping DORMAN 746-014... SKP SKDLA8... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/746-014-007.jpg vs https://www.rockauto.com/info/983/SKDLA8(1).jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[58/100] Row 59: 740-140 vs SKP SK740140
+  Scraping DORMAN 740-140... SKP SK740140... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/740-140-001.jpg vs https://www.rockauto.com/info/983/SK740140_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[59/100] Row 60: 264-346 vs SKP SK264346
+  Scraping DORMAN 264-346... SKP SK264346... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-346-007.jpg vs https://www.rockauto.com/info/983/SK264346_1.jpg
+  -> UPGRADE to LIKELY (score: 0.53, MEDIUM)
+[60/100] Row 61: 698-117 vs SKP SK698117
+  Scraping DORMAN 698-117... SKP SK698117... No SKP images
+[61/100] Row 62: 931-401 vs SKP SK931401
+  Scraping DORMAN 931-401... SKP SK931401... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/931-401-007.jpg vs https://www.rockauto.com/info/983/SK931401_1.jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[62/100] Row 63: 620-167 vs SKP SK620167
+  Scraping DORMAN 620-167... SKP SK620167... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/620-167-007.jpg vs https://www.rockauto.com/info/983/SK620167(1).jpg
+  -> UPGRADE to LIKELY (score: 0.52, MEDIUM)
+[63/100] Row 64: 620-120 vs SKP SK620120F
+  Scraping DORMAN 620-120... SKP SK620120F... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/620-120-001.jpg vs https://www.rockauto.com/info/983/SK620120F_1.jpg
+  -> UPGRADE to LIKELY (score: 0.53, MEDIUM)
+[64/100] Row 65: 621-601 vs SKP SK621601
+  Scraping DORMAN 621-601... SKP SK621601... No SKP images
+[65/100] Row 66: 264-985 vs SKP SK264985
+  Scraping DORMAN 264-985... SKP SK264985... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-985-007.jpg vs https://www.rockauto.com/info/983/SK264985(1).jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[66/100] Row 67: 264-414 vs SKP SK264414
+  Scraping DORMAN 264-414... SKP SK264414... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-414-007.jpg vs https://www.rockauto.com/info/983/SK264414_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[67/100] Row 68: 264-135 vs SKP SK264135
+  Scraping DORMAN 264-135... SKP SK264135... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-135-007.jpg vs https://www.rockauto.com/info/983/983_SK264135_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[68/100] Row 69: 264-540 vs SKP SK264540
+  Scraping DORMAN 264-540... SKP SK264540... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-540-007.jpg vs https://www.rockauto.com/info/983/983_SK264540_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[69/100] Row 70: 264-856 vs SKP SK264856
+  Scraping DORMAN 264-856... SKP SK264856... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-856-007.jpg vs https://www.rockauto.com/info/983/SK264856_1.jpg
+  -> UPGRADE to LIKELY (score: 0.53, MEDIUM)
+[70/100] Row 71: 746-302 vs SKP SKDLA87
+  Scraping DORMAN 746-302... SKP SKDLA87... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/746-302-007.jpg vs https://www.rockauto.com/info/983/SKDLA87_1.jpg
+  -> UPGRADE to LIKELY (score: 0.52, MEDIUM)
+[71/100] Row 72: 621-029 vs SKP SK621029
+  Scraping DORMAN 621-029... SKP SK621029... No SKP images
+[72/100] Row 73: 264-025 vs SKP SKGMP92A
+  Scraping DORMAN 264-025... SKP SKGMP92A... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-025-007.jpg vs https://www.rockauto.com/info/983/983_SKGMP92A_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[73/100] Row 74: 752-928 vs SKP SK752928
+  Scraping DORMAN 752-928... SKP SK752928... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/752-928-001.jpg vs https://www.rockauto.com/info/983/983_SK752928_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.50, MEDIUM)
+[74/100] Row 75: 264-757 vs SKP SK264757
+  Scraping DORMAN 264-757... SKP SK264757... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-757-001.jpg vs https://www.rockauto.com/info/983/983_SK264757_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[75/100] Row 76: 264-133 vs SKP SK264133
+  Scraping DORMAN 264-133... SKP SK264133... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-133-007.jpg vs https://www.rockauto.com/info/983/SK264133_1_.jpg
+  -> UPGRADE to LIKELY (score: 0.53, MEDIUM)
+[76/100] Row 77: 264-316 vs SKP SK264316
+  Scraping DORMAN 264-316... SKP SK264316... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-316-007.jpg vs https://www.rockauto.com/info/983/SK264316(1).jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[77/100] Row 78: 620-843 vs SKP SK620843
+  Scraping DORMAN 620-843... SKP SK620843... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/620-843-001.jpg vs https://www.rockauto.com/info/983/SK620843_1.jpg
+  -> UPGRADE to LIKELY (score: 0.52, MEDIUM)
+[78/100] Row 79: 621-353 vs SKP SK621353
+  Scraping DORMAN 621-353... SKP SK621353... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/621-353-001.jpg vs https://www.rockauto.com/info/983/SK621353.jpg
+  -> UPGRADE to LIKELY (score: 0.52, MEDIUM)
+[79/100] Row 80: 264-336 vs SKP SK264336
+  Scraping DORMAN 264-336... SKP SK264336... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-336-003.jpg vs https://www.rockauto.com/info/983/SK264336_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[80/100] Row 81: 264-468 vs SKP SK264468
+  Scraping DORMAN 264-468... SKP SK264468... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-468-007.jpg vs https://www.rockauto.com/info/983/SK264468(1).jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[81/100] Row 82: 264-314 vs SKP SK264314
+  Scraping DORMAN 264-314... SKP SK264314... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-314-007.jpg vs https://www.rockauto.com/info/983/SK264314_3_.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[82/100] Row 83: 621-577 vs SKP SK621577
+  Scraping DORMAN 621-577... SKP SK621577... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/621-577-007.jpg vs https://www.rockauto.com/info/983/SK621577_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[83/100] Row 84: 264-698 vs SKP SK264698
+  Scraping DORMAN 264-698... SKP SK264698... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-698-007.jpg vs https://www.rockauto.com/info/983/983_SK264698_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[84/100] Row 85: 264-713 vs SKP SK264713
+  Scraping DORMAN 264-713... SKP SK264713... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-713-007.jpg vs https://www.rockauto.com/info/983/SKP_SK264713_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[85/100] Row 86: 698-148 vs SKP SK698148
+  Scraping DORMAN 698-148... SKP SK698148... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/698-148-007.jpg vs https://www.rockauto.com/info/983/983_SK698148_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[86/100] Row 87: 698-238 vs SKP SK698238
+  Scraping DORMAN 698-238... SKP SK698238... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/698-238-007.jpg vs https://www.rockauto.com/info/983/SK698238_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[87/100] Row 88: 931-318 vs SKP SK931318
+  Scraping DORMAN 931-318... SKP SK931318... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/931-318-007.jpg vs https://www.rockauto.com/info/983/SKP_SK931318_1.jpg
+  -> UPGRADE to LIKELY (score: 0.59, MEDIUM)
+[88/100] Row 89: 937-266 vs SKP SK937266
+  Scraping DORMAN 937-266... SKP SK937266... No SKP images
+[89/100] Row 90: 621-498 vs SKP SK621498
+  Scraping DORMAN 621-498... SKP SK621498... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/621-498-001.jpg vs https://www.rockauto.com/info/983/SK621498_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[90/100] Row 91: 264-746 vs SKP SK510A02
+  Scraping DORMAN 264-746... SKP SK510A02... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/167/264-746-007.jpg vs https://www.rockauto.com/info/983/SK510A02_1.jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[91/100] Row 92: 264-351 vs SKP SK264351
+  Scraping DORMAN 264-351... SKP SK264351... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-351-007.jpg vs https://www.rockauto.com/info/983/SK264351(1).jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[92/100] Row 93: 264-379 vs SKP SK264379
+  Scraping DORMAN 264-379... SKP SK264379... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-379-007.jpg vs https://www.rockauto.com/info/983/SK264379_1_.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[93/100] Row 94: 264-444 vs SKP SK264444
+  Scraping DORMAN 264-444... SKP SK264444... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/264-444-007.jpg vs https://www.rockauto.com/info/983/SK264444(1).jpg
+  -> UPGRADE to LIKELY (score: 0.52, MEDIUM)
+[94/100] Row 95: 937-677 vs SKP SK937677
+  Scraping DORMAN 937-677... SKP SK937677... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/937-677-007.jpg vs https://www.rockauto.com/info/983/983_SK937677_putaway_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[95/100] Row 96: 620-974 vs SKP SK620974
+  Scraping DORMAN 620-974... SKP SK620974... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/620-974-001.jpg vs https://www.rockauto.com/info/983/SK620974_1.jpg
+[Enhanced] Perceptual hash failed: HTTPSConnectionPool(host='www.rockauto.com', port=443): Read timed out. (read timeout=10)
+  -> UPGRADE to LIKELY (score: 0.38, LOW)
+[96/100] Row 97: 931-403 vs SKP SK931403
+  Scraping DORMAN 931-403... SKP SK931403... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/931-403-007.jpg vs https://www.rockauto.com/info/983/SK931403_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[97/100] Row 98: 620-022 vs SKP SK620022
+  Scraping DORMAN 620-022... SKP SK620022... No SKP images
+[98/100] Row 99: 620-225 vs SKP SK620225D
+  Scraping DORMAN 620-225... SKP SK620225D... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/620-225-007.jpg vs https://www.rockauto.com/info/983/sk620225d.jpg
+  -> UPGRADE to LIKELY (score: 0.52, MEDIUM)
+[99/100] Row 100: 620-467 vs SKP SK620467
+  Scraping DORMAN 620-467... SKP SK620467... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/620-467-001.jpg vs https://www.rockauto.com/info/983/SK620467_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[100/100] Row 101: 621-038 vs SKP SK62138
+  Scraping DORMAN 621-038... SKP SK62138... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/42/621-038-001.jpg vs https://www.rockauto.com/info/983/SK62138_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+
+=======================================================
+ENHANCED ANALYSIS RESULTS
+=======================================================
+Processing time: 3251.0s (32.5s per row)
+Total processed: 100
+
+Results breakdown:
+  Upgrade to LIKELY:  92 (92.0%)
+  Keep UNCERTAIN:      0 ( 0.0%)
+  No images:           8 ( 8.0%)
+  Errors:              0 ( 0.0%)
+
+Success rate: 100.0% of processable rows upgraded to LIKELY
+(Baseline moondream: ~67%, Enhanced target: 74%+)
+\n>> TARGET ACHIEVED! Enhanced system performing at 100.0% vs 67% baseline
+\nApplying 92 upgrades to Excel...
+Opening Excel file for updates...
+Excel update failed: Bad magic number for central directory
+[ERROR] Failed to update Excel

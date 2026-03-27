@@ -1,0 +1,46 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+=== Processing sheet: Dorman | reprocess_uncertain=True ===
+Sheet: Dorman | Brand: DORMAN | Reprocess UNCERTAIN: True
+Loading workbook: FISHER SKP INTERCHANGE 20260302.xlsx
+Found 1595 rows for DORMAN brand
+Traceback (most recent call last):
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\src\excel_handler.py", line 286, in <module>
+    process_rows(
+    ~~~~~~~~~~~~^
+        filepath,
+        ^^^^^^^^^
+    ...<2 lines>...
+        on_log=print,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\src\excel_handler.py", line 202, in process_rows
+    wb = load_workbook(filepath)
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 348, in load_workbook
+    reader.read()
+    ~~~~~~~~~~~^^
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 303, in read
+    self.read_worksheets()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\.venv\Lib\site-packages\openpyxl\reader\excel.py", line 237, in read_worksheets
+    ws_parser.bind_all()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\.venv\Lib\site-packages\openpyxl\worksheet\_reader.py", line 465, in bind_all
+    self.bind_cells()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\.venv\Lib\site-packages\openpyxl\worksheet\_reader.py", line 368, in bind_cells
+    for idx, row in self.parser.parse():
+                    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\.venv\Lib\site-packages\openpyxl\worksheet\_reader.py", line 156, in parse
+    for _, element in it:
+                      ^^
+  File "C:\Python314\Lib\xml\etree\ElementTree.py", line 1248, in iterator
+    data = source.read(16 * 1024)
+  File "C:\Python314\Lib\zipfile\__init__.py", line 1084, in read
+    data = self._read1(n)
+  File "C:\Python314\Lib\zipfile\__init__.py", line 1174, in _read1
+    self._update_crc(data)
+    ~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Python314\Lib\zipfile\__init__.py", line 1102, in _update_crc
+    raise BadZipFile("Bad CRC-32 for file %r" % self.name)
+zipfile.BadZipFile: Bad CRC-32 for file 'xl/worksheets/sheet2.xml'

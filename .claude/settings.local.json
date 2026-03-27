@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(export PATH=\"$PATH:/c/Users/Owner/.local/bin\")",
+      "Bash(uv run:*)",
+      "Bash(export:*)",
+      "Bash(tasklist)",
+      "Bash(findstr chrome:*)",
+      "Bash(taskkill /f /im chrome.exe)",
+      "Bash(taskkill /f /im chrome-native-host.exe)",
+      "Bash(cmd.exe /c \"taskkill /f /im chrome.exe\")",
+      "Bash(powershell.exe -Command \"Remove-Item -Path ''.browser_profile/lockfile'' -Force -ErrorAction SilentlyContinue\")",
+      "Bash(findstr python:*)",
+      "Bash(powershell.exe -Command \"Get-Process python | Where-Object {$_.MainWindowTitle -like '*excel_handler*' -or $_.CommandLine -like '*excel_handler*'} | Stop-Process -Force -ErrorAction SilentlyContinue\")",
+      "WebSearch",
+      "Bash(curl -s http://localhost:11434/api/tags)",
+      "Bash(python -c \":*)",
+      "Bash(wc -l \"c:/Users/Owner/Desktop/Parts Agent 20260313/src\"/*.py)",
+      "Bash(find src:*)",
+      "Bash(python -c \"import sys; sys.path.insert\\(0, ''src''\\); from count_results import count_all_results; import json; results = count_all_results\\(''FISHER SKP INTERCHANGE 20260302.xlsx''\\); print\\(json.dumps\\(results, indent=2\\)\\)\")",
+      "Bash(python monitor_production.py --once)",
+      "Bash(find 'c:/Users/Owner/Desktop/Parts Agent 20260313' -type f \\\\\\(-name *.txt -o -name *.log -o -name *.json \\\\\\) -mtime -3)",
+      "Bash(python -c \"import sys; sys.path.append\\(''./src''\\); from bulk_image_scraper import collect_uncertain_rows; print\\(len\\(collect_uncertain_rows\\(''Anchor''\\)\\)\\)\")",
+      "Bash(uv sync:*)",
+      "Bash(uv pip:*)",
+      "Bash(python3 src/count_results.py)",
+      "Bash(python3 -c \"import clip; print\\(''CLIP installed''\\); import torch; print\\(f''CUDA available: {torch.cuda.is_available\\(\\)}''\\)\")",
+      "Bash(ls -lh *.md)",
+      "Bash(python:*)",
+      "Bash(ls -la src/*.py)",
+      "Bash(find output:*)",
+      "Bash(python3 -c \":*)",
+      "Bash(ls -lah src/*.py)",
+      "Bash(grep -r \"SCRAPER_SCHEMA\\\\|OUTPUT_SCHEMA\\\\|class.*Scraper\\\\|def.*output\" src/*.py)",
+      "Bash(python3:*)",
+      "Bash(find 'c:/Users/Owner/Desktop/Parts Agent 20260313' -maxdepth 2 -name main*.py -o -name launch*.py -o -name app.py)",
+      "mcp__sqlite__read_query"
+    ]
+  }
+}

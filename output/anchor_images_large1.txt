@@ -1,0 +1,46 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+
+============================================================
+  Image Analysis — Anchor
+============================================================
+Loading workbook...
+Found 339 UNCERTAIN rows in 'Anchor'
+Processing 150 rows (limit=150)
+[Vision] Using LOCAL Ollama vision (free, unlimited)
+
+[1/150] Row 151: ANCHOR 3503 vs SKP SKM3503
+    No image for: SKP SKM3503 — skipping
+[2/150] Row 233: ANCHOR 3157 vs SKP SKM3157
+    Images: https://www.rockauto.com/info/28/3157-000.jpg
+            https://www.rockauto.com/info/983/SKP_SKM3157_1.jpg
+    Local CV: 0.312  {'phash': np.float64(0.625), 'orb': 0.076, 'hist': 0.158}
+    LOW visual similarity (0.312) — keeping UNCERTAIN
+[3/150] Row 265: ANCHOR 9158 vs SKP SKM9158
+    No image for: SKP SKM9158 — skipping
+[4/150] Row 271: ANCHOR 2142 vs SKP SKM2142
+    Images: https://www.rockauto.com/info/28/2142-000.jpg
+            https://www.rockauto.com/info/983/SKM2142 (1).jpg
+    Local CV: 0.405  {'phash': np.float64(0.469), 'orb': 0.046, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   ANCHOR: The image shows a black metal engine mount with a rounded top and four holes on 
+[LocalVision]   SKP: The image shows a black engine mount with the number "SKP" on it. It has a recta
+[LocalVision] Jaccard similarity: 0.26  shared={'engine', 'shows', 'made', 'top', 'black', 'image', 'mount', 'attached', 'screws'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.26
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black metal engine mount with a r
+    -> UPGRADED to LIKELY (70%)
+    ERROR: [WinError 5] Access is denied: 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.tmp' -> 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.xlsx'
+[5/150] Row 306: ANCHOR 2285 vs SKP SKM2285
+    No image for: SKP SKM2285 — skipping
+[6/150] Row 338: ANCHOR 2257 vs SKP SKM2257
+    No image for: SKP SKM2257 — skipping
+[7/150] Row 389: ANCHOR 9400 vs SKP SKM9400
+    Images: https://www.rockauto.com/info/28/9400-000.jpg
+            https://www.rockauto.com/info/983/SKP_SKM9400_1.jpg
+    Local CV: 0.280  {'phash': np.float64(0.562), 'orb': 0.06, 'hist': 0.157}
+    LOW visual similarity (0.280) — keeping UNCERTAIN
+[8/150] Row 464: ANCHOR 9562 vs SKP SKM9562

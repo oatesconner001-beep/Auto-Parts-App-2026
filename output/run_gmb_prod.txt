@@ -1,0 +1,307 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+=== Processing sheet: GMB | reprocess_uncertain=False | limit=None ===
+Sheet: GMB | Brand: GMB | Reprocess UNCERTAIN: False
+Loading workbook: FISHER SKP INTERCHANGE 20260302.xlsx
+Found 300 rows for GMB brand
+[1/300] Row 2: NO — skipping
+[2/300] Row 3: LIKELY — skipping
+[3/300] Row 4: LIKELY — skipping
+[4/300] Row 6: YES — skipping
+[5/300] Row 7: LIKELY — skipping
+[6/300] Row 8: LIKELY — skipping
+[7/300] Row 9: LIKELY — skipping
+[8/300] Row 11: YES — skipping
+[9/300] Row 12: YES — skipping
+[10/300] Row 13: LIKELY — skipping
+[11/300] Row 14: LIKELY — skipping
+[12/300] Row 15: YES — skipping
+[13/300] Row 18: LIKELY — skipping
+[14/300] Row 22: LIKELY — skipping
+[15/300] Row 27: LIKELY — skipping
+[16/300] Row 28: LIKELY — skipping
+[17/300] Row 29: LIKELY — skipping
+[18/300] Row 30: YES — skipping
+[19/300] Row 33: LIKELY — skipping
+[20/300] Row 34: YES — skipping
+[21/300] Row 35: YES — skipping
+[22/300] Row 37: LIKELY — skipping
+[23/300] Row 38: LIKELY — skipping
+[24/300] Row 43: LIKELY — skipping
+[25/300] Row 44: LIKELY — skipping
+[26/300] Row 46: LIKELY — skipping
+[27/300] Row 49: LIKELY — skipping
+[28/300] Row 52: YES — skipping
+[29/300] Row 56: LIKELY — skipping
+[30/300] Row 59: LIKELY — skipping
+[31/300] Row 61: LIKELY — skipping
+[32/300] Row 65: YES — skipping
+[33/300] Row 68: LIKELY — skipping
+[34/300] Row 69: LIKELY — skipping
+[35/300] Row 70: YES — skipping
+[36/300] Row 75: LIKELY — skipping
+[37/300] Row 76: LIKELY — skipping
+[38/300] Row 77: LIKELY — skipping
+[39/300] Row 79: LIKELY — skipping
+[40/300] Row 80: YES — skipping
+[41/300] Row 81: LIKELY — skipping
+[42/300] Row 84: LIKELY — skipping
+[43/300] Row 85: YES — skipping
+[44/300] Row 86: YES — skipping
+[45/300] Row 91: LIKELY — skipping
+[46/300] Row 93: YES — skipping
+[47/300] Row 94: NO — skipping
+[48/300] Row 95: LIKELY — skipping
+[49/300] Row 100: NO — skipping
+[50/300] Row 101: LIKELY — skipping
+[51/300] Row 102: LIKELY — skipping
+[52/300] Row 104: LIKELY — skipping
+[53/300] Row 107: LIKELY — skipping
+[54/300] Row 109: LIKELY — skipping
+[55/300] Row 110: LIKELY — skipping
+[56/300] Row 112: YES — skipping
+[57/300] Row 119: YES — skipping
+[58/300] Row 122: LIKELY — skipping
+[59/300] Row 123: LIKELY — skipping
+[60/300] Row 125: YES — skipping
+[61/300] Row 130: YES — skipping
+[62/300] Row 136: LIKELY — skipping
+[63/300] Row 143: LIKELY — skipping
+[64/300] Row 144: NO — skipping
+[65/300] Row 149: LIKELY — skipping
+[66/300] Row 150: NO — skipping
+[67/300] Row 152: LIKELY — skipping
+[68/300] Row 158: UNCERTAIN — skipping (reprocess not enabled)
+[69/300] Row 161: LIKELY — skipping
+[70/300] Row 164: LIKELY — skipping
+[71/300] Row 166: NO — skipping
+[72/300] Row 169: UNCERTAIN — skipping (reprocess not enabled)
+[73/300] Row 171: UNCERTAIN — skipping (reprocess not enabled)
+[74/300] Row 178: LIKELY — skipping
+[75/300] Row 180: UNCERTAIN — skipping (reprocess not enabled)
+[76/300] Row 183: UNCERTAIN — skipping (reprocess not enabled)
+[77/300] Row 190: UNCERTAIN — skipping (reprocess not enabled)
+[78/300] Row 191: LIKELY — skipping
+[79/300] Row 192: UNCERTAIN — skipping (reprocess not enabled)
+[80/300] Row 202: LIKELY — skipping
+[81/300] Row 203: LIKELY — skipping
+[82/300] Row 204: UNCERTAIN — skipping (reprocess not enabled)
+[83/300] Row 208: LIKELY — skipping
+[84/300] Row 209: UNCERTAIN — skipping (reprocess not enabled)
+[85/300] Row 212: LIKELY — skipping
+[86/300] Row 218: UNCERTAIN — skipping (reprocess not enabled)
+[87/300] Row 222: LIKELY — skipping
+[88/300] Row 224: NO — skipping
+[89/300] Row 241: LIKELY — skipping
+[90/300] Row 246: LIKELY — skipping
+[91/300] Row 247: LIKELY — skipping
+[92/300] Row 253: LIKELY — skipping
+[93/300] Row 259: LIKELY — skipping
+[94/300] Row 261: LIKELY — skipping
+[95/300] Row 277: LIKELY — skipping
+[96/300] Row 298: LIKELY — skipping
+[97/300] Row 299: LIKELY — skipping
+[98/300] Row 301: LIKELY — skipping
+[99/300] Row 308: UNCERTAIN — skipping (reprocess not enabled)
+[100/300] Row 309: UNCERTAIN — skipping (reprocess not enabled)
+[101/300] Row 311: LIKELY — skipping
+[102/300] Row 312: LIKELY — skipping
+[103/300] Row 316: LIKELY — skipping
+[104/300] Row 329: LIKELY — skipping
+[105/300] Row 334: NO — skipping
+[106/300] Row 348: LIKELY — skipping
+[107/300] Row 349: LIKELY — skipping
+[108/300] Row 353: UNCERTAIN — skipping (reprocess not enabled)
+[109/300] Row 357: LIKELY — skipping
+[110/300] Row 358: NO — skipping
+[111/300] Row 359: LIKELY — skipping
+[112/300] Row 360: LIKELY — skipping
+[113/300] Row 361: UNCERTAIN — skipping (reprocess not enabled)
+[114/300] Row 365: LIKELY — skipping
+[115/300] Row 373: LIKELY — skipping
+[116/300] Row 378: UNCERTAIN — skipping (reprocess not enabled)
+[117/300] Row 381: LIKELY — skipping
+[118/300] Row 390: LIKELY — skipping
+[119/300] Row 397: UNCERTAIN — skipping (reprocess not enabled)
+[120/300] Row 400: LIKELY — skipping
+[121/300] Row 401: UNCERTAIN — skipping (reprocess not enabled)
+[122/300] Row 406: NO — skipping
+[123/300] Row 407: LIKELY — skipping
+[124/300] Row 412: LIKELY — skipping
+[125/300] Row 426: LIKELY — skipping
+[126/300] Row 427: UNCERTAIN — skipping (reprocess not enabled)
+[127/300] Row 432: LIKELY — skipping
+[128/300] Row 433: NO — skipping
+[129/300] Row 434: UNCERTAIN — skipping (reprocess not enabled)
+[130/300] Row 444: LIKELY — skipping
+[131/300] Row 450: LIKELY — skipping
+[132/300] Row 451: LIKELY — skipping
+[133/300] Row 453: LIKELY — skipping
+[134/300] Row 454: LIKELY — skipping
+[135/300] Row 455: LIKELY — skipping
+[136/300] Row 462: NO — skipping
+[137/300] Row 467: LIKELY — skipping
+[138/300] Row 468: LIKELY — skipping
+[139/300] Row 477: UNCERTAIN — skipping (reprocess not enabled)
+[140/300] Row 478: LIKELY — skipping
+[141/300] Row 498: LIKELY — skipping
+[142/300] Row 499: NO — skipping
+[143/300] Row 516: UNCERTAIN — skipping (reprocess not enabled)
+[144/300] Row 517: UNCERTAIN — skipping (reprocess not enabled)
+[145/300] Row 518: LIKELY — skipping
+[146/300] Row 519: UNCERTAIN — skipping (reprocess not enabled)
+[147/300] Row 533: LIKELY — skipping
+[148/300] Row 534: UNCERTAIN — skipping (reprocess not enabled)
+[149/300] Row 535: LIKELY — skipping
+[150/300] Row 536: NO — skipping
+[151/300] Row 537: LIKELY — skipping
+[152/300] Row 546: LIKELY — skipping
+[153/300] Row 560: NO — skipping
+[154/300] Row 561: UNCERTAIN — skipping (reprocess not enabled)
+[155/300] Row 562: LIKELY — skipping
+[156/300] Row 585: UNCERTAIN — skipping (reprocess not enabled)
+[157/300] Row 586: UNCERTAIN — skipping (reprocess not enabled)
+[158/300] Row 587: LIKELY — skipping
+[159/300] Row 594: UNCERTAIN — skipping (reprocess not enabled)
+[160/300] Row 595: LIKELY — skipping
+[161/300] Row 596: LIKELY — skipping
+[162/300] Row 598: LIKELY — skipping
+[163/300] Row 603: UNCERTAIN — skipping (reprocess not enabled)
+[164/300] Row 621: LIKELY — skipping
+[165/300] Row 627: NO — skipping
+[166/300] Row 661: UNCERTAIN — skipping (reprocess not enabled)
+[167/300] Row 667: LIKELY — skipping
+[168/300] Row 671: LIKELY — skipping
+[169/300] Row 672: LIKELY — skipping
+[170/300] Row 692: LIKELY — skipping
+[171/300] Row 693: LIKELY — skipping
+[172/300] Row 705: UNCERTAIN — skipping (reprocess not enabled)
+[173/300] Row 707: LIKELY — skipping
+[174/300] Row 724: LIKELY — skipping
+[175/300] Row 725: UNCERTAIN — skipping (reprocess not enabled)
+[176/300] Row 726: LIKELY — skipping
+[177/300] Row 727: UNCERTAIN — skipping (reprocess not enabled)
+[178/300] Row 742: LIKELY — skipping
+[179/300] Row 743: NO — skipping
+[180/300] Row 744: LIKELY — skipping
+[181/300] Row 754: UNCERTAIN — skipping (reprocess not enabled)
+[182/300] Row 762: LIKELY — skipping
+[183/300] Row 764: LIKELY — skipping
+[184/300] Row 782: LIKELY — skipping
+[185/300] Row 784: NO — skipping
+[186/300] Row 785: NO — skipping
+[187/300] Row 804: NO — skipping
+[188/300] Row 815: UNCERTAIN — skipping (reprocess not enabled)
+[189/300] Row 837: UNCERTAIN — skipping (reprocess not enabled)
+[190/300] Row 838: LIKELY — skipping
+[191/300] Row 864: NO — skipping
+[192/300] Row 868: LIKELY — skipping
+[193/300] Row 896: LIKELY — skipping
+[194/300] Row 897: LIKELY — skipping
+[195/300] Row 916: LIKELY — skipping
+[196/300] Row 920: LIKELY — skipping
+[197/300] Row 938: LIKELY — skipping
+[198/300] Row 1009: NO — skipping
+[199/300] Row 1010: LIKELY — skipping
+[200/300] Row 1058: NO — skipping
+[201/300] Row 1078: NO — skipping
+[202/300] Row 1079: LIKELY — skipping
+[203/300] Row 1123: NO — skipping
+[204/300] Row 1142: LIKELY — skipping
+[205/300] Row 1143: LIKELY — skipping
+[206/300] Row 1144: UNCERTAIN — skipping (reprocess not enabled)
+[207/300] Row 1145: LIKELY — skipping
+[208/300] Row 1146: NO — skipping
+[209/300] Row 1187: UNCERTAIN — skipping (reprocess not enabled)
+[210/300] Row 1192: UNCERTAIN — skipping (reprocess not enabled)
+[211/300] Row 1204: LIKELY — skipping
+[212/300] Row 1205: LIKELY — skipping
+[213/300] Row 1206: UNCERTAIN — skipping (reprocess not enabled)
+[214/300] Row 1279: LIKELY — skipping
+[215/300] Row 1280: LIKELY — skipping
+[216/300] Row 1281: LIKELY — skipping
+[217/300] Row 1282: LIKELY — skipping
+[218/300] Row 1283: LIKELY — skipping
+[219/300] Row 1284: LIKELY — skipping
+[220/300] Row 1285: LIKELY — skipping
+[221/300] Row 1286: NO — skipping
+[222/300] Row 1324: UNCERTAIN — skipping (reprocess not enabled)
+[223/300] Row 1327: UNCERTAIN — skipping (reprocess not enabled)
+[224/300] Row 1358: LIKELY — skipping
+[225/300] Row 1359: LIKELY — skipping
+[226/300] Row 1363: NO — skipping
+[227/300] Row 1364: LIKELY — skipping
+[228/300] Row 1365: UNCERTAIN — skipping (reprocess not enabled)
+[229/300] Row 1366: LIKELY — skipping
+[230/300] Row 1367: NO — skipping
+[231/300] Row 1420: UNCERTAIN — skipping (reprocess not enabled)
+[232/300] Row 1422: NO — skipping
+[233/300] Row 1429: NO — skipping
+[234/300] Row 1434: UNCERTAIN — skipping (reprocess not enabled)
+[235/300] Row 1438: UNCERTAIN — skipping (reprocess not enabled)
+[236/300] Row 1445: UNCERTAIN — skipping (reprocess not enabled)
+[237/300] Row 1446: UNCERTAIN — skipping (reprocess not enabled)
+[238/300] Row 1450: LIKELY — skipping
+[239/300] Row 1457: LIKELY — skipping
+[240/300] Row 1460: LIKELY — skipping
+[241/300] Row 1461: UNCERTAIN — skipping (reprocess not enabled)
+[242/300] Row 1463: LIKELY — skipping
+[243/300] Row 1523: NO — skipping
+[244/300] Row 1530: UNCERTAIN — skipping (reprocess not enabled)
+[245/300] Row 1535: UNCERTAIN — skipping (reprocess not enabled)
+[246/300] Row 1552: LIKELY — skipping
+[247/300] Row 1555: LIKELY — skipping
+[248/300] Row 1556: UNCERTAIN — skipping (reprocess not enabled)
+[249/300] Row 1557: LIKELY — skipping
+[250/300] Row 1558: UNCERTAIN — skipping (reprocess not enabled)
+[251/300] Row 1559: LIKELY — skipping
+[252/300] Row 1661: LIKELY — skipping
+[253/300] Row 1663: LIKELY — skipping
+[254/300] Row 1665: LIKELY — skipping
+[255/300] Row 1666: LIKELY — skipping
+[256/300] Row 1667: LIKELY — skipping
+[257/300] Row 1668: LIKELY — skipping
+[258/300] Row 1669: LIKELY — skipping
+[259/300] Row 1671: LIKELY — skipping
+[260/300] Row 1828: NO — skipping
+[261/300] Row 1835: UNCERTAIN — skipping (reprocess not enabled)
+[262/300] Row 1837: LIKELY — skipping
+[263/300] Row 1845: LIKELY — skipping
+[264/300] Row 1846: LIKELY — skipping
+[265/300] Row 1847: NO — skipping
+[266/300] Row 1848: UNCERTAIN — skipping (reprocess not enabled)
+[267/300] Row 1849: LIKELY — skipping
+[268/300] Row 2104: LIKELY — skipping
+[269/300] Row 2114: LIKELY — skipping
+[270/300] Row 2115: LIKELY — skipping
+[271/300] Row 2129: LIKELY — skipping
+[272/300] Row 2137: UNCERTAIN — skipping (reprocess not enabled)
+[273/300] Row 2142: NO — skipping
+[274/300] Row 2147: LIKELY — skipping
+[275/300] Row 2738: LIKELY — skipping
+[276/300] Row 2741: UNCERTAIN — skipping (reprocess not enabled)
+[277/300] Row 2746: UNCERTAIN — skipping (reprocess not enabled)
+[278/300] Row 2752: UNCERTAIN — skipping (reprocess not enabled)
+[279/300] Row 2753: LIKELY — skipping
+[280/300] Row 2755: UNCERTAIN — skipping (reprocess not enabled)
+[281/300] Row 2759: LIKELY — skipping
+[282/300] Row 2777: UNCERTAIN — skipping (reprocess not enabled)
+[283/300] Row 2788: LIKELY — skipping
+[284/300] Row 2789: LIKELY — skipping
+[285/300] Row 2792: LIKELY — skipping
+[286/300] Row 8123: LIKELY — skipping
+[287/300] Row 8177: UNCERTAIN — skipping (reprocess not enabled)
+[288/300] Row 8268: UNCERTAIN — skipping (reprocess not enabled)
+[289/300] Row 8382: LIKELY — skipping
+[290/300] Row 8420: NO — skipping
+[291/300] Row 8435: LIKELY — skipping
+[292/300] Row 8473: UNCERTAIN — skipping (reprocess not enabled)
+[293/300] Row 8514: UNCERTAIN — skipping (reprocess not enabled)
+[294/300] Row 8552: NO — skipping
+[295/300] Row 8553: LIKELY — skipping
+[296/300] Row 8754: LIKELY — skipping
+[297/300] Row 8778: LIKELY — skipping
+[298/300] Row 8795: LIKELY — skipping
+[299/300] Row 8906: UNCERTAIN — skipping (reprocess not enabled)
+[300/300] Row 8907: LIKELY — skipping
+Done. Workbook saved.
+Done.

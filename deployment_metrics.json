@@ -1,0 +1,172 @@
+{
+  "deployment_history": [
+    {
+      "timestamp": "2026-03-24T22:08:49.276900",
+      "phase": "baseline",
+      "description": "Pre-enhancement deployment baseline",
+      "sheets": {
+        "GMB": {
+          "YES": 18,
+          "LIKELY": 179,
+          "UNCERTAIN": 66,
+          "NO": 37,
+          "total_rows": 9930,
+          "processed": 300
+        },
+        "Four Seasons ": {
+          "YES": 0,
+          "LIKELY": 0,
+          "UNCERTAIN": 1,
+          "NO": 0,
+          "total_rows": 9930,
+          "processed": 1
+        },
+        "SMP": {
+          "YES": 2,
+          "LIKELY": 0,
+          "UNCERTAIN": 1,
+          "NO": 0,
+          "total_rows": 9930,
+          "processed": 3
+        },
+        "Anchor": {
+          "YES": 28,
+          "LIKELY": 150,
+          "UNCERTAIN": 412,
+          "NO": 0,
+          "total_rows": 9930,
+          "processed": 590
+        },
+        "Dorman": {
+          "YES": 3,
+          "LIKELY": 422,
+          "UNCERTAIN": 261,
+          "NO": 46,
+          "total_rows": 9930,
+          "processed": 732
+        }
+      },
+      "summary": {
+        "total_processed": 1626,
+        "total_likely": 751,
+        "total_uncertain": 741,
+        "anchor_likely": 150,
+        "anchor_uncertain": 412
+      }
+    },
+    {
+      "timestamp": "2026-03-24T22:09:12.031747",
+      "phase": "baseline",
+      "description": "Pre-enhancement deployment baseline",
+      "sheets": {
+        "GMB": {
+          "YES": 18,
+          "LIKELY": 179,
+          "UNCERTAIN": 66,
+          "NO": 37,
+          "total_rows": 9930,
+          "processed": 300
+        },
+        "Four Seasons ": {
+          "YES": 0,
+          "LIKELY": 0,
+          "UNCERTAIN": 1,
+          "NO": 0,
+          "total_rows": 9930,
+          "processed": 1
+        },
+        "SMP": {
+          "YES": 2,
+          "LIKELY": 0,
+          "UNCERTAIN": 1,
+          "NO": 0,
+          "total_rows": 9930,
+          "processed": 3
+        },
+        "Anchor": {
+          "YES": 28,
+          "LIKELY": 150,
+          "UNCERTAIN": 412,
+          "NO": 0,
+          "total_rows": 9930,
+          "processed": 590
+        },
+        "Dorman": {
+          "YES": 3,
+          "LIKELY": 422,
+          "UNCERTAIN": 261,
+          "NO": 46,
+          "total_rows": 9930,
+          "processed": 732
+        }
+      },
+      "summary": {
+        "total_processed": 1626,
+        "total_likely": 751,
+        "total_uncertain": 741,
+        "anchor_likely": 150,
+        "anchor_uncertain": 412
+      }
+    },
+    {
+      "timestamp": "2026-03-24T22:17:48.646452",
+      "phase": "Wave 1_completion",
+      "description": "Wave 1 enhanced analysis completion",
+      "target_upgrades": 25,
+      "sheets": {
+        "GMB": {
+          "YES": 18,
+          "LIKELY": 179,
+          "UNCERTAIN": 66,
+          "NO": 37,
+          "total_rows": 9930,
+          "processed": 300
+        },
+        "Four Seasons ": {
+          "YES": 0,
+          "LIKELY": 0,
+          "UNCERTAIN": 1,
+          "NO": 0,
+          "total_rows": 9930,
+          "processed": 1
+        },
+        "SMP": {
+          "YES": 2,
+          "LIKELY": 0,
+          "UNCERTAIN": 1,
+          "NO": 0,
+          "total_rows": 9930,
+          "processed": 3
+        },
+        "Anchor": {
+          "YES": 21,
+          "LIKELY": 159,
+          "UNCERTAIN": 410,
+          "NO": 0,
+          "total_rows": 9930,
+          "processed": 590
+        },
+        "Dorman": {
+          "YES": 3,
+          "LIKELY": 422,
+          "UNCERTAIN": 261,
+          "NO": 46,
+          "total_rows": 9930,
+          "processed": 732
+        }
+      },
+      "summary": {
+        "total_processed": 1626,
+        "total_likely": 760,
+        "total_uncertain": 739,
+        "anchor_likely": 159,
+        "anchor_uncertain": 410
+      },
+      "impact_vs_baseline": {
+        "likely_increase": 9,
+        "uncertain_decrease": 2,
+        "success_rate_improvement": "26.9% vs 25.4%"
+      }
+    }
+  ]
+}

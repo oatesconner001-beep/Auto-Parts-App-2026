@@ -1,0 +1,80 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+
+============================================================
+  Image Analysis — Anchor
+============================================================
+Loading workbook...
+Found 8 UNCERTAIN rows in 'Anchor'
+Processing 3 rows (limit=3)
+[Vision] Using LOCAL Ollama vision (free, unlimited)
+
+[1/3] Row 10: ANCHOR 3217 vs SKP SKM3217
+    Images: https://www.rockauto.com/info/28/3217-000.jpg
+            https://www.rockauto.com/info/983/SKM3217_1_.jpg
+    Local CV: 0.431  {'phash': np.float64(0.531), 'orb': 0.052, 'hist': 0.987}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (32 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 14.1s
+[LocalVision]   ANCHOR: The image shows a black engine mount with silver hardware on the front side. It 
+[LocalVision]   SKP: The image shows a black engine mount with a silver ring on top that has a hole f
+[LocalVision] Jaccard similarity: 0.31  shared={'engine', 'attached', 'mounted', 'bolt', 'black', 'shows', 'image', 'mount', 'hole', 'silver', 'ring'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.31
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with silver ha
+    -> UPGRADED to LIKELY (70%)
+[2/3] Row 45: ANCHOR 2987 vs SKP SKM2987
+    Images: https://www.rockauto.com/info/28/2987-000.jpg
+            https://www.rockauto.com/info/983/SKM2987 (1).jpg
+    Local CV: 0.456  {'phash': np.float64(0.562), 'orb': 0.08, 'hist': 0.997}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (21 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   ANCHOR: The image shows a black engine mount with silver bolts on the sides and top. It 
+[LocalVision]   SKP: The image shows a black engine mount with two screws on each side for mounting t
+[LocalVision] Jaccard similarity: 0.25  shared={'engine', 'black', 'shows', 'image', 'mount', 'screws'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.25
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with silver bo
+    -> UPGRADED to LIKELY (70%)
+[3/3] Row 47: ANCHOR 9247 vs SKP SKM9247
+    Images: https://www.rockauto.com/info/28/9247-000.jpg
+            https://www.rockauto.com/info/983/SKM9247_1.jpg
+    Local CV: 0.510  {'phash': np.float64(0.719), 'orb': 0.056, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a silver bolt at the top center. The e
+[LocalVision]   SKP: The image shows a black engine mount with silver bolts and nuts on the front and
+[LocalVision] Jaccard similarity: 0.34  shared={'during', 'engine', 'operation', 'into', 'designed', 'black', 'shows', 'image', 'mount', 'made', 'stability', 'fits', 'silver'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.34
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a silver 
+    -> UPGRADED to LIKELY (70%)
+
+============================================================
+  COMPLETED — Anchor Image Analysis
+============================================================
+  Rows processed:             3
+  No image available:         0
+  HIGH CV (>=0.75):           0
+  MEDIUM CV (0.35-0.75):      3
+  LOW CV (<0.35):             0
+  Gemini Vision calls:        3
+  Errors:                     0
+  --------------------------------------
+  UPGRADED to LIKELY:         3
+
+  Current counts for 'Anchor':
+    YES:           25  (21.0%)
+    LIKELY:        16  (13.4%)
+    UNCERTAIN:     77  (64.7%)
+    NO:             1  (0.8%)
+    ---------------------------------
+    Confirmed:     41  (34.5%)  [YES + LIKELY]
+    Pending:       77  (64.7%)  [UNCERTAIN]

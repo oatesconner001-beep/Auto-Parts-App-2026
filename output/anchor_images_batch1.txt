@@ -1,0 +1,228 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+
+============================================================
+  Image Analysis — Anchor
+============================================================
+Loading workbook...
+Found 209 UNCERTAIN rows in 'Anchor'
+Processing 25 rows (limit=25)
+[Vision] Using Gemini Vision (free API, quota-limited)
+
+[1/25] Row 274: ANCHOR 9451 vs SKP SKM9451
+[Local] Searching for 9451 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 9451...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['50810SDPA11', '50810SJAA02']
+[Local] Searching for SKM9451 (brand=SKP)...
+[Local] Fetching moreinfo for SKP SKM9451...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['1041888', '50810SDBA02']
+    Images: https://www.rockauto.com/info/28/9451-000.jpg
+            https://www.rockauto.com/info/983/SKM9451_1_-1.jpg
+    Local CV: 0.474  {'phash': np.float64(0.625), 'orb': 0.062, 'hist': 0.998}
+    [GEMINI Vision] comparing...
+[GeminiVision] Downloading images...
+[GeminiVision] Daily quota exhausted — vision comparison disabled for this session.
+    Vision quota exhausted — skipping for remaining MEDIUM cases
+[2/25] Row 291: ANCHOR 2436 vs SKP SKM2436
+[Local] Searching for 2436 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 2436...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['22188363']
+[Local] Searching for SKM2436 (brand=SKP)...
+[Local] Fetching moreinfo for SKP SKM2436...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['14020241', '14024140', '14062953']
+    Images: https://www.rockauto.com/info/28/2436-000.jpg
+            https://www.rockauto.com/info/983/SKM2436(1).jpg
+    Local CV: 0.429  {'phash': np.float64(0.531), 'orb': 0.044, 'hist': 0.994}
+    LOW visual similarity (0.429) — keeping UNCERTAIN
+[3/25] Row 306: ANCHOR 2285 vs SKP SKM2285
+[Local] Searching for 2285 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 2285...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['6358154']
+[Local] Searching for SKM2285 (brand=SKP)...
+    No image for: SKP SKM2285 — skipping
+[4/25] Row 307: ANCHOR 9168 vs SKP SKM9168
+[Local] Searching for 9168 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 9168...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['50810S9A013']
+[Local] Searching for SKM9168 (brand=SKP)...
+[Local] Fetching moreinfo for SKP SKM9168...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['50810S7D003']
+    Images: https://www.rockauto.com/info/28/9168-000.jpg
+            https://www.rockauto.com/info/983/SKM9168-_2-1.jpg
+    Local CV: 0.515  {'phash': np.float64(0.656), 'orb': 0.134, 'hist': 0.995}
+    LOW visual similarity (0.515) — keeping UNCERTAIN
+[5/25] Row 321: ANCHOR 9194 vs SKP SKM9194
+[Local] Searching for 9194 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 9194...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['50810SDAE11']
+[Local] Searching for SKM9194 (brand=SKP)...
+[Local] Fetching moreinfo for SKP SKM9194...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['50810SDAA02']
+    Images: https://www.rockauto.com/info/28/9194-000.jpg
+            https://www.rockauto.com/info/983/SKM9194_1_.jpg
+    Local CV: 0.456  {'phash': np.float64(0.688), 'orb': 0.054, 'hist': 0.799}
+    LOW visual similarity (0.456) — keeping UNCERTAIN
+[6/25] Row 331: ANCHOR 3565 vs SKP SKMA5739
+[Local] Searching for 3565 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 3565...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['85579396']
+[Local] Searching for SKMA5739 (brand=SKP)...
+[Local] Fetching moreinfo for SKP SKMA5739...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['84175583']
+    Images: https://www.rockauto.com/info/28/3565-000.jpg
+            https://www.rockauto.com/info/983/SKMA5739_1.jpg
+    Local CV: 0.456  {'phash': np.float64(0.562), 'orb': 0.08, 'hist': 0.993}
+    LOW visual similarity (0.456) — keeping UNCERTAIN
+[7/25] Row 332: ANCHOR 3149 vs SKP SKM3149
+[Local] Searching for 3149 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 3149...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['25886949', '25971093']
+[Local] Searching for SKM3149 (brand=SKP)...
+[Local] Fetching moreinfo for SKP SKM3149...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['20877776', '22887775']
+    Images: https://www.rockauto.com/info/28/3149-000.jpg
+            https://www.rockauto.com/info/983/SKM3149 (1).jpg
+    Local CV: 0.485  {'phash': np.float64(0.625), 'orb': 0.088, 'hist': 0.998}
+    LOW visual similarity (0.485) — keeping UNCERTAIN
+[8/25] Row 338: ANCHOR 2257 vs SKP SKM2257
+[Local] Searching for 2257 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 2257...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['D0ZZ6038B', 'D1ZZ6038A']
+[Local] Searching for SKM2257 (brand=SKP)...
+[Local] Fetching moreinfo for SKP SKM2257...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['C60Z6038C']
+    No image for: SKP SKM2257 — skipping
+[9/25] Row 343: ANCHOR 9797 vs SKP SKM9797
+[Local] Searching for 9797 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 9797...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['21810A5200', '21810A7000']
+[Local] Searching for SKM9797 (brand=SKP)...
+[Local] Fetching moreinfo for SKP SKM9797...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: []
+    Images: https://www.rockauto.com/info/28/9797-000.jpg
+            https://www.rockauto.com/info/983/SKM9797_1.jpg
+    Local CV: 0.426  {'phash': np.float64(0.469), 'orb': 0.098, 'hist': 0.998}
+    LOW visual similarity (0.426) — keeping UNCERTAIN
+[10/25] Row 367: ANCHOR 2283 vs SKP SKM2283
+[Local] Searching for 2283 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 2283...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['3990918']
+[Local] Searching for SKM2283 (brand=SKP)...
+    No image for: SKP SKM2283 — skipping
+[11/25] Row 374: ANCHOR 9446 vs SKP SKM9446
+[Local] Searching for 9446 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 9446...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['11360JA60A']
+[Local] Searching for SKM9446 (brand=SKP)...
+[Local] Fetching moreinfo for SKP SKM9446...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['9446']
+    Images: https://www.rockauto.com/info/28/9446-000.jpg
+            https://www.rockauto.com/info/983/SKM9446_1.jpg
+    Local CV: 0.508  {'phash': np.float64(0.719), 'orb': 0.052, 'hist': 0.999}
+    LOW visual similarity (0.508) — keeping UNCERTAIN
+[12/25] Row 389: ANCHOR 9400 vs SKP SKM9400
+[Local] Searching for 9400 (brand=ANCHOR)...
+[Local] Fetching moreinfo for ANCHOR 9400...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['123710T280', '88975615']
+[Local] Searching for SKM9400 (brand=SKP)...
+[Local] Error: Page.wait_for_timeout: Target page, context or browser has been closed
+    No image for: SKP SKM9400 — skipping
+[13/25] Row 395: ANCHOR 9582 vs SKP SKM9582
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 9582, SKP SKM9582 — skipping
+[14/25] Row 408: ANCHOR 3222 vs SKP SKM3222
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 3222, SKP SKM3222 — skipping
+[15/25] Row 415: ANCHOR 3254 vs SKP SKM3254
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 3254, SKP SKM3254 — skipping
+[16/25] Row 421: ANCHOR 3176 vs SKP SKM3176
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 3176, SKP SKM3176 — skipping
+[17/25] Row 442: ANCHOR 8801 vs SKP SKM8801
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 8801, SKP SKM8801 — skipping
+[18/25] Row 447: ANCHOR 9391 vs SKP SKM9391
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 9391, SKP SKM9391 — skipping
+[19/25] Row 464: ANCHOR 9562 vs SKP SKM9562
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 9562, SKP SKM9562 — skipping
+[20/25] Row 474: ANCHOR 3470 vs SKP SKM0513
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 3470, SKP SKM0513 — skipping
+[21/25] Row 491: ANCHOR 8988 vs SKP SKM8988
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 8988, SKP SKM8988 — skipping
+[22/25] Row 506: ANCHOR 2994 vs SKP SKM2994
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 2994, SKP SKM2994 — skipping
+[23/25] Row 526: ANCHOR 3215 vs SKP SKM3215
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 3215, SKP SKM3215 — skipping
+[24/25] Row 540: ANCHOR 2395 vs SKP SKM2292
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 2395, SKP SKM2292 — skipping
+[25/25] Row 542: ANCHOR 2250 vs SKP SKM2250
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+    No image for: ANCHOR 2250, SKP SKM2250 — skipping
+
+============================================================
+  COMPLETED — Anchor Image Analysis
+============================================================
+  Rows processed:            25
+  No image available:        17
+  HIGH CV (>=0.75):           0
+  MEDIUM CV (0.35-0.75):      1
+  LOW CV (<0.35):             7
+  Gemini Vision calls:        1
+  Errors:                     0
+  --------------------------------------
+  UPGRADED to LIKELY:         0
+
+  Current counts for 'Anchor':
+    YES:           50  (1.7%)
+    LIKELY:       257  (8.7%)
+    UNCERTAIN:  2,629  (89.4%)
+    NO:             4  (0.1%)
+    ---------------------------------
+    Confirmed:    307  (10.4%)  [YES + LIKELY]
+    Pending:    2,629  (89.4%)  [UNCERTAIN]

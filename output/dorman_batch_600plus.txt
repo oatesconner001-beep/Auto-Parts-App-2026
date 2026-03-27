@@ -1,0 +1,50 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+Traceback (most recent call last):
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\src\excel_handler.py", line 283, in process_rows
+    os.replace(tmp, filepath)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'FISHER SKP INTERCHANGE 20260302.xlsx.tmp' -> 'FISHER SKP INTERCHANGE 20260302.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<string>", line 5, in <module>
+    process_rows(
+    ~~~~~~~~~~~~^
+        'FISHER SKP INTERCHANGE 20260302.xlsx',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        start_row=600  # Start from row 600 to find unprocessed rows
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\src\excel_handler.py", line 294, in process_rows
+    os.replace(tmp, filepath)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'FISHER SKP INTERCHANGE 20260302.xlsx.tmp' -> 'FISHER SKP INTERCHANGE 20260302.xlsx'
+Sheet: Dorman | Brand: DORMAN | Reprocess UNCERTAIN: False
+Loading workbook: FISHER SKP INTERCHANGE 20260302.xlsx
+Found 1595 rows for DORMAN brand
+[1/50] Row 601: UNCERTAIN — skipping (reprocess not enabled)
+[2/50] Row 602: LIKELY — skipping
+[3/50] Row 615: UNCERTAIN — skipping (reprocess not enabled)
+[4/50] Row 616: UNCERTAIN — skipping (reprocess not enabled)
+[5/50] Row 618: UNCERTAIN — skipping (reprocess not enabled)
+[6/50] Row 631: UNCERTAIN — skipping (reprocess not enabled)
+[7/50] Row 632: UNCERTAIN — skipping (reprocess not enabled)
+[8/50] Row 645: UNCERTAIN — skipping (reprocess not enabled)
+[9/50] Row 646: UNCERTAIN — skipping (reprocess not enabled)
+[10/50] Row 647: UNCERTAIN — skipping (reprocess not enabled)
+[11/50] Row 648: UNCERTAIN — skipping (reprocess not enabled)
+[12/50] Row 650: UNCERTAIN — skipping (reprocess not enabled)
+[13/50] Row 652: UNCERTAIN — skipping (reprocess not enabled)
+[14/50] Row 663: LIKELY — skipping
+[15/50] Row 664: UNCERTAIN — skipping (reprocess not enabled)
+[16/50] Row 665: UNCERTAIN — skipping (reprocess not enabled)
+[17/50] Row 673: UNCERTAIN — skipping (reprocess not enabled)
+[18/50] Row 674: UNCERTAIN — skipping (reprocess not enabled)
+[19/50] Row 678: UNCERTAIN — skipping (reprocess not enabled)
+[20/50] Row 686: UNCERTAIN — skipping (reprocess not enabled)
+[21/50] Row 687: ENGINE OIL PAN | DORMAN=264-469 | SKP=SK264469
+[Rules] 264-469 vs SK264469: LIKELY (72%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.00×5 | visual:0.40×5
+  -> LIKELY (72%) - Shared OEM ref(s): 4892386AA | Identical category: Continue Shopping | Fitment y

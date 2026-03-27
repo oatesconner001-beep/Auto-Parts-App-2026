@@ -1,0 +1,587 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+
+============================================================
+  Image Analysis — Anchor
+============================================================
+Loading workbook...
+Found 340 UNCERTAIN rows in 'Anchor'
+Processing 50 rows (limit=50)
+[Vision] Using LOCAL Ollama vision (free, unlimited)
+
+[1/50] Row 16: ANCHOR 3280 vs SKP SKM3280
+    Images: https://www.rockauto.com/info/28/3280-000.jpg
+            https://www.rockauto.com/info/983/983_SKM3280_putaway_1.jpg
+    Local CV: 0.300  {'phash': np.float64(0.625), 'orb': 0.03, 'hist': 0.188}
+    LOW visual similarity (0.300) — keeping UNCERTAIN
+[2/50] Row 151: ANCHOR 3503 vs SKP SKM3503
+    Images: https://www.rockauto.com/info/28/3503-000.jpg
+            https://www.rockauto.com/info/983/983_SKM3503_1.jpg
+    Local CV: 0.458  {'phash': np.float64(0.562), 'orb': 0.084, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (20 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 14.7s
+[LocalVision]   ANCHOR: The image shows a silver engine mount with a black rubber gasket at the center. 
+[LocalVision]   SKP: The image shows a silver engine mount with a black rubber gasket on the bottom. 
+[LocalVision] Jaccard similarity: 0.35  shared={'mount', 'gasket', 'black', 'shows', 'rubber', 'image', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.35
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a silver engine mount with a black 
+    -> UPGRADED to LIKELY (70%)
+[3/50] Row 233: ANCHOR 3157 vs SKP SKM3157
+    Images: https://www.rockauto.com/info/28/3157-000.jpg
+            https://www.rockauto.com/info/983/SKP_SKM3157_1.jpg
+    Local CV: 0.312  {'phash': np.float64(0.625), 'orb': 0.076, 'hist': 0.158}
+    LOW visual similarity (0.312) — keeping UNCERTAIN
+[4/50] Row 265: ANCHOR 9158 vs SKP SKM9158
+    No image for: SKP SKM9158 — skipping
+[5/50] Row 271: ANCHOR 2142 vs SKP SKM2142
+    Images: https://www.rockauto.com/info/28/2142-000.jpg
+            https://www.rockauto.com/info/983/SKM2142 (1).jpg
+    Local CV: 0.405  {'phash': np.float64(0.469), 'orb': 0.046, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   ANCHOR: The image shows a black metal engine mount with four holes on the front side. It
+[LocalVision]   SKP: The image shows a black engine mount with the number "SKP" on it. It has a recta
+[LocalVision] Jaccard similarity: 0.20  shared={'mount', 'engine', 'holes', 'black', 'shows', 'image', 'there', 'side'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.20
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [ANCHOR] The image shows a black metal engine mount with fou
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[6/50] Row 306: ANCHOR 2285 vs SKP SKM2285
+    No image for: SKP SKM2285 — skipping
+[7/50] Row 338: ANCHOR 2257 vs SKP SKM2257
+    No image for: SKP SKM2257 — skipping
+[8/50] Row 389: ANCHOR 9400 vs SKP SKM9400
+    Images: https://www.rockauto.com/info/28/9400-000.jpg
+            https://www.rockauto.com/info/983/SKP_SKM9400_1.jpg
+    Local CV: 0.280  {'phash': np.float64(0.562), 'orb': 0.06, 'hist': 0.157}
+    LOW visual similarity (0.280) — keeping UNCERTAIN
+[9/50] Row 464: ANCHOR 9562 vs SKP SKM9562
+    Images: https://www.rockauto.com/info/28/9562-000.jpg
+            https://www.rockauto.com/info/983/SKM9562 (1).jpg
+    Local CV: 0.440  {'phash': np.float64(0.562), 'orb': 0.048, 'hist': 0.978}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   ANCHOR: The image shows a white metal engine mount with a silver cross on top. It has a 
+[LocalVision]   SKP: The image shows a white rock-auto part with a black center, possibly used for en
+[LocalVision] Jaccard similarity: 0.24  shared={'white', 'center', 'base', 'shows', 'image', 'silver', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.24
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [ANCHOR] The image shows a white metal engine mount with a s
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[10/50] Row 526: ANCHOR 3215 vs SKP SKM3215
+    Images: https://www.rockauto.com/info/28/3215-000.jpg
+            https://www.rockauto.com/info/983/SKM3215_1.jpg
+    Local CV: 0.455  {'phash': np.float64(0.531), 'orb': 0.106, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.1s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   ANCHOR: The image shows a silver engine mount with a black center ring and a silver bolt
+[LocalVision]   SKP: The image shows a silver engine mount with black rubber seals on the front side.
+[LocalVision] Jaccard similarity: 0.27  shared={'mount', 'engine', 'black', 'shows', 'image', 'silver', 'side'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.27
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a silver engine mount with a black 
+    -> UPGRADED to LIKELY (70%)
+[11/50] Row 540: ANCHOR 2395 vs SKP SKM2292
+    Images: https://www.rockauto.com/info/28/2395-000.jpg
+            https://www.rockauto.com/info/983/SKM2292 (1).jpg
+    Local CV: 0.466  {'phash': np.float64(0.594), 'orb': 0.074, 'hist': 0.997}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   ANCHOR: The image shows a silver engine mount with a black rubber base. The engine mount
+[LocalVision]   SKP: The image shows a black engine mount with four holes on the front side for mount
+[LocalVision] Jaccard similarity: 0.21  shared={'mount', 'black', 'front', 'shows', 'image', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.21
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [ANCHOR] The image shows a silver engine mount with a black 
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[12/50] Row 542: ANCHOR 2250 vs SKP SKM2250
+    No image for: SKP SKM2250 — skipping
+[13/50] Row 543: ANCHOR 9528 vs SKP SKM9528
+    No image for: SKP SKM9528 — skipping
+[14/50] Row 606: ANCHOR 3253 vs SKP SKMA4426
+    Images: https://www.rockauto.com/info/28/3253-000.jpg
+            https://www.rockauto.com/info/983/SKMA4426_1.jpg
+    Local CV: 0.501  {'phash': np.float64(0.625), 'orb': 0.128, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a silver bolt on the top right corner.
+[LocalVision]   SKP: The image shows a black engine mount with silver hardware on the front end. It h
+[LocalVision] Jaccard similarity: 0.36  shared={'attached', 'mount', 'end', 'bracket', 'black', 'front', 'shows', 'image', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.36
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a silver 
+    -> UPGRADED to LIKELY (70%)
+[15/50] Row 607: ANCHOR 9524 vs SKP SKMA4323
+    Images: https://www.rockauto.com/info/28/9524-000.jpg
+            https://www.rockauto.com/info/983/SKMA4323_1.jpg
+    Local CV: 0.444  {'phash': np.float64(0.531), 'orb': 0.09, 'hist': 0.979}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a curved top and a small hole at the c
+[LocalVision]   SKP: The image shows a black engine mount with a silver square base that has four hol
+[LocalVision] Jaccard similarity: 0.22  shared={'mount', 'black', 'shows', 'image', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.22
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a curved 
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[16/50] Row 612: ANCHOR 9244 vs SKP SKM9244
+    Images: https://www.rockauto.com/info/28/9244-000.jpg
+            https://www.rockauto.com/info/983/SKM9244 (5).jpg
+    Local CV: 0.412  {'phash': np.float64(0.469), 'orb': 0.064, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (21 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   ANCHOR: The image shows a black and silver engine mount with a round top and a flat bott
+[LocalVision]   SKP: The image shows a black metal engine mount with a silver bolt at the top center.
+[LocalVision] Jaccard similarity: 0.32  shared={'attached', 'mount', 'black', 'shows', 'top', 'image', 'metal', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.32
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black and silver engine mount wit
+    -> UPGRADED to LIKELY (70%)
+[17/50] Row 626: ANCHOR 9223 vs SKP SKM9223
+    Images: https://www.rockauto.com/info/28/9223-000.jpg
+            https://www.rockauto.com/info/983/SKM9223_1.jpg
+    Local CV: 0.435  {'phash': np.float64(0.562), 'orb': 0.026, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   ANCHOR: The image shows a black metal engine mount with a silver bolt holding it to the 
+[LocalVision]   SKP: The image shows a black engine mount with a silver center hole. It has a round m
+[LocalVision] Jaccard similarity: 0.36  shared={'mount', 'center', 'black', 'shows', 'image', 'metal', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.36
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black metal engine mount with a s
+    -> UPGRADED to LIKELY (70%)
+[18/50] Row 630: ANCHOR 9727 vs SKP SKM80770
+    No image for: SKP SKM80770 — skipping
+[19/50] Row 655: ANCHOR 9625 vs SKP SKMA4354HY
+    No image for: SKP SKMA4354HY — skipping
+[20/50] Row 658: ANCHOR 9185 vs SKP SKM9185
+    Images: https://www.rockauto.com/info/28/9185-000.jpg
+            https://www.rockauto.com/info/983/SKM9185_1.jpg
+    Local CV: 0.369  {'phash': np.float64(0.469), 'orb': 0.076, 'hist': 0.753}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a silver bolt holding it to the car's 
+[LocalVision]   SKP: urn-shaped engine mount with black rubber ring and metal bracket for secure atta
+[LocalVision] Jaccard similarity: 0.15  shared={'mount', 'black', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.15
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a silver 
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[21/50] Row 682: ANCHOR 9713 vs SKP SKM9713
+    Images: https://www.rockauto.com/info/28/9713-000.jpg
+            https://www.rockauto.com/info/983/SKP_SKM9713_1.jpg
+    Local CV: 0.222  {'phash': np.float64(0.406), 'orb': 0.054, 'hist': 0.187}
+    LOW visual similarity (0.222) — keeping UNCERTAIN
+[22/50] Row 683: ANCHOR 9957 vs SKP SKMA45004
+    No image for: SKP SKMA45004 — skipping
+[23/50] Row 698: ANCHOR 2710 vs SKP SKM2710
+    No image for: SKP SKM2710 — skipping
+[24/50] Row 720: ANCHOR 3441 vs SKP SKM3441
+    No image for: SKP SKM3441 — skipping
+[25/50] Row 775: ANCHOR 9903 vs SKP SKM9903
+    Images: https://www.rockauto.com/info/28/9903-000.jpg
+            https://www.rockauto.com/info/983/SKM9903_1.jpg
+    Local CV: 0.528  {'phash': np.float64(0.719), 'orb': 0.102, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.2s
+[LocalVision]   ANCHOR: The image shows a silver engine mount with a black center plate on top. The engi
+[LocalVision]   SKP: The image shows a silver engine mount with a black center plate attached to it. 
+[LocalVision] Jaccard similarity: 0.38  shared={'image', 'attached', 'mount', 'center', 'using', 'black', 'front', 'shows', 'curved', 'plate', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.38
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a silver engine mount with a black 
+    -> UPGRADED to LIKELY (70%)
+[26/50] Row 796: ANCHOR 8845 vs SKP SKM8845
+    Images: https://www.rockauto.com/info/28/8845-000.jpg
+            https://www.rockauto.com/info/983/SKM8845_1.jpg
+    Local CV: 0.475  {'phash': np.float64(0.625), 'orb': 0.064, 'hist': 0.995}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a gold bolt on top. It has a round bas
+[LocalVision]   SKP: The image shows a black engine mount with a round top and a flat bottom. It has 
+[LocalVision] Jaccard similarity: 0.22  shared={'mount', 'round', 'black', 'shows', 'top', 'image', 'into', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.22
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a gold bo
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[27/50] Row 797: ANCHOR 9694 vs SKP SKM9211
+    Images: https://www.rockauto.com/info/28/9694-000.jpg
+            https://www.rockauto.com/info/983/SKM9211_1.jpg
+    Local CV: 0.456  {'phash': np.float64(0.562), 'orb': 0.078, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (23 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a silver bolt at the top center. It ha
+[LocalVision]   SKP: The image shows a black engine mount with a silver bolt holding it to the bottom
+[LocalVision] Jaccard similarity: 0.45  shared={'mount', 'center', 'black', 'bolts', 'shows', 'bolt', 'top', 'image', 'silver', 'engine'}
+[LocalVision] Result: YES (85%)  jaccard=0.45
+    [LOCAL] YES (85%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a silver 
+    -> UPGRADED to LIKELY (80%)
+[28/50] Row 799: ANCHOR 2926 vs SKP SKM2926
+    Images: https://www.rockauto.com/info/28/2926-000.jpg
+            https://www.rockauto.com/info/983/SKM2926-_1.jpg
+    Local CV: 0.417  {'phash': np.float64(0.469), 'orb': 0.074, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (23 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   ANCHOR: The image shows a black engine mount with silver hardware on the back. The engin
+[LocalVision]   SKP: The image shows a black engine mount with a silver base that has four holes on t
+[LocalVision] Jaccard similarity: 0.22  shared={'mount', 'black', 'front', 'shows', 'image', 'silver', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.22
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [ANCHOR] The image shows a black engine mount with silver ha
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[29/50] Row 801: ANCHOR 9167 vs SKP SKM9167
+    Images: https://www.rockauto.com/info/28/9167-000.jpg
+            https://www.rockauto.com/info/983/SKP_SKM9167_1.jpg
+    Local CV: 0.248  {'phash': np.float64(0.469), 'orb': 0.048, 'hist': 0.209}
+    LOW visual similarity (0.248) — keeping UNCERTAIN
+[30/50] Row 850: ANCHOR 9260 vs SKP SKM9260
+    Images: https://www.rockauto.com/info/28/9260-000.jpg
+            https://www.rockauto.com/info/983/SKP_SKM9260_1.jpg
+    Local CV: 0.330  {'phash': np.float64(0.688), 'orb': 0.036, 'hist': 0.205}
+    LOW visual similarity (0.330) — keeping UNCERTAIN
+[31/50] Row 851: ANCHOR 2328 vs SKP SKM2328
+    No image for: SKP SKM2328 — skipping
+[32/50] Row 854: ANCHOR 2894 vs SKP SKM2894
+    Images: https://www.rockauto.com/info/28/2894-000.jpg
+            https://www.rockauto.com/info/983/SKM2894 (1).jpg
+    Local CV: 0.431  {'phash': np.float64(0.531), 'orb': 0.046, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (23 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a silver bolt on the front. It has a r
+[LocalVision]   SKP: The image shows a black engine mount with a silver bolt holding it to the car's 
+[LocalVision] Jaccard similarity: 0.36  shared={'attached', 'mount', 'bracket', 'using', 'black', 'shows', 'bolt', 'image', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.36
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a silver 
+    -> UPGRADED to LIKELY (70%)
+[33/50] Row 855: ANCHOR 9830 vs SKP SKM9830
+    Images: https://www.rockauto.com/info/28/9830-000.jpg
+            https://www.rockauto.com/info/983/SKM9830.jpg
+    Local CV: 0.434  {'phash': np.float64(0.5), 'orb': 0.09, 'hist': 0.992}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (20 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a silver base. It has a rounded top th
+[LocalVision]   SKP: The image shows a silver engine mount with a black center plate. It has a circul
+[LocalVision] Jaccard similarity: 0.25  shared={'mount', 'base', 'black', 'shows', 'image', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.25
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a silver 
+    -> UPGRADED to LIKELY (70%)
+[34/50] Row 856: ANCHOR 2990 vs SKP SKMA2990
+    Images: https://www.rockauto.com/info/28/2990-000.jpg
+            https://www.rockauto.com/info/983/SKMA2990(1).jpg
+    Local CV: 0.435  {'phash': np.float64(0.531), 'orb': 0.062, 'hist': 0.988}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   ANCHOR: The image shows a black metal engine mount with two screws on the front side.
+[LocalVision]   SKP: The image shows a black engine mount with four screws on the top left corner, tw
+[LocalVision] Jaccard similarity: 0.33  shared={'mount', 'black', 'shows', 'screws', 'image', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.33
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black metal engine mount with two
+    -> UPGRADED to LIKELY (70%)
+[35/50] Row 857: ANCHOR 9599 vs SKP SKM9599
+    Images: https://www.rockauto.com/info/28/9599-000.jpg
+            https://www.rockauto.com/info/983/SKM9599 (1).jpg
+    Local CV: 0.360  {'phash': np.float64(0.406), 'orb': 0.032, 'hist': 0.925}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a silver bolt at the center. It has fo
+[LocalVision]   SKP: The image shows a black engine mount with a gold bolt on top. It has a round bas
+[LocalVision] Jaccard similarity: 0.30  shared={'mount', 'black', 'shows', 'bolt', 'image', 'block', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.30
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a silver 
+    -> UPGRADED to LIKELY (70%)
+[36/50] Row 875: ANCHOR 8975 vs SKP SKM8975
+    Images: https://www.rockauto.com/info/28/8975-000.jpg
+            https://www.rockauto.com/info/983/SKM8975_1_.jpg
+    Local CV: 0.451  {'phash': np.float64(0.562), 'orb': 0.066, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (23 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   ANCHOR: The image shows a white engine mount with a black center and silver base. It has
+[LocalVision]   SKP: The image shows a silver engine mount with black rubber bands around it. It has 
+[LocalVision] Jaccard similarity: 0.25  shared={'attached', 'mount', 'black', 'shows', 'top', 'image', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.25
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a white engine mount with a black c
+    -> UPGRADED to LIKELY (70%)
+[37/50] Row 882: ANCHOR 10166 vs SKP SKMEM5362
+    Images: https://www.rockauto.com/info/28/10166-000.jpg
+            https://www.rockauto.com/info/983/skmem5362_1_.jpg
+    Local CV: 0.500  {'phash': np.float64(0.625), 'orb': 0.126, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (20 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   ANCHOR: The image shows a silver engine mount with a black rubber base. It has a circula
+[LocalVision]   SKP: The image shows a silver engine mount with a black center plate and four holes f
+[LocalVision] Jaccard similarity: 0.42  shared={'mount', 'using', 'black', 'front', 'shows', 'image', 'plate', 'metal', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.42
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a silver engine mount with a black 
+    -> UPGRADED to LIKELY (70%)
+[38/50] Row 885: ANCHOR 9829 vs SKP SKM9829
+    No image for: SKP SKM9829 — skipping
+[39/50] Row 904: ANCHOR 8851 vs SKP SKM8851
+    Images: https://www.rockauto.com/info/28/8851-000.jpg
+            https://www.rockauto.com/info/983/SKM8851_2_.jpg
+    Local CV: 0.431  {'phash': np.float64(0.562), 'orb': 0.05, 'hist': 0.932}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (21 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   ANCHOR: The image shows a black engine mount with three screws on the bottom, four screw
+[LocalVision]   SKP: The image shows a black engine mount with a silver bolt on the front. It has fou
+[LocalVision] Jaccard similarity: 0.26  shared={'mount', 'four', 'black', 'shows', 'image', 'block', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.26
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with three scr
+    -> UPGRADED to LIKELY (70%)
+[40/50] Row 906: ANCHOR 8973 vs SKP SKM8973
+    Images: https://www.rockauto.com/info/28/8973-000.jpg
+            https://www.rockauto.com/info/983/SKM8973_1.jpg
+    Local CV: 0.434  {'phash': np.float64(0.625), 'orb': 0.092, 'hist': 0.738}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.9s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   ANCHOR: The image shows a black metal engine mount with a silver base. It has a curved t
+[LocalVision]   SKP: The image shows a black engine mount with a silver bolt at the top center. It ha
+[LocalVision] Jaccard similarity: 0.27  shared={'mount', 'curved', 'black', 'front', 'shows', 'designed', 'top', 'image', 'metal', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.27
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black metal engine mount with a s
+    -> UPGRADED to LIKELY (70%)
+[41/50] Row 907: ANCHOR 10124 vs SKP SKM99519
+    Images: https://www.rockauto.com/info/28/10124-000.jpg
+            https://www.rockauto.com/info/983/SKM99519_1.jpg
+    Local CV: 0.536  {'phash': np.float64(0.719), 'orb': 0.124, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   ANCHOR: The image shows a silver engine mount with a curved top and bottom, made from me
+[LocalVision]   SKP: The image shows a silver engine mount with three holes on the front side for eas
+[LocalVision] Jaccard similarity: 0.33  shared={'attached', 'mount', 'front', 'shows', 'screws', 'image', 'metal', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.33
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a silver engine mount with a curved
+    -> UPGRADED to LIKELY (70%)
+[42/50] Row 917: ANCHOR 2827 vs SKP SKM2827
+    Images: https://www.rockauto.com/info/28/2827-000.jpg
+            https://www.rockauto.com/info/983/SKM2827_1.jpg
+    Local CV: 0.504  {'phash': np.float64(0.688), 'orb': 0.074, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   ANCHOR: The image shows a black engine mount with silver components. It has a rectangula
+[LocalVision]   SKP: The image shows a black engine mount with silver hardware against a white backgr
+[LocalVision] Jaccard similarity: 0.26  shared={'mount', 'black', 'shows', 'image', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.26
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with silver co
+    -> UPGRADED to LIKELY (70%)
+[43/50] Row 918: ANCHOR 9906 vs SKP SKMA4070
+    Images: https://www.rockauto.com/info/28/9906-000.jpg
+            https://www.rockauto.com/info/983/SKP_SKMA4070_1.jpg
+    Local CV: 0.301  {'phash': np.float64(0.594), 'orb': 0.076, 'hist': 0.168}
+    LOW visual similarity (0.301) — keeping UNCERTAIN
+[44/50] Row 919: ANCHOR 2819 vs SKP SKM2819
+    Images: https://www.rockauto.com/info/28/2819-000.jpg
+            https://www.rockauto.com/info/983/SKM2819_1.jpg
+    Local CV: 0.392  {'phash': np.float64(0.406), 'orb': 0.082, 'hist': 0.983}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a large circular base and a smaller ci
+[LocalVision]   SKP: The image shows a black engine mount with a round hole at the top for a bolt. It
+[LocalVision] Jaccard similarity: 0.39  shared={'mount', 'appears', 'made', 'black', 'shows', 'top', 'image', 'metal', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.39
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a large c
+    -> UPGRADED to LIKELY (70%)
+[45/50] Row 922: ANCHOR 3118 vs SKP SKM99514
+    Images: https://www.rockauto.com/info/28/3118-000.jpg
+            https://www.rockauto.com/info/983/983_SKM99514_putaway_1.jpg
+    Local CV: 0.468  {'phash': np.float64(0.594), 'orb': 0.08, 'hist': 0.994}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   ANCHOR: The image shows a silver engine mount with a black rubber seal on the bottom hal
+[LocalVision]   SKP: The image shows a silver engine mount with four holes on the front side for moun
+[LocalVision] Jaccard similarity: 0.23  shared={'mount', 'bottom', 'shows', 'top', 'image', 'silver', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.23
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [ANCHOR] The image shows a silver engine mount with a black 
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[46/50] Row 924: ANCHOR 3181 vs SKP SKM3181
+    Images: https://www.rockauto.com/info/28/3181-000.jpg
+            https://www.rockauto.com/info/983/SKM3181_1_.jpg
+    Local CV: 0.467  {'phash': np.float64(0.625), 'orb': 0.044, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   ANCHOR: The image shows a silver engine mount with a black center hole and a black rubbe
+[LocalVision]   SKP: The image shows a silver engine mount with a black hole center. It has a metal f
+[LocalVision] Jaccard similarity: 0.43  shared={'attached', 'mount', 'bracket', 'center', 'using', 'black', 'hole', 'shows', 'image', 'metal', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.43
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a silver engine mount with a black 
+    -> UPGRADED to LIKELY (70%)
+[47/50] Row 925: ANCHOR 8795 vs SKP SKM8795
+    Images: https://www.rockauto.com/info/28/8795-000.jpg
+            https://www.rockauto.com/info/983/SKM8795_1.jpg
+    Local CV: 0.456  {'phash': np.float64(0.562), 'orb': 0.078, 'hist': 0.997}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (18 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a hole on the front side for a battery
+[LocalVision]   SKP: The image shows a black engine mount with a silver screw on top and a silver bol
+[LocalVision] Jaccard similarity: 0.23  shared={'attached', 'mount', 'bottom', 'black', 'shows', 'image', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.23
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a hole on
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[48/50] Row 926: ANCHOR 9924 vs SKP SKMA4062
+    Images: https://www.rockauto.com/info/28/9924-000.jpg
+            https://www.rockauto.com/info/983/SKMA4062_1.jpg
+    Local CV: 0.398  {'phash': np.float64(0.406), 'orb': 0.092, 'hist': 0.995}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (17 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   ANCHOR: The image shows a white engine mount with a silver bolt holding it to the car's 
+[LocalVision]   SKP: The image shows a gray metal engine mount with a silver center hole and a silver
+[LocalVision] Jaccard similarity: 0.30  shared={'mount', 'shows', 'bolt', 'image', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.30
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a white engine mount with a silver 
+    -> UPGRADED to LIKELY (70%)
+[49/50] Row 927: ANCHOR 2841 vs SKP SKM2841
+    Images: https://www.rockauto.com/info/28/2841-000.jpg
+            https://www.rockauto.com/info/983/SKM2841_1.jpg
+    Local CV: 0.465  {'phash': np.float64(0.625), 'orb': 0.038, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   ANCHOR: The image shows a black engine mount with silver hardware on the front. The engi
+[LocalVision]   SKP: The image shows a black engine mount with silver brackets on the front side. The
+[LocalVision] Jaccard similarity: 0.36  shared={'image', 'attached', 'mount', 'using', 'black', 'front', 'shows', 'top', 'curved', 'car', 'silver', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.36
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with silver ha
+    -> UPGRADED to LIKELY (70%)
+[50/50] Row 928: ANCHOR 8897 vs SKP SKM8897
+    Images: https://www.rockauto.com/info/28/8897-000.jpg
+            https://www.rockauto.com/info/983/SKM8897(1).jpg
+    Local CV: 0.442  {'phash': np.float64(0.531), 'orb': 0.076, 'hist': 0.994}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   ANCHOR: The image shows a black engine mount with a large hole at the center, designed t
+[LocalVision]   SKP: The image shows a black engine mount with a silver ring on the front. It has a r
+[LocalVision] Jaccard similarity: 0.27  shared={'attached', 'mount', 'center', 'black', 'shows', 'image', 'plate', 'metal', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.27
+    [LOCAL] LIKELY (70%) — Image descriptions: [ANCHOR] The image shows a black engine mount with a large h
+    -> UPGRADED to LIKELY (70%)
+
+============================================================
+  COMPLETED — Anchor Image Analysis
+============================================================
+  Rows processed:            50
+  No image available:        12
+  HIGH CV (>=0.75):           0
+  MEDIUM CV (0.35-0.75):     31
+  LOW CV (<0.35):             7
+  Gemini Vision calls:       31
+  Errors:                     0
+  --------------------------------------
+  UPGRADED to LIKELY:        22
+
+  Current counts for 'Anchor':
+    YES:           28  (4.7%)
+    LIKELY:       172  (29.2%)
+    UNCERTAIN:    390  (66.1%)
+    NO:             0  (0.0%)
+    ---------------------------------
+    Confirmed:    200  (33.9%)  [YES + LIKELY]
+    Pending:      390  (66.1%)  [UNCERTAIN]

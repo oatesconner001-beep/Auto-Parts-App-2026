@@ -1,0 +1,39 @@
+{
+  "ai_backend": "Claude API",
+  "cost_limit": 5.00,
+  "scraping_delay": 2.0,
+  "max_workers": 4,
+  "timeout": 90,
+  "preferred_models": {
+    "claude": "claude-sonnet-4-20250514",
+    "gemini": "gemini-3-flash-preview",
+    "ollama": "moondream"
+  },
+  "excel_settings": {
+    "auto_save": true,
+    "backup_enabled": true,
+    "color_coding": true
+  },
+  "ui_settings": {
+    "theme": "default",
+    "log_retention": 200,
+    "auto_refresh_stats": true
+  },
+  "batch_processing": {
+    "batch_size": 6,
+    "optimize_delays": true,
+    "adaptive_delay_start": 2.0,
+    "adaptive_delay_min": 0.5,
+    "adaptive_delay_max": 3.0,
+    "max_session_calls": 50,
+    "fallback_enabled": true,
+    "use_threading": true
+  },
+  "production_settings": {
+    "monitoring_interval": 30,
+    "error_threshold": 5,
+    "pause_on_consecutive_errors": 30,
+    "session_restart_frequency": 50,
+    "daily_processing_target": 1000
+  }
+}

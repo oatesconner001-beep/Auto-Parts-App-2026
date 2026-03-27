@@ -1,0 +1,259 @@
+{
+  "overall_quality": {
+    "overall_score": 89.65144173362401,
+    "grade": "B",
+    "total_rows": 49650,
+    "processed_rows": 1626,
+    "processing_completion": 3.2749244712990935,
+    "component_scores": {
+      "completeness": 100.0,
+      "consistency": 93.72693726937268,
+      "accuracy": 71.90906982138715,
+      "reliability": 96.66666666666667
+    }
+  },
+  "completeness_analysis": {
+    "by_field": {
+      "part_type": {
+        "completion_rate": 100.0,
+        "complete_count": 1626,
+        "total_count": 1626
+      },
+      "part_number": {
+        "completion_rate": 100.0,
+        "complete_count": 1626,
+        "total_count": 1626
+      },
+      "skp_part_number": {
+        "completion_rate": 100.0,
+        "complete_count": 1626,
+        "total_count": 1626
+      },
+      "match_reason": {
+        "completion_rate": 100.0,
+        "complete_count": 1626,
+        "total_count": 1626
+      },
+      "confidence": {
+        "completion_rate": 100.0,
+        "complete_count": 1626,
+        "total_count": 1626
+      },
+      "last_checked": {
+        "completion_rate": 100.0,
+        "complete_count": 1626,
+        "total_count": 1626
+      }
+    },
+    "by_sheet": {
+      "GMB": {
+        "completion_rate": 100.0,
+        "total_processed": 300,
+        "fully_complete": 300
+      },
+      "Four Seasons ": {
+        "completion_rate": 100.0,
+        "total_processed": 1,
+        "fully_complete": 1
+      },
+      "SMP": {
+        "completion_rate": 100.0,
+        "total_processed": 3,
+        "fully_complete": 3
+      },
+      "Anchor": {
+        "completion_rate": 100.0,
+        "total_processed": 590,
+        "fully_complete": 590
+      },
+      "Dorman": {
+        "completion_rate": 100.0,
+        "total_processed": 732,
+        "fully_complete": 732
+      }
+    },
+    "critical_gaps": [],
+    "completion_trends": {}
+  },
+  "consistency_analysis": {
+    "verdict_confidence_alignment": 0.9083640836408364,
+    "part_format_standardization": {
+      "total_parts": 49650,
+      "patterns": {
+        "alphanumeric_with_separators": 31988,
+        "numbers_then_letters": 14460,
+        "letters_then_numbers": 3202
+      },
+      "standardization_score": 0.644269889224572
+    },
+    "cross_sheet_consistency": 0.7,
+    "reasoning_consistency": 0.7,
+    "inconsistencies": []
+  },
+  "confidence_reliability": {
+    "total_samples": 1626,
+    "mean_confidence": 56.92189421894219,
+    "median_confidence": 49.0,
+    "std_deviation": 19.292263583995062,
+    "distribution_analysis": {
+      "buckets": {
+        "0-20": 1,
+        "21-40": 290,
+        "41-60": 543,
+        "61-80": 732,
+        "81-100": 60
+      },
+      "percentages": {
+        "0-20": 0.06150061500615006,
+        "21-40": 17.83517835178352,
+        "41-60": 33.39483394833948,
+        "61-80": 45.018450184501845,
+        "81-100": 3.6900369003690034
+      },
+      "skewness": "right_skewed",
+      "balance_score": 69.26937269372694
+    },
+    "calibration_analysis": {
+      "0-20": {
+        "sample_size": 1,
+        "actual_success_rate": 0.0,
+        "expected_confidence": 10.0
+      },
+      "21-40": {
+        "sample_size": 290,
+        "actual_success_rate": 0.0,
+        "expected_confidence": 30.5
+      },
+      "41-60": {
+        "sample_size": 543,
+        "actual_success_rate": 1.841620626151013,
+        "expected_confidence": 50.5
+      },
+      "61-80": {
+        "sample_size": 732,
+        "actual_success_rate": 100.0,
+        "expected_confidence": 70.5
+      },
+      "81-100": {
+        "sample_size": 60,
+        "actual_success_rate": 100.0,
+        "expected_confidence": 90.5
+      }
+    },
+    "verdict_confidence_correlation": {
+      "by_verdict": {
+        "NO": {
+          "count": 83,
+          "avg_confidence": 31.83132530120482,
+          "min_confidence": 23,
+          "max_confidence": 34,
+          "std_dev": 2.8619423606731593
+        },
+        "LIKELY": {
+          "count": 751,
+          "avg_confidence": 74.13448735019973,
+          "min_confidence": 60,
+          "max_confidence": 90,
+          "std_dev": 3.4034133410699767
+        },
+        "YES": {
+          "count": 51,
+          "avg_confidence": 93.72549019607843,
+          "min_confidence": 81,
+          "max_confidence": 100,
+          "std_dev": 6.575951433435466
+        },
+        "UNCERTAIN": {
+          "count": 741,
+          "avg_confidence": 39.75438596491228,
+          "min_confidence": 0,
+          "max_confidence": 57,
+          "std_dev": 6.479416290611832
+        }
+      },
+      "correlation_quality": 0.9,
+      "expected_order": [
+        "NO",
+        "UNCERTAIN",
+        "LIKELY",
+        "YES"
+      ]
+    }
+  },
+  "oem_matching_quality": {
+    "oem_extraction_rate": 74.90774907749078,
+    "oem_format_quality": 100.0,
+    "oem_match_correlation": 0,
+    "common_oem_patterns": [],
+    "quality_issues": []
+  },
+  "anomaly_detection": {
+    "statistical_outliers": [],
+    "pattern_anomalies": [],
+    "temporal_anomalies": [],
+    "logical_inconsistencies": []
+  },
+  "data_validation": {
+    "format_compliance": {
+      "overall_rate": 100.0
+    },
+    "validation_errors": [],
+    "format_recommendations": []
+  },
+  "sheet_comparison": {
+    "GMB": {
+      "total_rows": 9930,
+      "processed_rows": 300,
+      "completion_rate": 3.0211480362537766,
+      "avg_confidence": 62.29,
+      "success_rate": 65.66666666666666,
+      "has_confidence_scores": 100.0,
+      "has_match_reasons": 100.0,
+      "data_freshness": 100.0
+    },
+    "Four Seasons ": {
+      "total_rows": 9930,
+      "processed_rows": 1,
+      "completion_rate": 0.010070493454179255,
+      "avg_confidence": 44,
+      "success_rate": 0.0,
+      "has_confidence_scores": 100.0,
+      "has_match_reasons": 100.0,
+      "data_freshness": 100.0
+    },
+    "SMP": {
+      "total_rows": 9930,
+      "processed_rows": 3,
+      "completion_rate": 0.030211480362537763,
+      "avg_confidence": 74,
+      "success_rate": 66.66666666666666,
+      "has_confidence_scores": 100.0,
+      "has_match_reasons": 100.0,
+      "data_freshness": 100.0
+    },
+    "Anchor": {
+      "total_rows": 9930,
+      "processed_rows": 590,
+      "completion_rate": 5.94159113796576,
+      "avg_confidence": 51.623728813559325,
+      "success_rate": 30.16949152542373,
+      "has_confidence_scores": 100.0,
+      "has_match_reasons": 100.0,
+      "data_freshness": 100.0
+    },
+    "Dorman": {
+      "total_rows": 9930,
+      "processed_rows": 732,
+      "completion_rate": 7.371601208459215,
+      "avg_confidence": 58.939890710382514,
+      "success_rate": 58.060109289617486,
+      "has_confidence_scores": 100.0,
+      "has_match_reasons": 100.0,
+      "data_freshness": 100.0
+    }
+  },
+  "recommendations": [
+    "Priority: Improve Four Seasons  sheet quality (low completion rate)"
+  ],
+  "timestamp": "2026-03-24T11:44:46.679489"
+}

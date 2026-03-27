@@ -1,0 +1,129 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+\n>> ENHANCED IMAGE ANALYSIS: GMB
+=======================================================
+Target: Improve 67% -> 74%+ upgrade rate
+Method: SSIM + CLIP + Enhanced comparison
+Limit: 25
+Mode: LIVE - will update Excel
+
+Loading GMB UNCERTAIN rows...
+Found 25 UNCERTAIN rows in GMB
+Processing 25 UNCERTAIN rows...
+
+[1/25] Row 2: 120-4530 vs SKP SK1204530
+  Scraping GMB 120-4530... SKP SK1204530... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/120-4530_ANG.jpg vs https://www.rockauto.com/info/983/SK1204530_1.jpg
+[Enhanced] CLIP model loaded successfully
+  -> UPGRADE to LIKELY (score: 0.60, MEDIUM)
+[2/25] Row 3: 145-2530 vs SKP SK1452530
+  Scraping GMB 145-2530... SKP SK1452530... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/145-2530_ANG.jpg vs https://www.rockauto.com/info/983/SK1452530_1.jpg
+  -> UPGRADE to LIKELY (score: 0.59, MEDIUM)
+[3/25] Row 4: 130-2030AH vs SKP SK1302030AH
+  Scraping GMB 130-2030AH... SKP SK1302030AH... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/130-2030AH_ANG.jpg vs https://www.rockauto.com/info/983/SK1302030AH_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[4/25] Row 5: 130-1350 vs SKP SK1301350
+  Scraping GMB 130-1350... SKP SK1301350... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/130-1350_ANG.jpg vs https://www.rockauto.com/info/983/SKP_SK1301350_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[5/25] Row 6: 146-7420 vs SKP SK1467420
+  Scraping GMB 146-7420... SKP SK1467420... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/146-7420_ANG.jpg vs https://www.rockauto.com/info/983/SK1467420_1.jpg
+  -> UPGRADE to LIKELY (score: 0.60, MEDIUM)
+[6/25] Row 7: 130-3120 vs SKP SK1303120
+  Scraping GMB 130-3120... SKP SK1303120... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/130-3120_ANG.jpg vs https://www.rockauto.com/info/983/SK1303120_1.jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[7/25] Row 8: 144-2060 vs SKP SK1442060
+  Scraping GMB 144-2060... SKP SK1442060... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/144-2060_ANG.jpg vs https://www.rockauto.com/info/983/SK1442060_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[8/25] Row 9: 120-4010 vs SKP SK1204010
+  Scraping GMB 120-4010... SKP SK1204010... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/120-4010_ANG.jpg vs https://www.rockauto.com/info/983/SK1204010_1.jpg
+  -> UPGRADE to LIKELY (score: 0.67, HIGH)
+[9/25] Row 10: 170-2101 vs SKP SK1702101
+  Scraping GMB 170-2101... SKP SK1702101... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/170-2101_ANG.jpg vs https://www.rockauto.com/info/983/SK1702101_1.jpg
+  -> UPGRADE to LIKELY (score: 0.59, MEDIUM)
+[10/25] Row 11: 125-3460 vs SKP SK1253460
+  Scraping GMB 125-3460... SKP SK1253460... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/125-3460_ANG.jpg vs https://www.rockauto.com/info/983/SK1253460_1.jpg
+  -> UPGRADE to LIKELY (score: 0.60, MEDIUM)
+[11/25] Row 12: 125-3000 vs SKP SK1253000
+  Scraping GMB 125-3000... SKP SK1253000... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/125-3000_ANG.jpg vs https://www.rockauto.com/info/983/SK1253000_1.jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[12/25] Row 13: 125-9060 vs SKP SK1259060
+  Scraping GMB 125-9060... SKP SK1259060... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/125-9060_ANG.jpg vs https://www.rockauto.com/info/983/SKP_SK1259060_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[13/25] Row 14: 170-4070 vs SKP SK1704070
+  Scraping GMB 170-4070... SKP SK1704070... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/170-4070_ANG.jpg vs https://www.rockauto.com/info/983/SK1704070_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[14/25] Row 15: 146-7410 vs SKP SK1467410
+  Scraping GMB 146-7410... SKP SK1467410... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/146-7410_ANG.jpg vs https://www.rockauto.com/info/983/SK1467410_1.jpg
+  -> UPGRADE to LIKELY (score: 0.63, MEDIUM)
+[15/25] Row 16: 115-2320 vs SKP SK1152320
+  Scraping GMB 115-2320... SKP SK1152320... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/115-2320_ANG.jpg vs https://www.rockauto.com/info/983/SK1152320_1.jpg
+  -> UPGRADE to LIKELY (score: 0.60, MEDIUM)
+[16/25] Row 17: 120-4550 vs SKP SK1204550
+  Scraping GMB 120-4550... SKP SK1204550... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/120-4550_ANG.jpg vs https://www.rockauto.com/info/983/SK1204550_1.jpg
+  -> UPGRADE to LIKELY (score: 0.62, MEDIUM)
+[17/25] Row 18: 130-7290 vs SKP SK1307270
+  Scraping GMB 130-7290... SKP SK1307270... No SKP images
+[18/25] Row 19: 125-1610 vs SKP SK1251610
+  Scraping GMB 125-1610... SKP SK1251610... No SKP images
+[19/25] Row 20: 170-3000 vs SKP SK1703000
+  Scraping GMB 170-3000... SKP SK1703000... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/170-3000_ANG.jpg vs https://www.rockauto.com/info/983/SK1703000_1.jpg
+  -> UPGRADE to LIKELY (score: 0.63, MEDIUM)
+[20/25] Row 21: 125-5018 vs SKP SK1255018
+  Scraping GMB 125-5018... SKP SK1255018... No SKP images
+[21/25] Row 22: 125-1110 vs SKP SK1251110
+  Scraping GMB 125-1110... SKP SK1251110... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/125-1110_ANG.jpg vs https://www.rockauto.com/info/983/SKP_SK1251110_1.jpg
+  -> UPGRADE to LIKELY (score: 0.54, MEDIUM)
+[22/25] Row 23: 125-1560 vs SKP SK1251560
+  Scraping GMB 125-1560... SKP SK1251560... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/125-1560P_ANG.jpg vs https://www.rockauto.com/info/983/SK1251560_1.jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[23/25] Row 24: 146-1230 vs SKP SK1461230
+  Scraping GMB 146-1230... SKP SK1461230... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/146-1230_ANG.jpg vs https://www.rockauto.com/info/983/SK1461230_1.jpg
+  -> UPGRADE to LIKELY (score: 0.61, MEDIUM)
+[24/25] Row 25: 130-1280 vs SKP SK1301280
+  Scraping GMB 130-1280... SKP SK1301280... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/130-1280_ANG.jpg vs https://www.rockauto.com/info/983/SKP_SK1301280_P04_FRO.jpg
+  -> UPGRADE to LIKELY (score: 0.59, MEDIUM)
+[25/25] Row 26: 125-5800 vs SKP SK1255800
+  Scraping GMB 125-5800... SKP SK1255800... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/424/125-5800_ANG.jpg vs https://www.rockauto.com/info/983/SK1255800_1.jpg
+[Enhanced] Perceptual hash failed: HTTPSConnectionPool(host='www.rockauto.com', port=443): Read timed out. (read timeout=10)
+[Enhanced] CLIP similarity failed: HTTPSConnectionPool(host='www.rockauto.com', port=443): Read timed out. (read timeout=10)
+  -> Keep UNCERTAIN (score: 0.17, LOW)
+
+=======================================================
+ENHANCED ANALYSIS RESULTS
+=======================================================
+Processing time: 891.5s (35.7s per row)
+Total processed: 25
+
+Results breakdown:
+  Upgrade to LIKELY:  21 (84.0%)
+  Keep UNCERTAIN:      1 ( 4.0%)
+  No images:           3 (12.0%)
+  Errors:              0 ( 0.0%)
+
+Success rate: 95.5% of processable rows upgraded to LIKELY
+(Baseline moondream: ~67%, Enhanced target: 74%+)
+\n>> TARGET ACHIEVED! Enhanced system performing at 95.5% vs 67% baseline
+\nApplying 21 upgrades to Excel...
+Opening Excel file for updates...
+Excel update failed: Bad magic number for central directory
+[ERROR] Failed to update Excel

@@ -1,0 +1,155 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+=== Processing sheet: SMP | reprocess_uncertain=False ===
+Sheet: SMP | Brand: SMP | Reprocess UNCERTAIN: False
+Loading workbook: FISHER SKP INTERCHANGE 20260302.xlsx
+Found 383 rows for SMP brand
+[1/383] Row 460: DOOR LOCK ACTUATOR | SMP=DLA1005 | SKP=SKDLA1005
+[Local] Error: BrowserType.launch_persistent_context: Target page, context or browser has been closed
+Browser logs:
+
+<launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --start-maximized --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+<launched> pid=3300
+[pid=3300][out] Opening in existing browser session.
+Call log:
+  - <launching> C:\Program Files\Google\Chrome\Application\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --disable-blink-features=AutomationControlled --disable-infobars --start-maximized --user-data-dir=C:\Users\Owner\Desktop\Parts Agent 20260313\.browser_profile --remote-debugging-pipe about:blank
+  - <launched> pid=3300
+  - [pid=3300][out] Opening in existing browser session.
+  - [pid=3300] <gracefully close start>
+  - [pid=3300] <kill>
+  - [pid=3300] <will force kill>
+  - [pid=3300] taskkill stderr: ERROR: The process "3300" not found.
+  - [pid=3300] <process did exit: exitCode=0, signal=null>
+  - [pid=3300] starting temporary directories cleanup
+  - [pid=3300] finished temporary directories cleanup
+  - [pid=3300] <gracefully close end>
+
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA1005 vs SKDLA1005: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[2/383] Row 486: DOOR LOCK ACTUATOR | SMP=DLA-131 | SKP=SKDLA131
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA-131 vs SKDLA131: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[3/383] Row 531: DOOR LOCK ACTUATOR | SMP=DLA1015 | SKP=SKDLA1015
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA1015 vs SKDLA1015: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[4/383] Row 544: DOOR LOCK ACTUATOR | SMP=DLA1006 | SKP=SKDLA1006
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA1006 vs SKDLA1006: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[5/383] Row 617: DOOR LOCK ACTUATOR | SMP=DLA1001 | SKP=SKDLA1001
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA1001 vs SKDLA1001: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[6/383] Row 666: DOOR LOCK ACTUATOR | SMP=DLA-87 | SKP=SKDLA87
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA-87 vs SKDLA87: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[7/383] Row 834: DOOR LOCK ACTUATOR | SMP=DLA-144 | SKP=SKDLA144
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA-144 vs SKDLA144: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[8/383] Row 1269: DOOR LOCK ACTUATOR | SMP=DLA-1 | SKP=SKDLA1
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA-1 vs SKDLA1: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[9/383] Row 1378: DOOR LOCK ACTUATOR | SMP=DLA-267 | SKP=SKDLA58
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA-267 vs SKDLA58: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[10/383] Row 1538: DOOR LOCK ACTUATOR | SMP=DLA975 | SKP=SK746015
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA975 vs SK746015: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[11/383] Row 1647: DOOR LOCK ACTUATOR | SMP=DLA-129 | SKP=SK746301
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA-129 vs SK746301: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[12/383] Row 1648: DOOR LOCK ACTUATOR | SMP=DLA-151 | SKP=SKDLA151
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA-151 vs SKDLA151: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[13/383] Row 1798: DOOR LOCK ACTUATOR | SMP=DLA1074 | SKP=SKDLA1074
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA1074 vs SKDLA1074: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[14/383] Row 2064: DOOR LOCK ACTUATOR | SMP=DLA1186 | SKP=SK937663
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Rules] DLA1186 vs SK937663: UNCERTAIN (43%) — oem:0.30×40 | category:0.30×20 | description:1.00×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (43%) - Both descriptions contain part-type words; token overlap 100% | No OEM refs avai
+[15/383] Row 2065: DOOR LOCK ACTUATOR | SMP=DLA-187 | SKP=SK746848
+[Local] Error: It looks like you are using Playwright Sync API inside the asyncio loop.
+Please use the Async API instead.
+[Local] Scheduled restart after 30 calls (preventing session degradation)...
+[Local] Searching for SK746848 (brand=SKP)...
+[Local] Fetching moreinfo for SKP SK746848...
+[Local] Done. Found: True, Category: Continue Shopping, OEMs: ['691500C010']
+[Rules] DLA-187 vs SK746848: UNCERTAIN (29%) — oem:0.30×40 | category:0.30×20 | description:0.10×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+[Gemini] Comparing DLA-187 vs SK746848...
+[Gemini] Daily quota exhausted — switching to rules-only for this session.
+[Rules] Gemini returned no result — keeping rule result
+  -> UNCERTAIN (29%) - ANCHOR DLA-187 not found on RockAuto ? No OEM refs available for: Anchor | Categ
+Traceback (most recent call last):
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\src\excel_handler.py", line 261, in process_rows
+    os.replace(tmp, filepath)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'FISHER SKP INTERCHANGE 20260302.xlsx.tmp' -> 'FISHER SKP INTERCHANGE 20260302.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\src\excel_handler.py", line 286, in <module>
+    process_rows(
+    ~~~~~~~~~~~~^
+        filepath,
+        ^^^^^^^^^
+    ...<2 lines>...
+        on_log=print,
+        ^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\src\excel_handler.py", line 272, in process_rows
+    os.replace(tmp, filepath)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'FISHER SKP INTERCHANGE 20260302.xlsx.tmp' -> 'FISHER SKP INTERCHANGE 20260302.xlsx'

@@ -1,0 +1,2461 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+
+============================================================
+  Image Analysis — Dorman
+============================================================
+Loading workbook...
+Found 212 UNCERTAIN rows in 'Dorman'
+Processing 200 rows (limit=200)
+[Vision] Using LOCAL Ollama vision (free, unlimited)
+
+[1/200] Row 106: DORMAN 264-571 vs SKP SK264571
+    Images: https://www.rockauto.com/info/42/264-571-007.jpg
+            https://www.rockauto.com/info/983/983_SK264571_putaway_1.jpg
+    Local CV: 0.269  {'phash': np.float64(0.531), 'orb': 0.056, 'hist': 0.172}
+    LOW visual similarity (0.269) — keeping UNCERTAIN
+[2/200] Row 115: DORMAN 264-342 vs SKP SK264342
+    Images: https://www.rockauto.com/info/42/264-342-007.jpg
+            https://www.rockauto.com/info/983/SK264342(1).jpg
+    Local CV: 0.455  {'phash': np.float64(0.531), 'orb': 0.112, 'hist': 0.986}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black oil pan with a circular hole on the side for attaching h
+[LocalVision]   SKP: The image shows a black engine oil pan with a curved lip design. It has a silver
+[LocalVision] Jaccard similarity: 0.25  shared={'oil', 'pan', 'image', 'shows', 'black'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.25
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a circular hol
+    -> UPGRADED to LIKELY (70%)
+[3/200] Row 124: DORMAN 746-259 vs SKP SK746259
+    Images: https://www.rockauto.com/info/42/746-259-007.jpg
+            https://www.rockauto.com/info/983/SK746259(1).jpg
+    Local CV: 0.470  {'phash': np.float64(0.625), 'orb': 0.052, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (30 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black door lock with a red button on the side. The lock is mad
+[LocalVision]   SKP: The image shows a black door lock with a silver metal frame. It has a pink trigg
+[LocalVision] Jaccard similarity: 0.27  shared={'door', 'button', 'metal', 'lock', 'shows', 'image', 'black', 'side'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.27
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black door lock with a red button
+    -> UPGRADED to LIKELY (70%)
+[4/200] Row 127: DORMAN 264-904 vs SKP SK264904
+    Images: https://www.rockauto.com/info/167/264-904-007.jpg
+            https://www.rockauto.com/info/983/983_SK264904_putaway_1.jpg
+    Local CV: 0.228  {'phash': np.float64(0.438), 'orb': 0.036, 'hist': 0.191}
+    LOW visual similarity (0.228) — keeping UNCERTAIN
+[5/200] Row 132: DORMAN 698-221 vs SKP SK698221
+    Images: https://www.rockauto.com/info/42/698-221-007.jpg
+            https://www.rockauto.com/info/983/SK698221_1.jpg
+    Local CV: 0.419  {'phash': np.float64(0.531), 'orb': 0.016, 'hist': 1.0}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   DORMAN: The image shows a steering knuckle made of black metal with silver rivets on the
+[LocalVision]   SKP: The image shows a steering knuckle made from black metal with silver rivets on t
+[LocalVision] Jaccard similarity: 0.62  shared={'made', 'attached', 'silver', 'sides', 'knuckle', 'metal', 'piece', 'shows', 'image', 'black', 'larger', 'using', 'bolts', 'rivets', 'steering'}
+[LocalVision] Result: YES (85%)  jaccard=0.62
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a steering knuckle made of black me
+    -> UPGRADED to LIKELY (80%)
+[6/200] Row 137: DORMAN 263-211 vs SKP SK260040
+    Images: https://www.rockauto.com/info/167/263-211-001.jpg
+            https://www.rockauto.com/info/983/SK260040_1.jpg
+    Local CV: 0.410  {'phash': np.float64(0.469), 'orb': 0.06, 'hist': 0.99}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   DORMAN: The image shows a black engine cover with six holes arranged in two rows of thre
+[LocalVision]   SKP: The image shows a black engine cover with four holes on the sides and six holes 
+[LocalVision] Jaccard similarity: 0.30  shared={'made', 'plastic', 'six', 'image', 'black', 'shows', 'engine', 'holes', 'cover'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.30
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine cover with six holes
+    -> UPGRADED to LIKELY (70%)
+[7/200] Row 140: DORMAN 620-658 vs SKP SK620658
+    Images: https://www.rockauto.com/info/42/620-658-001.jpg
+            https://www.rockauto.com/info/983/SK620658_1.jpg
+    Local CV: 0.480  {'phash': np.float64(0.625), 'orb': 0.086, 'hist': 0.979}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (30 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a black engine cooling fan assembly with a large circular blade 
+[LocalVision]   SKP: The image shows a black engine cooling fan assembly with a circular center hole 
+[LocalVision] Jaccard similarity: 0.50  shared={'circular', 'bracket', 'fan', 'assembly', 'large', 'cooling', 'metal', 'car', 'block', 'shows', 'blade', 'image', 'black', 'center', 'engine', 'mounted'}
+[LocalVision] Result: YES (85%)  jaccard=0.50
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black engine cooling fan assembly
+    -> UPGRADED to LIKELY (80%)
+[8/200] Row 157: DORMAN 264-249 vs SKP SK264249
+    Images: https://www.rockauto.com/info/167/264-249-003.jpg
+            https://www.rockauto.com/info/983/SK264249(1).jpg
+    Local CV: 0.468  {'phash': np.float64(0.531), 'orb': 0.16, 'hist': 0.959}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black engine oil pan with a hole on the front for the oil to d
+[LocalVision]   SKP: The image shows a black engine oil pan with a rounded top and a flat bottom. It 
+[LocalVision] Jaccard similarity: 0.30  shared={'made', 'appears', 'oil', 'vehicle', 'metal', 'pan', 'shows', 'image', 'black', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.30
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine oil pan with a hole 
+    -> UPGRADED to LIKELY (70%)
+[9/200] Row 173: DORMAN 264-539 vs SKP SK264539
+    Images: https://www.rockauto.com/info/42/264-539-007.jpg
+            https://www.rockauto.com/info/983/983_SK264539_putaway_1.jpg
+    Local CV: 0.283  {'phash': np.float64(0.5), 'orb': 0.1, 'hist': 0.215}
+    LOW visual similarity (0.283) — keeping UNCERTAIN
+[10/200] Row 181: DORMAN 263-263 vs SKP SK263263
+    Images: https://www.rockauto.com/info/167/263-263-007.jpg
+            https://www.rockauto.com/info/983/SK263263_1.jpg
+    Local CV: 0.452  {'phash': np.float64(0.562), 'orb': 0.076, 'hist': 0.983}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black engine cover with gold bolts on the sides, mounted to a 
+[LocalVision]   SKP: The image shows a black engine cover with a silver metal frame. It has a rectang
+[LocalVision] Jaccard similarity: 0.22  shared={'metal', 'bolts', 'shows', 'black', 'image', 'engine', 'cover'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.22
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black engine cover with gold bolt
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[11/200] Row 182: DORMAN 264-065 vs SKP SKSUP06A
+    Images: https://www.rockauto.com/info/167/264-065-007.jpg
+            https://www.rockauto.com/info/983/983_SKSUP06A_putaway_1.jpg
+    Local CV: 0.425  {'phash': np.float64(0.562), 'orb': 0.05, 'hist': 0.9}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   DORMAN: The image shows the front left side view of an engine oil pan with a black color
+[LocalVision]   SKP: The image shows a black engine oil pan with a curved lip design. It has a metal 
+[LocalVision] Jaccard similarity: 0.22  shared={'oil', 'metal', 'pan', 'image', 'shows', 'black', 'engine', 'drain'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.22
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows the front left side view of an engi
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[12/200] Row 193: DORMAN 264-969 vs SKP SK264969
+    Images: https://www.rockauto.com/info/167/264-969-001.jpg
+            https://www.rockauto.com/info/983/983_SK264969_putaway_1.jpg
+    Local CV: 0.455  {'phash': np.float64(0.625), 'orb': 0.028, 'hist': 0.971}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (18 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows a silver engine cover with six holes evenly spaced along the len
+[LocalVision]   SKP: The image shows a silver engine valve cover with six bolts on the sides for moun
+[LocalVision] Jaccard similarity: 0.26  shared={'made', 'six', 'silver', 'metal', 'shows', 'image', 'engine', 'cover'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.26
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver engine cover with six hole
+    -> UPGRADED to LIKELY (70%)
+[13/200] Row 194: DORMAN 621-071 vs SKP SK621071
+    Images: https://www.rockauto.com/info/42/621-071-001.jpg
+            https://www.rockauto.com/info/983/SK621071_1.jpg
+    Local CV: 0.469  {'phash': np.float64(0.562), 'orb': 0.114, 'hist': 0.991}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (37 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a black car engine cooling fan assembly with a circular design f
+[LocalVision]   SKP: The image shows the engine cooling fan assembly with a black plastic body, featu
+[LocalVision] Jaccard similarity: 0.41  shared={'bracket', 'fan', 'assembly', 'cooling', 'featuring', 'metal', 'shows', 'image', 'black', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.41
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black car engine cooling fan asse
+    -> UPGRADED to LIKELY (70%)
+[14/200] Row 201: DORMAN 264-593 vs SKP SK264593
+    Images: https://www.rockauto.com/info/42/264-593-007.jpg
+            https://www.rockauto.com/info/983/SK264593_1.jpg
+    Local CV: 0.403  {'phash': np.float64(0.438), 'orb': 0.074, 'hist': 0.991}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.9s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a black oil pan with a large hole at the bottom for easy access 
+[LocalVision]   SKP: The image shows a black oil pan with a circular hole on the side for easy access
+[LocalVision] Jaccard similarity: 0.29  shared={'oil', 'hole', 'access', 'metal', 'pan', 'shows', 'image', 'black', 'engine', 'easy'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.29
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a large hole a
+    -> UPGRADED to LIKELY (70%)
+[15/200] Row 205: DORMAN 264-410 vs SKP SK264410
+    Images: https://www.rockauto.com/info/42/264-410-007.jpg
+            https://www.rockauto.com/info/983/SK264410(1).jpg
+    Local CV: 0.418  {'phash': np.float64(0.469), 'orb': 0.084, 'hist': 0.983}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a black oil pan with a hexagonal lid and a circular hole at the 
+[LocalVision]   SKP: The image shows a black oil pan with a rectangular shape and a small hole on eac
+[LocalVision] Jaccard similarity: 0.45  shared={'use', 'made', 'appears', 'rectangular', 'oil', 'designed', 'hole', 'metal', 'pan', 'image', 'shows', 'black', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.45
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a hexagonal li
+    -> UPGRADED to LIKELY (70%)
+[16/200] Row 206: DORMAN 621-392 vs SKP SK621392
+    Images: https://www.rockauto.com/info/167/621-392-007.jpg
+            https://www.rockauto.com/info/983/SK621392_1.jpg
+    Local CV: 0.431  {'phash': np.float64(0.5), 'orb': 0.08, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.2s
+[LocalVision] Composite image created (34 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a black engine cooling fan assembly with four large circular fan
+[LocalVision]   SKP: The image shows a black engine cooling fan assembly with four fans mounted on th
+[LocalVision] Jaccard similarity: 0.28  shared={'fan', 'assembly', 'fans', 'cooling', 'four', 'metal', 'image', 'shows', 'black', 'front', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.28
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine cooling fan assembly
+    -> UPGRADED to LIKELY (70%)
+[17/200] Row 213: DORMAN 264-529 vs SKP SK264529
+    Images: https://www.rockauto.com/info/167/264-529-007.jpg
+            https://www.rockauto.com/info/983/SK264529_1.jpg
+    Local CV: 0.409  {'phash': np.float64(0.5), 'orb': 0.052, 'hist': 0.939}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (28 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a black oil pan with a flat top and a curved bottom. It appears 
+[LocalVision]   SKP: The image shows a black oil pan with a curved top and bottom edge, made from met
+[LocalVision] Jaccard similarity: 0.34  shared={'curved', 'made', 'oil', 'top', 'metal', 'pan', 'bottom', 'image', 'shows', 'black'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.34
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a flat top and
+    -> UPGRADED to LIKELY (70%)
+[18/200] Row 215: DORMAN 621-503 vs SKP SK621503
+    Images: https://www.rockauto.com/info/167/621-503-007.jpg
+            https://www.rockauto.com/info/983/SK621503_1.jpg
+    Local CV: 0.436  {'phash': np.float64(0.5), 'orb': 0.094, 'hist': 0.993}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (35 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black fan assembly with a circular blade design. It appears to
+[LocalVision]   SKP: The image shows a black engine cooling fan assembly with a circular design featu
+[LocalVision] Jaccard similarity: 0.38  shared={'circular', 'fan', 'assembly', 'featuring', 'metal', 'bottom', 'image', 'shows', 'black', 'screws', 'design', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.38
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black fan assembly with a circula
+    -> UPGRADED to LIKELY (70%)
+[19/200] Row 217: DORMAN 264-452 vs SKP SK264452
+    Images: https://www.rockauto.com/info/42/264-452-007.jpg
+            https://www.rockauto.com/info/983/SK264452_1.jpg
+    Local CV: 0.245  {'phash': np.float64(0.438), 'orb': 0.106, 'hist': 0.136}
+    LOW visual similarity (0.245) — keeping UNCERTAIN
+[20/200] Row 219: DORMAN 620-212 vs SKP SK620212
+    Images: https://www.rockauto.com/info/42/620-212-001.jpg
+            https://www.rockauto.com/info/983/sk620212.jpg
+    Local CV: 0.466  {'phash': np.float64(0.562), 'orb': 0.108, 'hist': 0.99}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (37 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows the front panel of a car engine cooling fan. It has a black colo
+[LocalVision]   SKP: The image shows a black fan assembly with a white center, mounted on the bottom 
+[LocalVision] Jaccard similarity: 0.32  shared={'made', 'appears', 'fan', 'cooling', 'car', 'metal', 'image', 'shows', 'black', 'front', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.32
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front panel of a car engine coo
+    -> UPGRADED to LIKELY (70%)
+[21/200] Row 220: DORMAN 264-939 vs SKP SK264939
+    Images: https://www.rockauto.com/info/42/264-939-007.jpg
+            https://www.rockauto.com/info/983/983_SK264939_1.jpg
+    Local CV: 0.281  {'phash': np.float64(0.531), 'orb': 0.11, 'hist': 0.122}
+    LOW visual similarity (0.281) — keeping UNCERTAIN
+[22/200] Row 223: DORMAN 264-378 vs SKP SK264378
+    Images: https://www.rockauto.com/info/42/264-378-007.jpg
+            https://www.rockauto.com/info/983/SK264378(1).jpg
+    Local CV: 0.422  {'phash': np.float64(0.5), 'orb': 0.06, 'hist': 0.99}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a silver engine oil pan with a curved front and back. The pan is
+[LocalVision]   SKP: The image shows a silver engine oil pan with a curved top and bottom edge, desig
+[LocalVision] Jaccard similarity: 0.29  shared={'curved', 'appears', 'made', 'oil', 'silver', 'designed', 'light', 'metal', 'pan', 'bottom', 'image', 'shows', 'engine', 'reflects'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.29
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver engine oil pan with a curv
+    -> UPGRADED to LIKELY (70%)
+[23/200] Row 234: DORMAN 264-380 vs SKP SK264380
+    Images: https://www.rockauto.com/info/42/264-380-007.jpg
+            https://www.rockauto.com/info/983/SK264380(1).jpg
+    Local CV: 0.419  {'phash': np.float64(0.5), 'orb': 0.052, 'hist': 0.989}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a silver engine oil pan with a rectangular shape and a flat top.
+[LocalVision]   SKP: The image shows a silver engine oil pan with a rectangular shape and a flat top.
+[LocalVision] Jaccard similarity: 0.45  shared={'made', 'appears', 'small', 'rectangular', 'oil', 'shape', 'silver', 'possibly', 'top', 'metal', 'pan', 'image', 'shows', 'larger', 'engine', 'flat', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.45
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver engine oil pan with a rect
+    -> UPGRADED to LIKELY (70%)
+[24/200] Row 242: DORMAN 621-586 vs SKP SK623760
+    No image for: SKP SK623760 — skipping
+[25/200] Row 245: DORMAN 264-363 vs SKP SK264363
+    Images: https://www.rockauto.com/info/42/264-363-007.jpg
+            https://www.rockauto.com/info/983/SK264363_1_.jpg
+    Local CV: 0.424  {'phash': np.float64(0.5), 'orb': 0.062, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (30 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows the front left side view of an engine oil pan cover. The cover i
+[LocalVision]   SKP: The image shows a black engine oil pan with a hexagonal pattern on the side. It 
+[LocalVision] Jaccard similarity: 0.26  shared={'oil', 'attached', 'pan', 'shows', 'image', 'black', 'using', 'engine', 'side'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.26
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of an engi
+    -> UPGRADED to LIKELY (70%)
+[26/200] Row 251: DORMAN 264-365 vs SKP SK264365
+    Images: https://www.rockauto.com/info/42/264-365-001.jpg
+            https://www.rockauto.com/info/983/SKP_SK264365_1.jpg
+    Local CV: 0.275  {'phash': np.float64(0.531), 'orb': 0.07, 'hist': 0.17}
+    LOW visual similarity (0.275) — keeping UNCERTAIN
+[27/200] Row 252: DORMAN 264-474 vs SKP SK264474
+    Images: https://www.rockauto.com/info/42/264-474-007.jpg
+            https://www.rockauto.com/info/983/SK264474(1).jpg
+    Local CV: 0.420  {'phash': np.float64(0.469), 'orb': 0.09, 'hist': 0.984}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   DORMAN: The image shows a black oil pan with a curved top and a flat bottom. The oil pan
+[LocalVision]   SKP: The image shows a black oil pan with a rounded top and a flat bottom. It appears
+[LocalVision] Jaccard similarity: 0.47  shared={'use', 'made', 'appears', 'vehicles', 'oil', 'top', 'designed', 'metal', 'pan', 'bottom', 'image', 'shows', 'black', 'flat'}
+[LocalVision] Result: YES (85%)  jaccard=0.47
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black oil pan with a curved top a
+    -> UPGRADED to LIKELY (80%)
+[28/200] Row 264: DORMAN 264-982 vs SKP SK264982
+    Images: https://www.rockauto.com/info/42/264-982-007.jpg
+            https://www.rockauto.com/info/983/SK264982_1.jpg
+    Local CV: 0.473  {'phash': np.float64(0.594), 'orb': 0.09, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black engine cover with six holes arranged in two rows of thre
+[LocalVision]   SKP: The image shows a black engine valve cover with a silver ring around the top edg
+[LocalVision] Jaccard similarity: 0.29  shared={'plastic', 'six', 'attached', 'car', 'shows', 'image', 'black', 'using', 'engine', 'holes', 'cover'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.29
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine cover with six holes
+    -> UPGRADED to LIKELY (70%)
+[29/200] Row 270: DORMAN 698-137 vs SKP SK698137
+    Images: https://www.rockauto.com/info/42/698-137-007.jpg
+            https://www.rockauto.com/info/983/SK698137_1.jpg
+    Local CV: 0.410  {'phash': np.float64(0.5), 'orb': 0.024, 'hist': 1.0}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (30 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black steering knuckle with multiple holes for bolts to attach
+[LocalVision]   SKP: The image shows a black steering knuckle with silver holes on the sides and top.
+[LocalVision] Jaccard similarity: 0.33  shared={'made', 'appears', 'hole', 'metal', 'knuckle', 'shows', 'image', 'black', 'round', 'center', 'holes', 'steering'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.33
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black steering knuckle with multi
+    -> UPGRADED to LIKELY (70%)
+[30/200] Row 273: DORMAN 264-465 vs SKP SK264465
+    No image for: DORMAN 264-465 — skipping
+[31/200] Row 279: DORMAN 621-637 vs SKP SK621637
+    Images: https://www.rockauto.com/info/42/621-637-001.jpg
+            https://www.rockauto.com/info/983/SK621637_1.jpg
+    Local CV: 0.452  {'phash': np.float64(0.531), 'orb': 0.108, 'hist': 0.981}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (38 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.1s
+[LocalVision]   DORMAN: The image shows the front left side view of an engine cooling fan assembly with 
+[LocalVision]   SKP: The image shows the engine cooling fan assembly with two large black fans mounte
+[LocalVision] Jaccard similarity: 0.40  shared={'fan', 'assembly', 'large', 'cooling', 'shows', 'image', 'black', 'front', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.40
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of an engi
+    -> UPGRADED to LIKELY (70%)
+[32/200] Row 282: DORMAN 264-340 vs SKP SK264340
+    Images: https://www.rockauto.com/info/42/264-340-007.jpg
+            https://www.rockauto.com/info/983/SKP_SK264340_1.jpg
+    Local CV: 0.260  {'phash': np.float64(0.469), 'orb': 0.09, 'hist': 0.183}
+    LOW visual similarity (0.260) — keeping UNCERTAIN
+[33/200] Row 283: DORMAN 264-364 vs SKP SK264364
+    Images: https://www.rockauto.com/info/42/264-364-007.jpg
+            https://www.rockauto.com/info/983/SKP_SK264364_1.jpg
+    Local CV: 0.287  {'phash': np.float64(0.531), 'orb': 0.122, 'hist': 0.129}
+    LOW visual similarity (0.287) — keeping UNCERTAIN
+[34/200] Row 289: DORMAN 264-507 vs SKP SK264507
+    Images: https://www.rockauto.com/info/42/264-507-007.jpg
+            https://www.rockauto.com/info/983/SKP_SK264507_1.jpg
+    Local CV: 0.435  {'phash': np.float64(0.5), 'orb': 0.13, 'hist': 0.916}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows a black oil pan with a hexagonal lid featuring six holes for att
+[LocalVision]   SKP: The image shows a black oil pan cover with a hexagonal pattern on the front side
+[LocalVision] Jaccard similarity: 0.56  shared={'six', 'oil', 'attaching', 'hexagonal', 'pan', 'shows', 'image', 'black', 'engine', 'holes'}
+[LocalVision] Result: YES (85%)  jaccard=0.56
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black oil pan with a hexagonal li
+    -> UPGRADED to LIKELY (80%)
+[35/200] Row 292: DORMAN 621-606 vs SKP SK621606
+    Images: https://www.rockauto.com/info/42/621-606-007.jpg
+            https://www.rockauto.com/info/983/SK621606_1.jpg
+    Local CV: 0.414  {'phash': np.float64(0.469), 'orb': 0.072, 'hist': 0.988}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows the front left side view of a black engine cooling fan assembly 
+[LocalVision]   SKP: The image shows a black fan assembly with a circular blade design on the front f
+[LocalVision] Jaccard similarity: 0.40  shared={'circular', 'small', 'fan', 'assembly', 'hole', 'image', 'shows', 'blade', 'black', 'front', 'side', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.40
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of a black
+    -> UPGRADED to LIKELY (70%)
+[36/200] Row 293: DORMAN 264-357 vs SKP SK264357
+    Images: https://www.rockauto.com/info/167/264-357-007.jpg
+            https://www.rockauto.com/info/983/SK264357_1.jpg
+    Local CV: 0.468  {'phash': np.float64(0.625), 'orb': 0.046, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 2.2s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a black oil pan with a hexagonal head gasket and a bolt on the s
+[LocalVision]   SKP: The image shows a black rectangular engine oil pan with a silver bolt on the top
+[LocalVision] Jaccard similarity: 0.47  shared={'made', 'appears', 'bolt', 'rectangular', 'vehicles', 'oil', 'top', 'metal', 'pan', 'bottom', 'image', 'shows', 'black', 'flat', 'side'}
+[LocalVision] Result: YES (85%)  jaccard=0.47
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black oil pan with a hexagonal he
+    -> UPGRADED to LIKELY (80%)
+    ERROR: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.tmp' -> 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.xlsx'
+[37/200] Row 294: DORMAN 264-505 vs SKP SK264505
+    Images: https://www.rockauto.com/info/42/264-505-007.jpg
+            https://www.rockauto.com/info/983/SK264505_1_.jpg
+    Local CV: 0.410  {'phash': np.float64(0.469), 'orb': 0.062, 'hist': 0.991}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (32 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   DORMAN: The image shows a black oil pan with a grid pattern on the sides. The oil pan ha
+[LocalVision]   SKP: The image shows a black oil pan with a square lid featuring a grid pattern on th
+[LocalVision] Jaccard similarity: 0.29  shared={'made', 'pattern', 'oil', 'sides', 'metal', 'pan', 'image', 'black', 'shows', 'grid', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.29
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a grid pattern
+    -> UPGRADED to LIKELY (70%)
+[38/200] Row 297: DORMAN 264-382 vs SKP SK264382
+    Images: https://www.rockauto.com/info/42/264-382-007.jpg
+            https://www.rockauto.com/info/983/SK264382_1.jpg
+    Local CV: 0.398  {'phash': np.float64(0.438), 'orb': 0.058, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a silver engine oil pan with a curved top and bottom, made of me
+[LocalVision]   SKP: The image shows a silver engine oil pan with the word "rockauto" written on it. 
+[LocalVision] Jaccard similarity: 0.25  shared={'oil', 'silver', 'metal', 'pan', 'shows', 'image', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.25
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver engine oil pan with a curv
+    -> UPGRADED to LIKELY (70%)
+[39/200] Row 304: DORMAN 698-136 vs SKP SK698136
+    Images: https://www.rockauto.com/info/42/698-136-007.jpg
+            https://www.rockauto.com/info/983/SK698136_1.jpg
+    Local CV: 0.452  {'phash': np.float64(0.594), 'orb': 0.036, 'hist': 1.0}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows a black steering knuckle with a silver center hole. It appears t
+[LocalVision]   SKP: The image shows a black steering knuckle with six holes on the front side. It ap
+[LocalVision] Jaccard similarity: 0.50  shared={'made', 'appears', 'vehicle', 'attached', 'knuckle', 'metal', 'shows', 'image', 'black', 'using', 'steering'}
+[LocalVision] Result: YES (85%)  jaccard=0.50
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black steering knuckle with a sil
+    -> UPGRADED to LIKELY (80%)
+[40/200] Row 318: DORMAN 264-491 vs SKP SK264491
+    Images: https://www.rockauto.com/info/167/RB_264491_Ang.jpg
+            https://www.rockauto.com/info/983/SK264491_1.jpg
+    Local CV: 0.420  {'phash': np.float64(0.469), 'orb': 0.084, 'hist': 0.995}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (32 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a silver engine valve cover with three holes on the front side. 
+[LocalVision]   SKP: The image shows a silver engine valve cover with a black rubber gasket attached 
+[LocalVision] Jaccard similarity: 0.31  shared={'attached', 'silver', 'valve', 'shows', 'image', 'bolts', 'engine', 'holes', 'cover'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.31
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver engine valve cover with th
+    -> UPGRADED to LIKELY (70%)
+[41/200] Row 333: DORMAN 264-042 vs SKP SK264042
+    Images: https://www.rockauto.com/info/42/264-042-007.jpg
+            https://www.rockauto.com/info/983/SK264042_1.jpg
+    Local CV: 0.450  {'phash': np.float64(0.562), 'orb': 0.064, 'hist': 0.997}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black oil pan with the word "RockAuto" written on it. The oil 
+[LocalVision]   SKP: The image shows a black engine oil pan with a silver bolt on the front. It has a
+[LocalVision] Jaccard similarity: 0.24  shared={'made', 'oil', 'metal', 'pan', 'image', 'shows', 'black', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.24
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black oil pan with the word "Rock
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[42/200] Row 337: DORMAN 264-907 vs SKP SK264907
+    Images: https://www.rockauto.com/info/167/264-907-007.jpg
+            https://www.rockauto.com/info/983/SK264907_1.jpg
+    Local CV: 0.454  {'phash': np.float64(0.562), 'orb': 0.072, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.1s
+[LocalVision]   DORMAN: The image shows a black engine cover with six holes arranged in two rows of thre
+[LocalVision]   SKP: The image shows the front cover panel of a car engine with black plastic materia
+[LocalVision] Jaccard similarity: 0.36  shared={'arranged', 'six', 'attached', 'holes', 'side', 'bottom', 'shows', 'black', 'image', 'engine', 'there', 'cover'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.36
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine cover with six holes
+    -> UPGRADED to LIKELY (70%)
+[43/200] Row 347: DORMAN 264-239 vs SKP SK264239
+    Images: https://www.rockauto.com/info/167/264-239-007.jpg
+            https://www.rockauto.com/info/983/SK264239_1.jpg
+    Local CV: 0.471  {'phash': np.float64(0.5), 'orb': 0.178, 'hist': 0.997}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (18 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows a black oil pan with a rectangular shape and a flat top. It has 
+[LocalVision]   SKP: The image shows a black oil pan with a curved lip design. It appears to be made 
+[LocalVision] Jaccard similarity: 0.19  shared={'oil', 'pan', 'image', 'shows', 'black'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.19
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black oil pan with a rectangular 
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[44/200] Row 350: DORMAN 620-042 vs SKP SK620042
+    Images: https://www.rockauto.com/info/42/620-042-001.jpg
+            https://www.rockauto.com/info/983/SK620042 (1).jpg
+    Local CV: 0.387  {'phash': np.float64(0.469), 'orb': 0.048, 'hist': 0.899}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.1s
+[LocalVision]   DORMAN: The image shows the front left side view of a black car engine cooling fan assem
+[LocalVision]   SKP: The image shows a black suspension assembly with a gold-colored ball joint on th
+[LocalVision] Jaccard similarity: 0.26  shared={'assembly', 'vehicle', 'mounted', 'image', 'shows', 'black', 'front', 'frame'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.26
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of a black
+    -> UPGRADED to LIKELY (70%)
+[45/200] Row 352: DORMAN 264-880 vs SKP SK264880
+    Images: https://www.rockauto.com/info/42/264-880-007.jpg
+            https://www.rockauto.com/info/983/SK264880_1.jpg
+    Local CV: 0.463  {'phash': np.float64(0.562), 'orb': 0.106, 'hist': 0.976}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black rectangular engine oil pan with a silver bolt on the bot
+[LocalVision]   SKP: The image shows a black oil pan with a rectangular shape and six holes evenly di
+[LocalVision] Jaccard similarity: 0.21  shared={'rectangular', 'oil', 'pan', 'shows', 'image', 'black', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.21
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black rectangular engine oil pan 
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[46/200] Row 354: DORMAN 620-039 vs SKP SK62039
+    Images: https://www.rockauto.com/info/42/620-039-001.jpg
+            https://www.rockauto.com/info/983/SK62039_1.jpg
+    Local CV: 0.480  {'phash': np.float64(0.594), 'orb': 0.112, 'hist': 0.987}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (39 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows a black car engine cooling fan assembly with four large circular
+[LocalVision]   SKP: The image shows a black engine cooling fan assembly with four large black blades
+[LocalVision] Jaccard similarity: 0.33  shared={'fan', 'assembly', 'large', 'cooling', 'four', 'shows', 'image', 'black', 'blades', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.33
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black car engine cooling fan asse
+    -> UPGRADED to LIKELY (70%)
+[47/200] Row 356: DORMAN 264-485 vs SKP SK264485
+    Images: https://www.rockauto.com/info/42/264-485-007.jpg
+            https://www.rockauto.com/info/983/SK264485(1).jpg
+    Local CV: 0.459  {'phash': np.float64(0.594), 'orb': 0.06, 'hist': 0.99}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a silver engine oil pan with a curved top and bottom edge, desig
+[LocalVision]   SKP: The image shows a silver engine oil pan with a curved edge and a small hole on t
+[LocalVision] Jaccard similarity: 0.38  shared={'curved', 'oil', 'edge', 'attached', 'silver', 'top', 'metal', 'pan', 'bottom', 'shows', 'image', 'engine', 'side'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.38
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver engine oil pan with a curv
+    -> UPGRADED to LIKELY (70%)
+[48/200] Row 363: DORMAN 264-046 vs SKP SK264046
+    Images: https://www.rockauto.com/info/42/264-046-007.jpg
+            https://www.rockauto.com/info/983/SK264046_1.jpg
+    Local CV: 0.418  {'phash': np.float64(0.438), 'orb': 0.11, 'hist': 0.997}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (23 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows a black oil pan with a rectangular shape and a flat top. It has 
+[LocalVision]   SKP: The image shows a black engine oil pan with a hexagonal top and six holes for th
+[LocalVision] Jaccard similarity: 0.33  shared={'rectangular', 'oil', 'top', 'shape', 'pan', 'shows', 'image', 'black', 'holes'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.33
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a rectangular 
+    -> UPGRADED to LIKELY (70%)
+[49/200] Row 364: DORMAN 264-344 vs SKP SK264344
+    Images: https://www.rockauto.com/info/42/264-344-007.jpg
+            https://www.rockauto.com/info/983/SK264344(1).jpg
+    Local CV: 0.418  {'phash': np.float64(0.469), 'orb': 0.084, 'hist': 0.987}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a black oil pan with a hexagonal lid and a circular gasket at th
+[LocalVision]   SKP: The image shows a black engine oil pan with a circular lid and a small hole on t
+[LocalVision] Jaccard similarity: 0.40  shared={'circular', 'lid', 'oil', 'metal', 'pan', 'shows', 'image', 'black', 'engine', 'side'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.40
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a hexagonal li
+    -> UPGRADED to LIKELY (70%)
+[50/200] Row 369: DORMAN 620-473 vs SKP SK959355
+    Images: https://www.rockauto.com/info/167/620-473-007.jpg
+            https://www.rockauto.com/info/983/SK959355_1.jpg
+    Local CV: 0.491  {'phash': np.float64(0.594), 'orb': 0.134, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows a black car engine cooling fan with four blades mounted on the f
+[LocalVision]   SKP: The image shows a black car engine cooling fan assembly with a circular design f
+[LocalVision] Jaccard similarity: 0.38  shared={'fan', 'cooling', 'car', 'four', 'shows', 'image', 'black', 'blades', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.38
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black car engine cooling fan with
+    -> UPGRADED to LIKELY (70%)
+[51/200] Row 377: DORMAN 264-860 vs SKP SK264860
+    Images: https://www.rockauto.com/info/42/264-860-007.jpg
+            https://www.rockauto.com/info/983/983_SK264860_putaway_1.jpg
+    Local CV: 0.313  {'phash': np.float64(0.625), 'orb': 0.062, 'hist': 0.189}
+    LOW visual similarity (0.313) — keeping UNCERTAIN
+[52/200] Row 396: DORMAN 264-205 vs SKP SK264205
+    Images: https://www.rockauto.com/info/42/264-205-007.jpg
+            https://www.rockauto.com/info/983/SK264205_1.jpg
+    Local CV: 0.409  {'phash': np.float64(0.469), 'orb': 0.056, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.2s
+[LocalVision]   DORMAN: The image shows a black oil pan with a rectangular shape and a flat top. It appe
+[LocalVision]   SKP: The image shows a black engine oil pan with a rectangular shape and a small hole
+[LocalVision] Jaccard similarity: 0.26  shared={'rectangular', 'oil', 'shape', 'pan', 'shows', 'image', 'black'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.26
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a rectangular 
+    -> UPGRADED to LIKELY (70%)
+[53/200] Row 399: DORMAN 264-317 vs SKP SK264317
+    Images: https://www.rockauto.com/info/42/264-317-007.jpg
+            https://www.rockauto.com/info/983/SK264317(1).jpg
+    Local CV: 0.485  {'phash': np.float64(0.625), 'orb': 0.096, 'hist': 0.981}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.2s
+[LocalVision] Composite image created (28 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.2s
+[LocalVision]   DORMAN: The image shows a black oil pan with a circular hole on the side for attaching h
+[LocalVision]   SKP: The image shows a black engine oil pan with a circular top hole. It has a curved
+[LocalVision] Jaccard similarity: 0.38  shared={'circular', 'made', 'oil', 'hole', 'metal', 'pan', 'shows', 'image', 'black'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.38
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a circular hol
+    -> UPGRADED to LIKELY (70%)
+[54/200] Row 404: DORMAN 264-353 vs SKP SKFP67A
+    Images: https://www.rockauto.com/info/167/264-353-007.jpg
+            https://www.rockauto.com/info/983/983_SKFP67A_putaway_1.jpg
+    Local CV: 0.267  {'phash': np.float64(0.469), 'orb': 0.1, 'hist': 0.196}
+    LOW visual similarity (0.267) — keeping UNCERTAIN
+[55/200] Row 405: DORMAN 264-375 vs SKP SK264375
+    Images: https://www.rockauto.com/info/42/264-375-007.jpg
+            https://www.rockauto.com/info/983/SK264375_1.jpg
+    Local CV: 0.423  {'phash': np.float64(0.531), 'orb': 0.028, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows a silver engine oil pan with a rectangular shape and a flat top.
+[LocalVision]   SKP: The image shows a silver engine oil pan with a hole on the side for drain plugs.
+[LocalVision] Jaccard similarity: 0.42  shared={'rectangular', 'oil', 'silver', 'shape', 'pan', 'shows', 'image', 'bolts', 'engine', 'side'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.42
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver engine oil pan with a rect
+    -> UPGRADED to LIKELY (70%)
+[56/200] Row 410: DORMAN 264-244 vs SKP SK264244
+    Images: https://www.rockauto.com/info/42/264-244-007.jpg
+            https://www.rockauto.com/info/983/SK264244(1).jpg
+    Local CV: 0.442  {'phash': np.float64(0.531), 'orb': 0.08, 'hist': 0.988}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 2.2s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black oil pan with a curved lip design. It appears to be made 
+[LocalVision]   SKP: The image shows a black engine oil pan with a curved top and a flat bottom. It h
+[LocalVision] Jaccard similarity: 0.21  shared={'curved', 'oil', 'metal', 'pan', 'image', 'shows', 'black'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.21
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black oil pan with a curved lip d
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[57/200] Row 411: DORMAN 746-014 vs SKP SKDLA8
+    Images: https://www.rockauto.com/info/42/746-014-007.jpg
+            https://www.rockauto.com/info/983/SKDLA8(1).jpg
+    Local CV: 0.444  {'phash': np.float64(0.562), 'orb': 0.05, 'hist': 0.997}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows a black door lock motor with a silver screw on the front.
+[LocalVision]   SKP: The image shows a black door lock with six screws on the bottom right corner. Th
+[LocalVision] Jaccard similarity: 0.35  shared={'silver', 'door', 'lock', 'shows', 'image', 'black'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.35
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black door lock motor with a silv
+    -> UPGRADED to LIKELY (70%)
+    ERROR: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.tmp' -> 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.xlsx'
+[58/200] Row 419: DORMAN 740-140 vs SKP SK740140
+    Images: https://www.rockauto.com/info/167/740-140-001.jpg
+            https://www.rockauto.com/info/983/SK740140_1.jpg
+    Local CV: 0.456  {'phash': np.float64(0.531), 'orb': 0.11, 'hist': 1.0}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (20 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows the front left side view of a car's window regulator. It has a s
+[LocalVision]   SKP: The image shows a silver wire with black connectors attached to the front left s
+[LocalVision] Jaccard similarity: 0.48  shared={'attached', 'silver', 'window', 'left', 'car', 'shows', 'image', 'black', 'regulator', 'front', 'side'}
+[LocalVision] Result: YES (85%)  jaccard=0.48
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows the front left side view of a car's
+    -> UPGRADED to LIKELY (80%)
+    ERROR: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.tmp' -> 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.xlsx'
+[59/200] Row 422: DORMAN 264-346 vs SKP SK264346
+    Images: https://www.rockauto.com/info/42/264-346-007.jpg
+            https://www.rockauto.com/info/983/SK264346_1.jpg
+    Local CV: 0.391  {'phash': np.float64(0.406), 'orb': 0.074, 'hist': 0.994}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a black oil pan with a silver bolt on the front. The oil pan has
+[LocalVision]   SKP: The image shows a black oil pan with a curved edge and a flat bottom. It has a f
+[LocalVision] Jaccard similarity: 0.22  shared={'oil', 'metal', 'pan', 'shows', 'image', 'black', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.22
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black oil pan with a silver bolt 
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[60/200] Row 424: DORMAN 698-117 vs SKP SK698117
+    No image for: SKP SK698117 — skipping
+[61/200] Row 425: DORMAN 931-401 vs SKP SK931401
+    Images: https://www.rockauto.com/info/42/931-401-007.jpg
+            https://www.rockauto.com/info/983/SK931401_1.jpg
+    Local CV: 0.476  {'phash': np.float64(0.625), 'orb': 0.068, 'hist': 0.995}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (33 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows a black car door lock with a silver metal frame. It has four scr
+[LocalVision]   SKP: The image shows a black car door lock cover with a diamond pattern. It appears t
+[LocalVision] Jaccard similarity: 0.28  shared={'door', 'car', 'shows', 'image', 'black', 'screws', 'lock'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.28
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black car door lock with a silver
+    -> UPGRADED to LIKELY (70%)
+[62/200] Row 435: DORMAN 620-167 vs SKP SK620167
+    Images: https://www.rockauto.com/info/42/620-167-007.jpg
+            https://www.rockauto.com/info/983/SK620167(1).jpg
+    Local CV: 0.444  {'phash': np.float64(0.594), 'orb': 0.034, 'hist': 0.965}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (20 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows the engine cooling fan assembly with two fans mounted side by si
+[LocalVision]   SKP: The image shows a silver suspension arm with black rubber seals on the front and
+[LocalVision] Jaccard similarity: 0.08  shared={'image', 'shows'}
+[LocalVision] Result: NO (20%)  jaccard=0.08
+    [LOCAL] NO (20%) — Image descriptions: [DORMAN] The image shows the engine cooling fan assembly wit
+    Not upgrading (local: NO, confidence 20%)
+[63/200] Row 440: DORMAN 620-120 vs SKP SK620120F
+    Images: https://www.rockauto.com/info/42/620-120-001.jpg
+            https://www.rockauto.com/info/983/SK620120F_1.jpg
+    Local CV: 0.417  {'phash': np.float64(0.5), 'orb': 0.046, 'hist': 0.993}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (36 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.2s
+[LocalVision]   DORMAN: The image shows a black fan assembly with four blades arranged in a circular pat
+[LocalVision]   SKP: The image shows a black fan assembly with a circular design on the front, mounte
+[LocalVision] Jaccard similarity: 0.30  shared={'circular', 'fan', 'assembly', 'metal', 'shows', 'image', 'black', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.30
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black fan assembly with four blad
+    -> UPGRADED to LIKELY (70%)
+[64/200] Row 445: DORMAN 621-601 vs SKP SK621601
+    No image for: SKP SK621601 — skipping
+[65/200] Row 446: DORMAN 264-985 vs SKP SK264985
+    Images: https://www.rockauto.com/info/42/264-985-007.jpg
+            https://www.rockauto.com/info/983/SK264985(1).jpg
+    Local CV: 0.453  {'phash': np.float64(0.562), 'orb': 0.078, 'hist': 0.986}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (28 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.1s
+[LocalVision]   DORMAN: The image shows a black engine valve cover with three holes on the sides for bol
+[LocalVision]   SKP: The image shows a black engine cover with four holes on the sides, likely for at
+[LocalVision] Jaccard similarity: 0.27  shared={'sides', 'image', 'black', 'shows', 'engine', 'holes', 'cover'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.27
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine valve cover with thr
+    -> UPGRADED to LIKELY (70%)
+[66/200] Row 449: DORMAN 264-414 vs SKP SK264414
+    Images: https://www.rockauto.com/info/42/264-414-007.jpg
+            https://www.rockauto.com/info/983/SK264414_1.jpg
+    Local CV: 0.445  {'phash': np.float64(0.562), 'orb': 0.054, 'hist': 0.993}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (28 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows the front cover of an engine oil pan with a silver color. It has
+[LocalVision]   SKP: The image shows a silver engine oil pan with the word "rockauto" written on it. 
+[LocalVision] Jaccard similarity: 0.30  shared={'made', 'rectangular', 'oil', 'silver', 'shape', 'metal', 'pan', 'image', 'shows', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.30
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front cover of an engine oil pa
+    -> UPGRADED to LIKELY (70%)
+[67/200] Row 458: DORMAN 264-135 vs SKP SK264135
+    Images: https://www.rockauto.com/info/167/264-135-007.jpg
+            https://www.rockauto.com/info/983/983_SK264135_putaway_1.jpg
+    Local CV: 0.216  {'phash': np.float64(0.469), 'orb': 0.058, 'hist': 0.027}
+    LOW visual similarity (0.216) — keeping UNCERTAIN
+[68/200] Row 459: DORMAN 264-540 vs SKP SK264540
+    Images: https://www.rockauto.com/info/42/264-540-007.jpg
+            https://www.rockauto.com/info/983/983_SK264540_putaway_1.jpg
+    Local CV: 0.448  {'phash': np.float64(0.5), 'orb': 0.12, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black oil pan with a curved top and bottom, made from metal an
+[LocalVision]   SKP: The image shows a black engine oil pan with a rounded top and a flat bottom. It 
+[LocalVision] Jaccard similarity: 0.40  shared={'small', 'oil', 'top', 'pan', 'bottom', 'shows', 'image', 'black', 'engine', 'side'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.40
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a curved top a
+    -> UPGRADED to LIKELY (70%)
+    ERROR: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.tmp' -> 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.xlsx'
+[69/200] Row 465: DORMAN 264-856 vs SKP SK264856
+    Images: https://www.rockauto.com/info/42/264-856-007.jpg
+            https://www.rockauto.com/info/983/SK264856_1.jpg
+    Local CV: 0.389  {'phash': np.float64(0.438), 'orb': 0.038, 'hist': 0.993}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (23 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   DORMAN: The image shows a silver oil pan with a curved top and a flat bottom. The oil pa
+[LocalVision]   SKP: The image shows a silver engine oil pan with a rectangular shape and a flat top.
+[LocalVision] Jaccard similarity: 0.41  shared={'small', 'oil', 'assembly', 'silver', 'part', 'top', 'metal', 'pan', 'bottom', 'image', 'shows', 'system', 'larger', 'engine', 'flat'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.41
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver oil pan with a curved top 
+    -> UPGRADED to LIKELY (70%)
+[70/200] Row 466: DORMAN 746-302 vs SKP SKDLA87
+    Images: https://www.rockauto.com/info/42/746-302-007.jpg
+            https://www.rockauto.com/info/983/SKDLA87_1.jpg
+    Local CV: 0.388  {'phash': np.float64(0.406), 'orb': 0.07, 'hist': 0.988}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (21 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.2s
+[LocalVision]   DORMAN: The image shows a black door lock with a silver metal frame. It has four screws 
+[LocalVision]   SKP: The image shows a black door lock with four screws on the front panel.
+[LocalVision] Jaccard similarity: 0.56  shared={'front', 'door', 'panel', 'four', 'lock', 'shows', 'image', 'screws', 'black'}
+[LocalVision] Result: YES (85%)  jaccard=0.56
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black door lock with a silver met
+    -> UPGRADED to LIKELY (80%)
+[71/200] Row 470: DORMAN 621-029 vs SKP SK621029
+    No image for: SKP SK621029 — skipping
+[72/200] Row 475: DORMAN 264-025 vs SKP SKGMP92A
+    Images: https://www.rockauto.com/info/42/264-025-007.jpg
+            https://www.rockauto.com/info/983/983_SKGMP92A_putaway_1.jpg
+    Local CV: 0.281  {'phash': np.float64(0.5), 'orb': 0.096, 'hist': 0.212}
+    LOW visual similarity (0.281) — keeping UNCERTAIN
+[73/200] Row 476: DORMAN 752-928 vs SKP SK752928
+    Images: https://www.rockauto.com/info/42/752-928-001.jpg
+            https://www.rockauto.com/info/983/983_SK752928_putaway_1.jpg
+    Local CV: 0.404  {'phash': np.float64(0.469), 'orb': 0.052, 'hist': 0.977}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (34 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows the front left side view of a car's window regulator. The window
+[LocalVision]   SKP: The image shows the front left side view of a car's window regulator. It has a b
+[LocalVision] Jaccard similarity: 0.65  shared={'front', 'plastic', 'silver', 'view', 'door', 'window', 'left', 'car', 'metal', 'image', 'shows', 'black', 'screws', 'regulator', 'side', 'accents', 'frame'}
+[LocalVision] Result: YES (85%)  jaccard=0.65
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows the front left side view of a car's
+    -> UPGRADED to LIKELY (80%)
+    ERROR: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.tmp' -> 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.xlsx'
+[74/200] Row 480: DORMAN 264-757 vs SKP SK264757
+    Images: https://www.rockauto.com/info/167/264-757-001.jpg
+            https://www.rockauto.com/info/983/983_SK264757_1.jpg
+    Local CV: 0.446  {'phash': np.float64(0.562), 'orb': 0.062, 'hist': 0.983}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (32 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows the engine cover of a car with a black color. It has four holes 
+[LocalVision]   SKP: The image shows a black engine cover with six holes arranged in two rows of thre
+[LocalVision] Jaccard similarity: 0.18  shared={'made', 'plastic', 'image', 'shows', 'black', 'engine', 'holes', 'cover'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.18
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows the engine cover of a car with a bl
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[75/200] Row 484: DORMAN 264-133 vs SKP SK264133
+    Images: https://www.rockauto.com/info/42/264-133-007.jpg
+            https://www.rockauto.com/info/983/SK264133_1_.jpg
+    Local CV: 0.417  {'phash': np.float64(0.469), 'orb': 0.074, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a silver oil pan with a rectangular shape and a flat top. It has
+[LocalVision]   SKP: The image shows a silver engine oil pan with a square top and bottom panel. It h
+[LocalVision] Jaccard similarity: 0.26  shared={'small', 'oil', 'top', 'silver', 'pan', 'shows', 'image', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.26
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver oil pan with a rectangular
+    -> UPGRADED to LIKELY (70%)
+[76/200] Row 485: DORMAN 264-316 vs SKP SK264316
+    Images: https://www.rockauto.com/info/42/264-316-007.jpg
+            https://www.rockauto.com/info/983/SK264316(1).jpg
+    Local CV: 0.459  {'phash': np.float64(0.5), 'orb': 0.15, 'hist': 0.994}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (28 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows a black oil pan with a hexagonal lid featuring a small bolt on t
+[LocalVision]   SKP: The image shows a black oil pan with a curved top and bottom edge, made from met
+[LocalVision] Jaccard similarity: 0.35  shared={'small', 'oil', 'featuring', 'pan', 'shows', 'image', 'black'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.35
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a hexagonal li
+    -> UPGRADED to LIKELY (70%)
+[77/200] Row 489: DORMAN 620-843 vs SKP SK620843
+    Images: https://www.rockauto.com/info/42/620-843-001.jpg
+            https://www.rockauto.com/info/983/SK620843_1.jpg
+    Local CV: 0.435  {'phash': np.float64(0.469), 'orb': 0.13, 'hist': 0.978}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (35 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows a black car engine cooling fan assembly with four large black bl
+[LocalVision]   SKP: The image shows the engine cooling fan assembly with two black fans mounted on a
+[LocalVision] Jaccard similarity: 0.35  shared={'fan', 'assembly', 'designed', 'cooling', 'metal', 'shows', 'image', 'black', 'using', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.35
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black car engine cooling fan asse
+    -> UPGRADED to LIKELY (70%)
+[78/200] Row 490: DORMAN 621-353 vs SKP SK621353
+    Images: https://www.rockauto.com/info/42/621-353-001.jpg
+            https://www.rockauto.com/info/983/SK621353.jpg
+    Local CV: 0.428  {'phash': np.float64(0.438), 'orb': 0.138, 'hist': 0.988}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (36 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black car engine cooling fan with a circular blade design. The
+[LocalVision]   SKP: The image shows a black engine cooling fan assembly with a circular blade design
+[LocalVision] Jaccard similarity: 0.44  shared={'circular', 'appears', 'plastic', 'made', 'fan', 'cooling', 'metal', 'image', 'shows', 'blade', 'black', 'design', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.44
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black car engine cooling fan with
+    -> UPGRADED to LIKELY (70%)
+[79/200] Row 494: DORMAN 264-336 vs SKP SK264336
+    Images: https://www.rockauto.com/info/167/264-336-003.jpg
+            https://www.rockauto.com/info/983/SK264336_1.jpg
+    Local CV: 0.469  {'phash': np.float64(0.562), 'orb': 0.134, 'hist': 0.953}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (31 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows the engine oil pan cover, which is black with green accents on t
+[LocalVision]   SKP: The image shows a black engine oil pan with a green top. It has a rectangular sh
+[LocalVision] Jaccard similarity: 0.31  shared={'rectangular', 'oil', 'shape', 'sides', 'pan', 'engine', 'shows', 'image', 'black', 'green'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.31
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the engine oil pan cover, which is 
+    -> UPGRADED to LIKELY (70%)
+[80/200] Row 495: DORMAN 264-468 vs SKP SK264468
+    Images: https://www.rockauto.com/info/42/264-468-007.jpg
+            https://www.rockauto.com/info/983/SK264468(1).jpg
+    Local CV: 0.455  {'phash': np.float64(0.531), 'orb': 0.112, 'hist': 0.99}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (21 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a black metal engine oil pan with a rectangular shape and a flat
+[LocalVision]   SKP: The image shows a black engine oil pan with a rectangular shape, made from metal
+[LocalVision] Jaccard similarity: 0.27  shared={'rectangular', 'oil', 'shape', 'metal', 'pan', 'image', 'shows', 'black', 'engine', 'easy', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.27
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black metal engine oil pan with a
+    -> UPGRADED to LIKELY (70%)
+    ERROR: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.tmp' -> 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.xlsx'
+[81/200] Row 502: DORMAN 264-314 vs SKP SK264314
+    Images: https://www.rockauto.com/info/42/264-314-007.jpg
+            https://www.rockauto.com/info/983/SK264314_3_.jpg
+    Local CV: 0.465  {'phash': np.float64(0.562), 'orb': 0.104, 'hist': 0.991}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows a black engine oil pan with a silver lid featuring a circular ho
+[LocalVision]   SKP: The image shows a black engine oil pan with six holes evenly spaced around the e
+[LocalVision] Jaccard similarity: 0.17  shared={'oil', 'pan', 'image', 'shows', 'black', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.17
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black engine oil pan with a silve
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[82/200] Row 503: DORMAN 621-577 vs SKP SK621577
+    Images: https://www.rockauto.com/info/42/621-577-007.jpg
+            https://www.rockauto.com/info/983/SK621577_1.jpg
+    Local CV: 0.486  {'phash': np.float64(0.594), 'orb': 0.126, 'hist': 0.99}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows a black engine cooling fan assembly with a circular design on th
+[LocalVision]   SKP: The image shows a black engine cooling fan assembly with a white center. The ass
+[LocalVision] Jaccard similarity: 0.36  shared={'circular', 'fan', 'assembly', 'cooling', 'shows', 'image', 'black', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.36
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine cooling fan assembly
+    -> UPGRADED to LIKELY (70%)
+[83/200] Row 509: DORMAN 264-698 vs SKP SK264698
+    Images: https://www.rockauto.com/info/42/264-698-007.jpg
+            https://www.rockauto.com/info/983/983_SK264698_putaway_1.jpg
+    Local CV: 0.272  {'phash': np.float64(0.531), 'orb': 0.058, 'hist': 0.181}
+    LOW visual similarity (0.272) — keeping UNCERTAIN
+[84/200] Row 510: DORMAN 264-713 vs SKP SK264713
+    Images: https://www.rockauto.com/info/42/264-713-007.jpg
+            https://www.rockauto.com/info/983/SKP_SK264713_1.jpg
+    Local CV: 0.287  {'phash': np.float64(0.562), 'orb': 0.062, 'hist': 0.185}
+    LOW visual similarity (0.287) — keeping UNCERTAIN
+[85/200] Row 511: DORMAN 698-148 vs SKP SK698148
+    Images: https://www.rockauto.com/info/42/698-148-007.jpg
+            https://www.rockauto.com/info/983/983_SK698148_putaway_1.jpg
+    Local CV: 0.291  {'phash': np.float64(0.594), 'orb': 0.052, 'hist': 0.164}
+    LOW visual similarity (0.291) — keeping UNCERTAIN
+[86/200] Row 512: DORMAN 698-238 vs SKP SK698238
+    Images: https://www.rockauto.com/info/42/698-238-007.jpg
+            https://www.rockauto.com/info/983/SK698238_1.jpg
+    Local CV: 0.447  {'phash': np.float64(0.531), 'orb': 0.088, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (21 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.2s
+[LocalVision]   DORMAN: The image shows a silver steering knuckle attached to the front of a car using b
+[LocalVision]   SKP: The image shows a silver steering knuckle with a hole in the center for bolts to
+[LocalVision] Jaccard similarity: 0.58  shared={'attached', 'silver', 'knuckle', 'shows', 'image', 'bolts', 'steering'}
+[LocalVision] Result: YES (85%)  jaccard=0.58
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a silver steering knuckle attached 
+    -> UPGRADED to LIKELY (80%)
+[87/200] Row 513: DORMAN 931-318 vs SKP SK931318
+    Images: https://www.rockauto.com/info/42/931-318-007.jpg
+            https://www.rockauto.com/info/983/SKP_SK931318_1.jpg
+    Local CV: 0.352  {'phash': np.float64(0.688), 'orb': 0.09, 'hist': 0.207}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black and silver door lock with a white plastic housing. It ha
+[LocalVision]   SKP: The image shows a black and white car door lock with a yellow handle on the left
+[LocalVision] Jaccard similarity: 0.35  shared={'white', 'silver', 'door', 'left', 'yellow', 'shows', 'image', 'black', 'lock', 'side', 'right'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.35
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black and silver door lock with a
+    -> UPGRADED to LIKELY (70%)
+[88/200] Row 514: DORMAN 937-266 vs SKP SK937266
+    No image for: SKP SK937266 — skipping
+[89/200] Row 521: DORMAN 621-498 vs SKP SK621498
+    Images: https://www.rockauto.com/info/42/621-498-001.jpg
+            https://www.rockauto.com/info/983/SK621498_1.jpg
+    Local CV: 0.433  {'phash': np.float64(0.531), 'orb': 0.16, 'hist': 0.781}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (41 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows the front left side view of an engine cooling fan with a black p
+[LocalVision]   SKP: The image shows a black fan assembly with a large circular blade at the center, 
+[LocalVision] Jaccard similarity: 0.25  shared={'circular', 'fan', 'large', 'image', 'shows', 'black', 'blade', 'center'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.25
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of an engi
+    -> UPGRADED to LIKELY (70%)
+[90/200] Row 525: DORMAN 264-746 vs SKP SK510A02
+    Images: https://www.rockauto.com/info/167/264-746-007.jpg
+            https://www.rockauto.com/info/983/SK510A02_1.jpg
+    Local CV: 0.430  {'phash': np.float64(0.469), 'orb': 0.108, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows the front cover of a car engine with three holes on each side fo
+[LocalVision]   SKP: The image shows a black engine cover with three holes on the front side. It appe
+[LocalVision] Jaccard similarity: 0.36  shared={'made', 'appears', 'holes', 'car', 'shows', 'image', 'black', 'front', 'engine', 'three', 'side', 'cover'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.36
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front cover of a car engine wit
+    -> UPGRADED to LIKELY (70%)
+[91/200] Row 528: DORMAN 264-351 vs SKP SK264351
+    Images: https://www.rockauto.com/info/42/264-351-007.jpg
+            https://www.rockauto.com/info/983/SK264351(1).jpg
+    Local CV: 0.456  {'phash': np.float64(0.594), 'orb': 0.054, 'hist': 0.986}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (21 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a black oil pan with a silver bolt on the front. It has a rectan
+[LocalVision]   SKP: The image shows a black engine oil pan with a curved top and a flat bottom. It h
+[LocalVision] Jaccard similarity: 0.25  shared={'oil', 'photo', 'metal', 'pan', 'shows', 'image', 'black'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.25
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a silver bolt 
+    -> UPGRADED to LIKELY (70%)
+[92/200] Row 529: DORMAN 264-379 vs SKP SK264379
+    Images: https://www.rockauto.com/info/42/264-379-007.jpg
+            https://www.rockauto.com/info/983/SK264379_1_.jpg
+    Local CV: 0.442  {'phash': np.float64(0.562), 'orb': 0.044, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   DORMAN: The image shows a silver engine oil pan with a rectangular shape and a curved to
+[LocalVision]   SKP: The image shows a silver engine oil pan with a curved edge and a rectangular bas
+[LocalVision] Jaccard similarity: 0.29  shared={'curved', 'hoses', 'rectangular', 'oil', 'silver', 'attaching', 'pan', 'shows', 'image', 'engine', 'holes'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.29
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver engine oil pan with a rect
+    -> UPGRADED to LIKELY (70%)
+[93/200] Row 530: DORMAN 264-444 vs SKP SK264444
+    Images: https://www.rockauto.com/info/42/264-444-007.jpg
+            https://www.rockauto.com/info/983/SK264444(1).jpg
+    Local CV: 0.389  {'phash': np.float64(0.469), 'orb': 0.01, 'hist': 0.99}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (33 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a silver metal oil pan with a grid-like pattern on the front cov
+[LocalVision]   SKP: The image shows a silver engine oil pan with a diamond pattern on the side. It h
+[LocalVision] Jaccard similarity: 0.31  shared={'pattern', 'rectangular', 'oil', 'silver', 'shape', 'metal', 'pan', 'shows', 'image'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.31
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver metal oil pan with a grid-
+    -> UPGRADED to LIKELY (70%)
+[94/200] Row 532: DORMAN 937-677 vs SKP SK937677
+    Images: https://www.rockauto.com/info/42/937-677-007.jpg
+            https://www.rockauto.com/info/983/983_SK937677_putaway_1.jpg
+    Local CV: 0.295  {'phash': np.float64(0.531), 'orb': 0.12, 'hist': 0.172}
+    LOW visual similarity (0.295) — keeping UNCERTAIN
+[95/200] Row 538: DORMAN 620-974 vs SKP SK620974
+    Images: https://www.rockauto.com/info/42/620-974-001.jpg
+            https://www.rockauto.com/info/983/SK620974_1.jpg
+    Local CV: 0.442  {'phash': np.float64(0.469), 'orb': 0.142, 'hist': 0.987}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (36 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   DORMAN: The image shows the front left side view of an engine cooling fan assembly with 
+[LocalVision]   SKP: The image shows the front panel of a car engine cooling fan assembly. It is made
+[LocalVision] Jaccard similarity: 0.29  shared={'plastic', 'fan', 'assembly', 'cooling', 'metal', 'image', 'shows', 'black', 'components', 'front', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.29
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of an engi
+    -> UPGRADED to LIKELY (70%)
+[96/200] Row 545: DORMAN 931-403 vs SKP SK931403
+    Images: https://www.rockauto.com/info/42/931-403-007.jpg
+            https://www.rockauto.com/info/983/SK931403_1.jpg
+    Local CV: 0.470  {'phash': np.float64(0.594), 'orb': 0.084, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (33 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows the front panel of a car door lock. It has a black plastic body 
+[LocalVision]   SKP: The image shows a black car door lock with a silver metal frame. It has a rectan
+[LocalVision] Jaccard similarity: 0.24  shared={'attached', 'silver', 'door', 'car', 'shows', 'image', 'black', 'lock'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.24
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows the front panel of a car door lock.
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[97/200] Row 547: DORMAN 620-022 vs SKP SK620022
+    No image for: SKP SK620022 — skipping
+[98/200] Row 548: DORMAN 620-225 vs SKP SK620225D
+    Images: https://www.rockauto.com/info/42/620-225-007.jpg
+            https://www.rockauto.com/info/983/sk620225d.jpg
+    Local CV: 0.424  {'phash': np.float64(0.5), 'orb': 0.064, 'hist': 0.994}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (34 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows a black engine cooling fan assembly with four white blades mount
+[LocalVision]   SKP: The image shows a black fan assembly with four fans mounted on the front side of
+[LocalVision] Jaccard similarity: 0.29  shared={'fan', 'assembly', 'four', 'shows', 'black', 'image', 'front', 'engine', 'side', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.29
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine cooling fan assembly
+    -> UPGRADED to LIKELY (70%)
+[99/200] Row 549: DORMAN 620-467 vs SKP SK620467
+    Images: https://www.rockauto.com/info/42/620-467-001.jpg
+            https://www.rockauto.com/info/983/SK620467_1.jpg
+    Local CV: 0.465  {'phash': np.float64(0.562), 'orb': 0.14, 'hist': 0.918}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (40 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows a black car engine cooling fan assembly with a large circular bl
+[LocalVision]   SKP: The image shows a black engine cooling fan assembly with a white motor at the ce
+[LocalVision] Jaccard similarity: 0.48  shared={'fan', 'assembly', 'cooling', 'four', 'shows', 'image', 'black', 'screws', 'center', 'engine', 'mounted'}
+[LocalVision] Result: YES (85%)  jaccard=0.48
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black car engine cooling fan asse
+    -> UPGRADED to LIKELY (80%)
+[100/200] Row 550: DORMAN 621-038 vs SKP SK62138
+    Images: https://www.rockauto.com/info/42/621-038-001.jpg
+            https://www.rockauto.com/info/983/SK62138_1.jpg
+    Local CV: 0.474  {'phash': np.float64(0.594), 'orb': 0.098, 'hist': 0.987}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (35 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black car engine cooling fan assembly with four large circular
+[LocalVision]   SKP: The image shows a black engine cooling fan assembly with four large fans mounted
+[LocalVision] Jaccard similarity: 0.44  shared={'circular', 'fan', 'assembly', 'large', 'cooling', 'four', 'car', 'metal', 'shows', 'image', 'black', 'blades', 'using', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.44
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black car engine cooling fan asse
+    -> UPGRADED to LIKELY (70%)
+[101/200] Row 551: DORMAN 621-390 vs SKP SK621390
+    Images: https://www.rockauto.com/info/42/621-390-001.jpg
+            https://www.rockauto.com/info/983/SK621390_1.jpg
+    Local CV: 0.472  {'phash': np.float64(0.531), 'orb': 0.156, 'hist': 0.988}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (36 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows a black car engine cooling fan assembly with four blades on each
+[LocalVision]   SKP: The image shows a black fan assembly with four large circular blades mounted on 
+[LocalVision] Jaccard similarity: 0.43  shared={'fan', 'assembly', 'four', 'image', 'shows', 'black', 'blades', 'front', 'side', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.43
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black car engine cooling fan asse
+    -> UPGRADED to LIKELY (70%)
+[102/200] Row 552: DORMAN 621-526 vs SKP SK621526
+    Images: https://www.rockauto.com/info/42/621-526-007.jpg
+            https://www.rockauto.com/info/983/SKP_SK621526_1.jpg
+    Local CV: 0.308  {'phash': np.float64(0.531), 'orb': 0.116, 'hist': 0.244}
+    LOW visual similarity (0.308) — keeping UNCERTAIN
+[103/200] Row 559: DORMAN 264-100 vs SKP SK264100
+    Images: https://www.rockauto.com/info/167/264-100-001.jpg
+            https://www.rockauto.com/info/983/SK264100_1.jpg
+    Local CV: 0.463  {'phash': np.float64(0.594), 'orb': 0.095, 'hist': 0.938}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (18 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black engine oil pan with a rectangular shape and a flat top. 
+[LocalVision]   SKP: The image shows a black engine oil pan with a rectangular shape and a flat top. 
+[LocalVision] Jaccard similarity: 0.36  shared={'rectangular', 'oil', 'top', 'shape', 'pan', 'shows', 'image', 'black', 'engine', 'flat'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.36
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine oil pan with a recta
+    -> UPGRADED to LIKELY (70%)
+    ERROR: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.tmp' -> 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.xlsx'
+[104/200] Row 569: DORMAN 264-104 vs SKP SK264104
+    Images: https://www.rockauto.com/info/42/264-104B-007.jpg
+            https://www.rockauto.com/info/983/SK264104_1.jpg
+    Local CV: 0.403  {'phash': np.float64(0.438), 'orb': 0.072, 'hist': 0.994}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (21 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black engine oil pan with a flat top and a curved bottom. It h
+[LocalVision]   SKP: The image shows a black oil pan with a curved top and bottom edge. It appears to
+[LocalVision] Jaccard similarity: 0.38  shared={'curved', 'oil', 'top', 'pan', 'bottom', 'shows', 'image', 'black'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.38
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine oil pan with a flat 
+    -> UPGRADED to LIKELY (70%)
+[105/200] Row 570: DORMAN 264-455 vs SKP SK264455
+    Images: https://www.rockauto.com/info/42/264-455-007.jpg
+            https://www.rockauto.com/info/983/983_SK264455_putaway_3.jpg
+    Local CV: 0.442  {'phash': np.float64(0.562), 'orb': 0.048, 'hist': 0.987}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (28 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a silver-colored engine oil pan with a curved top and a flat bot
+[LocalVision]   SKP: The image shows a silver metal engine oil pan with a curved top and a flat botto
+[LocalVision] Jaccard similarity: 0.42  shared={'curved', 'small', 'oil', 'silver', 'top', 'sides', 'purposes', 'metal', 'pan', 'bottom', 'image', 'shows', 'few', 'engine', 'flat', 'holes', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.42
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver-colored engine oil pan wit
+    -> UPGRADED to LIKELY (70%)
+[106/200] Row 572: DORMAN 746-017 vs SKP SKDLA118
+    Images: https://www.rockauto.com/info/167/746-017-007.jpg
+            https://www.rockauto.com/info/983/SKDLA118(1).jpg
+    Local CV: 0.421  {'phash': np.float64(0.5), 'orb': 0.058, 'hist': 0.987}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (23 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The object shown is a black and white door lock with four orange plastic caps mo
+[LocalVision]   SKP: The image shows a black door lock with a silver handle attached to the bottom ce
+[LocalVision] Jaccard similarity: 0.12  shared={'lock', 'door', 'black'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.12
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The object shown is a black and white door lock wit
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[107/200] Row 575: DORMAN 621-450 vs SKP SK621450
+    Images: https://www.rockauto.com/info/167/621-450-007.jpg
+            https://www.rockauto.com/info/983/SK621450_1.jpg
+    Local CV: 0.462  {'phash': np.float64(0.562), 'orb': 0.094, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (31 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows the engine cooling fan assembly with four black blades arranged 
+[LocalVision]   SKP: The image shows a black engine cooling fan assembly with four blades mounted on 
+[LocalVision] Jaccard similarity: 0.31  shared={'fan', 'assembly', 'cooling', 'four', 'shows', 'black', 'image', 'blades', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.31
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the engine cooling fan assembly wit
+    -> UPGRADED to LIKELY (70%)
+[108/200] Row 582: DORMAN 264-473 vs SKP SK264473
+    Images: https://www.rockauto.com/info/42/264-473-007.jpg
+            https://www.rockauto.com/info/983/SK264473(1).jpg
+    Local CV: 0.511  {'phash': np.float64(0.656), 'orb': 0.128, 'hist': 0.988}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows a black oil pan with a hole on the side for easy access to the o
+[LocalVision]   SKP: The image shows a black engine oil pan with a rounded top and a flat bottom. The
+[LocalVision] Jaccard similarity: 0.28  shared={'oil', 'metal', 'pan', 'shows', 'image', 'black', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.28
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a hole on the 
+    -> UPGRADED to LIKELY (70%)
+[109/200] Row 583: DORMAN 752-026 vs SKP SK752026
+    Images: https://www.rockauto.com/info/42/752-026-52891-001.jpg
+            https://www.rockauto.com/info/983/983_SK752026_putaway_1.jpg
+    Local CV: 0.412  {'phash': np.float64(0.5), 'orb': 0.036, 'hist': 0.988}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (23 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows the front window regulator (windshield wiper) of a car. It has a
+[LocalVision]   SKP: The image shows a silver-colored window regulator with a diamond pattern on the 
+[LocalVision] Jaccard similarity: 0.37  shared={'front', 'attached', 'silver', 'window', 'car', 'shows', 'image', 'regulator', 'screws', 'using'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.37
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front window regulator (windshi
+    -> UPGRADED to LIKELY (70%)
+[110/200] Row 593: DORMAN 264-534 vs SKP SK264534
+    Images: https://www.rockauto.com/info/42/264-534-007.jpg
+            https://www.rockauto.com/info/983/SK264534(1).jpg
+    Local CV: 0.426  {'phash': np.float64(0.5), 'orb': 0.072, 'hist': 0.984}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 2.2s
+[LocalVision] Composite image created (30 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a black oil pan with a square top and bottom section, made from 
+[LocalVision]   SKP: The image shows a black oil pan with a square lid featuring a grid pattern on th
+[LocalVision] Jaccard similarity: 0.24  shared={'oil', 'top', 'square', 'pan', 'shows', 'image', 'black'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.24
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black oil pan with a square top a
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[111/200] Row 599: DORMAN 620-219 vs SKP SK620219
+    Images: https://www.rockauto.com/info/42/620-219-001.jpg
+            https://www.rockauto.com/info/983/SK620219_1.jpg
+    Local CV: 0.445  {'phash': np.float64(0.469), 'orb': 0.146, 'hist': 0.994}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (39 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows the front panel of a car engine cooling fan. It has a black fram
+[LocalVision]   SKP: The image shows a black fan assembly with four blades arranged in a circular pat
+[LocalVision] Jaccard similarity: 0.19  shared={'made', 'fan', 'image', 'shows', 'black', 'blades', 'engine', 'mounted'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.19
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows the front panel of a car engine coo
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[112/200] Row 601: DORMAN 264-759 vs SKP SK264759A
+    Images: https://www.rockauto.com/info/42/264-759-007.jpg
+            https://www.rockauto.com/info/983/SK264759A_1.jpg
+    Local CV: 0.406  {'phash': np.float64(0.469), 'orb': 0.048, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 2.4s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a silver engine valve cover with four black bolts on the sides f
+[LocalVision]   SKP: The image shows a silver engine cover with six holes evenly spaced along the len
+[LocalVision] Jaccard similarity: 0.20  shared={'made', 'appears', 'silver', 'metal', 'image', 'shows', 'engine', 'cover'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.20
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a silver engine valve cover with fo
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[113/200] Row 615: DORMAN 264-564 vs SKP SK264564
+    Images: https://www.rockauto.com/info/42/264-564-007.jpg
+            https://www.rockauto.com/info/983/SK264564_1.jpg
+    Local CV: 0.493  {'phash': np.float64(0.656), 'orb': 0.078, 'hist': 0.997}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a black oil pan with a square lid featuring a grid pattern on th
+[LocalVision]   SKP: The image shows a black oil pan with a square lid featuring a grid pattern on th
+[LocalVision] Jaccard similarity: 0.29  shared={'pattern', 'lid', 'oil', 'sides', 'square', 'featuring', 'pan', 'shows', 'image', 'black', 'grid'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.29
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a square lid f
+    -> UPGRADED to LIKELY (70%)
+    ERROR: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.tmp' -> 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.xlsx'
+[114/200] Row 616: DORMAN 266-003 vs SKP SK103452
+    Images: https://www.rockauto.com/info/167/266-003-007.jpg
+            https://www.rockauto.com/info/983/SK103452_1.jpg
+    Local CV: 0.483  {'phash': np.float64(0.562), 'orb': 0.154, 'hist': 0.983}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   DORMAN: The image shows a black oil pan with a circular center hole at the bottom. It ha
+[LocalVision]   SKP: The image shows a black oil pan with a curved top and bottom edge, designed to h
+[LocalVision] Jaccard similarity: 0.47  shared={'curved', 'oil', 'edge', 'attached', 'top', 'metal', 'pan', 'bottom', 'shows', 'image', 'black', 'center', 'using', 'engine'}
+[LocalVision] Result: YES (85%)  jaccard=0.47
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black oil pan with a circular cen
+    -> UPGRADED to LIKELY (80%)
+[115/200] Row 618: DORMAN 931-303 vs SKP SK931303
+    Images: https://www.rockauto.com/info/42/931-303-007.jpg
+            https://www.rockauto.com/info/983/SK931303_1.jpg
+    Local CV: 0.467  {'phash': np.float64(0.594), 'orb': 0.074, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (33 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows a black and silver door lock attached to the front of a car usin
+[LocalVision]   SKP: The image shows a black and silver door lock with a silver metal plate on the fr
+[LocalVision] Jaccard similarity: 0.65  shared={'small', 'plate', 'silver', 'attached', 'door', 'car', 'metal', 'shows', 'image', 'black', 'lock', 'front', 'using'}
+[LocalVision] Result: YES (85%)  jaccard=0.65
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black and silver door lock attach
+    -> UPGRADED to LIKELY (80%)
+[116/200] Row 631: DORMAN 264-374 vs SKP SK264374
+    Images: https://www.rockauto.com/info/42/264-374-007.jpg
+            https://www.rockauto.com/info/983/SK264374(1).jpg
+    Local CV: 0.466  {'phash': np.float64(0.625), 'orb': 0.042, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.2s
+[LocalVision]   DORMAN: The image shows a silver oil pan with a curved top and bottom, designed to hold 
+[LocalVision]   SKP: The image shows the engine oil pan cover, which is made of silver metal with a c
+[LocalVision] Jaccard similarity: 0.36  shared={'made', 'curved', 'oil', 'silver', 'metal', 'pan', 'shows', 'image', 'using', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.36
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver oil pan with a curved top 
+    -> UPGRADED to LIKELY (70%)
+[117/200] Row 632: DORMAN 264-701 vs SKP SK264701
+    Images: https://www.rockauto.com/info/42/264-701-007.jpg
+            https://www.rockauto.com/info/983/SK2647011-1.jpg
+    Local CV: 0.401  {'phash': np.float64(0.469), 'orb': 0.034, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 2.4s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.4s
+[LocalVision]   DORMAN: The image shows the front end of a car engine oil pan made of silver metal with 
+[LocalVision]   SKP: The image shows a silver engine oil pan with a rectangular shape and a flat top.
+[LocalVision] Jaccard similarity: 0.24  shared={'rectangular', 'oil', 'shape', 'silver', 'metal', 'pan', 'image', 'shows', 'engine', 'mounted'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.24
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows the front end of a car engine oil p
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[118/200] Row 645: DORMAN 264-243 vs SKP SK264243
+    Images: https://www.rockauto.com/info/42/264-243-007.jpg
+            https://www.rockauto.com/info/983/SK264243(1).jpg
+    Local CV: 0.410  {'phash': np.float64(0.438), 'orb': 0.09, 'hist': 0.997}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (20 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   DORMAN: The image shows a black oil pan with a rectangular shape and a flat top. It has 
+[LocalVision]   SKP: The image shows a black oil pan with a rectangular shape and a flat bottom. It h
+[LocalVision] Jaccard similarity: 0.31  shared={'rectangular', 'oil', 'shape', 'attaching', 'pan', 'shows', 'image', 'black', 'engine', 'flat'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.31
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a rectangular 
+    -> UPGRADED to LIKELY (70%)
+[119/200] Row 646: DORMAN 264-360 vs SKP SK264360
+    Images: https://www.rockauto.com/info/42/264-360-007.jpg
+            https://www.rockauto.com/info/983/SK264360(1).jpg
+    Local CV: 0.436  {'phash': np.float64(0.469), 'orb': 0.134, 'hist': 0.975}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   DORMAN: The image shows a black oil pan with the word "RockAuto" written on it. It has a
+[LocalVision]   SKP: The image shows a black engine oil pan with a rectangular shape and six holes ev
+[LocalVision] Jaccard similarity: 0.14  shared={'oil', 'metal', 'pan', 'image', 'shows', 'black'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.14
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black oil pan with the word "Rock
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[120/200] Row 647: DORMAN 264-475 vs SKP SK264475
+    Images: https://www.rockauto.com/info/42/264-475-007.jpg
+            https://www.rockauto.com/info/983/SK264475(1).jpg
+    Local CV: 0.462  {'phash': np.float64(0.594), 'orb': 0.07, 'hist': 0.984}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (23 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows a black oil pan with a silver bolt on the front. It has a rectan
+[LocalVision]   SKP: The image shows a black oil pan with a rectangular shape and a small circular ho
+[LocalVision] Jaccard similarity: 0.26  shared={'made', 'rectangular', 'oil', 'shape', 'metal', 'pan', 'shows', 'image', 'black'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.26
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a silver bolt 
+    -> UPGRADED to LIKELY (70%)
+[121/200] Row 648: DORMAN 264-810 vs SKP SK103506
+    Images: https://www.rockauto.com/info/167/264-810-003.jpg
+            https://www.rockauto.com/info/983/SK103506_1.jpg
+    Local CV: 0.449  {'phash': np.float64(0.562), 'orb': 0.062, 'hist': 0.994}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.9s
+[LocalVision] Composite image created (34 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.7s
+[LocalVision]   DORMAN: The image shows the front panel of an engine oil pan made from metal. The panel 
+[LocalVision]   SKP: The image shows a silver engine oil pan with a curved top edge and a flat bottom
+[LocalVision] Jaccard similarity: 0.27  shared={'made', 'appears', 'curved', 'oil', 'edge', 'silver', 'top', 'metal', 'pan', 'image', 'shows', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.27
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front panel of an engine oil pa
+    -> UPGRADED to LIKELY (70%)
+[122/200] Row 650: DORMAN 746-011 vs SKP SKDLA119
+    Images: https://www.rockauto.com/info/167/746-011-007.jpg
+            https://www.rockauto.com/info/983/SKDLA119(1).jpg
+    Local CV: 0.429  {'phash': np.float64(0.562), 'orb': 0.018, 'hist': 0.983}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a black door lock with four red buttons on the sides for easy id
+[LocalVision]   SKP: The image shows a black door lock with four screws on the front panel.
+[LocalVision] Jaccard similarity: 0.26  shared={'door', 'four', 'lock', 'image', 'shows', 'black'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.26
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black door lock with four red but
+    -> UPGRADED to LIKELY (70%)
+    ERROR: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.tmp' -> 'C:\\Users\\Owner\\Desktop\\Parts Agent 20260313\\FISHER SKP INTERCHANGE 20260302.xlsx'
+[123/200] Row 652: DORMAN 621-052 vs SKP SK621052
+    Images: https://www.rockauto.com/info/42/621-052-001.jpg
+            https://www.rockauto.com/info/983/SK621052.jpg
+    Local CV: 0.440  {'phash': np.float64(0.5), 'orb': 0.106, 'hist': 0.989}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (37 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows the front left side view of a black engine cooling fan assembly 
+[LocalVision]   SKP: The image shows the engine cooling fan assembly with two large black fans mounte
+[LocalVision] Jaccard similarity: 0.34  shared={'fan', 'assembly', 'large', 'fans', 'cooling', 'shows', 'image', 'black', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.34
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of a black
+    -> UPGRADED to LIKELY (70%)
+[124/200] Row 664: DORMAN 264-585 vs SKP SKFP87A
+    Images: https://www.rockauto.com/info/42/264-585-007.jpg
+            https://www.rockauto.com/info/983/SKFP87A_1.jpg
+    Local CV: 0.457  {'phash': np.float64(0.531), 'orb': 0.112, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   DORMAN: The image shows a black oil pan with a square lid that has been mounted on a rec
+[LocalVision]   SKP: The image shows a black engine oil pan with a rectangular shape and a flat top. 
+[LocalVision] Jaccard similarity: 0.24  shared={'rectangular', 'oil', 'attached', 'indicating', 'metal', 'pan', 'shows', 'image', 'black', 'engine', 'mounted'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.24
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black oil pan with a square lid t
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[125/200] Row 665: DORMAN 749-073 vs SKP SK749073
+    No image for: SKP SK749073 — skipping
+[126/200] Row 673: DORMAN 620-010 vs SKP SK620010D
+    Images: https://www.rockauto.com/info/42/620-010-001.jpg
+            https://www.rockauto.com/info/983/SKP_SK620010D_1.jpg
+    Local CV: 0.367  {'phash': np.float64(0.656), 'orb': 0.152, 'hist': 0.22}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (42 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a black fan assembly with four blades arranged in a circular pat
+[LocalVision]   SKP: The image shows a black fan assembly with a large circular blade at the center, 
+[LocalVision] Jaccard similarity: 0.22  shared={'circular', 'fan', 'assembly', 'metal', 'shows', 'image', 'black', 'center'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.22
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black fan assembly with four blad
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[127/200] Row 674: DORMAN 620-546 vs SKP SK620546
+    Images: https://www.rockauto.com/info/42/620-546-001.jpg
+            https://www.rockauto.com/info/983/SKP_SK620546_1.jpg
+    Local CV: 0.277  {'phash': np.float64(0.531), 'orb': 0.046, 'hist': 0.231}
+    LOW visual similarity (0.277) — keeping UNCERTAIN
+[128/200] Row 678: DORMAN 264-937 vs SKP SK510008
+    Images: https://www.rockauto.com/info/42/264-937-007.jpg
+            https://www.rockauto.com/info/983/SK510008_1.jpg
+    Local CV: 0.450  {'phash': np.float64(0.531), 'orb': 0.094, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.2s
+[LocalVision]   DORMAN: The engine cover is black with yellow stickers on the sides and bottom displayin
+[LocalVision]   SKP: The image shows the front cover panel of a car engine. It's black with silver ac
+[LocalVision] Jaccard similarity: 0.08  shared={'front', 'engine', 'black', 'cover'}
+[LocalVision] Result: NO (20%)  jaccard=0.08
+    [LOCAL] NO (20%) — Image descriptions: [DORMAN] The engine cover is black with yellow stickers on t
+    Not upgrading (local: NO, confidence 20%)
+[129/200] Row 686: DORMAN 264-319 vs SKP SK264319
+    Images: https://www.rockauto.com/info/42/264-319-007.jpg
+            https://www.rockauto.com/info/983/SK264319(1).jpg
+    Local CV: 0.442  {'phash': np.float64(0.5), 'orb': 0.11, 'hist': 0.989}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   DORMAN: The image shows a black oil pan with a hexagonal lid featuring a circular hole a
+[LocalVision]   SKP: The image shows a black oil pan with a hexagonal lid that has been mounted on th
+[LocalVision] Jaccard similarity: 0.22  shared={'lid', 'oil', 'hexagonal', 'pan', 'shows', 'image', 'black', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.22
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black oil pan with a hexagonal li
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[130/200] Row 701: DORMAN 698-239 vs SKP SK698239
+    Images: https://www.rockauto.com/info/42/698-239-007.jpg
+            https://www.rockauto.com/info/983/SK698239_1.jpg
+    Local CV: 0.459  {'phash': np.float64(0.562), 'orb': 0.086, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (19 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a silver steering knuckle attached to the front of a car using b
+[LocalVision]   SKP: The image shows a silver steering knuckle attached to the front wheel of a car u
+[LocalVision] Jaccard similarity: 0.38  shared={'curved', 'allows', 'attached', 'shape', 'vehicle', 'silver', 'knuckle', 'car', 'metal', 'shows', 'image', 'using', 'front', 'steering', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.38
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver steering knuckle attached 
+    -> UPGRADED to LIKELY (70%)
+[131/200] Row 703: DORMAN 749-006 vs SKP SK749006
+    No image for: SKP SK749006 — skipping
+[132/200] Row 709: DORMAN 621-391 vs SKP SK621391
+    Images: https://www.rockauto.com/info/42/621-391-007.jpg
+            https://www.rockauto.com/info/983/SK621391_1.jpg
+    Local CV: 0.504  {'phash': np.float64(0.656), 'orb': 0.12, 'hist': 0.966}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 2.1s
+[LocalVision] Composite image created (36 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   DORMAN: The image shows the front left side view of an engine cooling fan assembly with 
+[LocalVision]   SKP: The image shows a black fan assembly with a large circular blade at the center, 
+[LocalVision] Jaccard similarity: 0.37  shared={'circular', 'fan', 'assembly', 'cooling', 'metal', 'image', 'shows', 'black', 'center', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.37
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of an engi
+    -> UPGRADED to LIKELY (70%)
+[133/200] Row 779: DORMAN 752-458 vs SKP SK380084
+    Images: https://www.rockauto.com/info/42/752-458-001.jpg
+            https://www.rockauto.com/info/983/SK380084_1.jpg
+    Local CV: 0.452  {'phash': np.float64(0.531), 'orb': 0.1, 'hist': 1.0}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 2.2s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a black and silver windscreen wiper motor with a black rubber ba
+[LocalVision]   SKP: The image shows a pair of window regulator parts made from black plastic with si
+[LocalVision] Jaccard similarity: 0.33  shared={'white', 'attached', 'silver', 'car', 'shows', 'image', 'black', 'using', 'front'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.33
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black and silver windscreen wiper
+    -> UPGRADED to LIKELY (70%)
+[134/200] Row 780: DORMAN 746-147 vs SKP SK746147
+    No image for: SKP SK746147 — skipping
+[135/200] Row 787: DORMAN 620-422 vs SKP SK620422
+    Images: https://www.rockauto.com/info/42/620-422-001.jpg
+            https://www.rockauto.com/info/983/SK620422_1.jpg
+    Local CV: 0.485  {'phash': np.float64(0.594), 'orb': 0.124, 'hist': 0.991}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (33 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   DORMAN: The image shows the front left side view of a black car engine cooling fan assem
+[LocalVision]   SKP: The image shows a black fan assembly with four blades on the front and back side
+[LocalVision] Jaccard similarity: 0.34  shared={'fan', 'assembly', 'four', 'metal', 'shows', 'image', 'black', 'blades', 'front', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.34
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of a black
+    -> UPGRADED to LIKELY (70%)
+[136/200] Row 806: DORMAN 264-464 vs SKP SKHYP18A
+    Images: https://www.rockauto.com/info/42/264-464-007.jpg
+            https://www.rockauto.com/info/983/skhyp18a.jpg
+    Local CV: 0.422  {'phash': np.float64(0.5), 'orb': 0.056, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (28 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black oil pan with a hexagonal lid and a rectangular base. It 
+[LocalVision]   SKP: The image shows a black engine oil pan with a silver bolt on the front. It has a
+[LocalVision] Jaccard similarity: 0.36  shared={'made', 'appears', 'rectangular', 'oil', 'metal', 'pan', 'shows', 'image', 'black', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.36
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a hexagonal li
+    -> UPGRADED to LIKELY (70%)
+[137/200] Row 831: DORMAN 698-116 vs SKP SK698116
+    No image for: SKP SK698116 — skipping
+[138/200] Row 832: DORMAN 749-531 vs SKP SK749531
+    No image for: SKP SK749531 — skipping
+[139/200] Row 833: DORMAN 752-894 vs SKP SK30784578
+    Images: https://www.rockauto.com/info/42/752-894-50608-001.jpg
+            https://www.rockauto.com/info/983/SK30784578_1.jpg
+    Local CV: 0.417  {'phash': np.float64(0.531), 'orb': 0.012, 'hist': 0.996}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows a silver-colored auto part with a circular design on the front, 
+[LocalVision]   SKP: The image shows a silver-colored auto part with a circular design on the front, 
+[LocalVision] Jaccard similarity: 0.41  shared={'circular', 'auto', 'attached', 'silver', 'part', 'shows', 'image', 'design', 'screws', 'front', 'colored'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.41
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver-colored auto part with a c
+    -> UPGRADED to LIKELY (70%)
+[140/200] Row 835: DORMAN 746-145 vs SKP SK746145
+    No image for: SKP SK746145 — skipping
+[141/200] Row 839: DORMAN 621-477 vs SKP SK621477
+    No image for: SKP SK621477 — skipping
+[142/200] Row 872: DORMAN 621-456 vs SKP SK621456
+    Images: https://www.rockauto.com/info/42/621-456-001.jpg
+            https://www.rockauto.com/info/983/SK621456_1.jpg
+    Local CV: 0.478  {'phash': np.float64(0.562), 'orb': 0.14, 'hist': 0.984}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (33 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.1s
+[LocalVision]   DORMAN: The image shows a black car engine cooling fan with four blades mounted on the f
+[LocalVision]   SKP: The image shows the front left side view of a black engine cooling fan assembly 
+[LocalVision] Jaccard similarity: 0.31  shared={'front', 'fan', 'cooling', 'four', 'metal', 'shows', 'image', 'black', 'blades', 'using', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.31
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black car engine cooling fan with
+    -> UPGRADED to LIKELY (70%)
+[143/200] Row 874: DORMAN 264-908 vs SKP SK264908
+    Images: https://www.rockauto.com/info/42/264-908-007.jpg
+            https://www.rockauto.com/info/983/SK264908_1.jpg
+    Local CV: 0.408  {'phash': np.float64(0.5), 'orb': 0.022, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.2s
+[LocalVision]   DORMAN: The image shows a silver engine cover with a black cap on the front. It has a re
+[LocalVision]   SKP: The image shows a silver engine valve cover with four circular holes on the side
+[LocalVision] Jaccard similarity: 0.23  shared={'silver', 'four', 'shows', 'image', 'engine', 'cover'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.23
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a silver engine cover with a black 
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[144/200] Row 905: DORMAN 937-980 vs SKP SKDLA750
+    Images: https://www.rockauto.com/info/42/937-980-007.jpg
+            https://www.rockauto.com/info/983/SKDLA750_1.jpg
+    Local CV: 0.439  {'phash': np.float64(0.531), 'orb': 0.074, 'hist': 0.982}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.4s
+[LocalVision]   DORMAN: The image shows a black car door lock with a silver metal bracket attached to it
+[LocalVision]   SKP: The image shows the front panel of a car door lock. It's made of black plastic w
+[LocalVision] Jaccard similarity: 0.47  shared={'attached', 'silver', 'door', 'car', 'shows', 'image', 'black', 'lock'}
+[LocalVision] Result: YES (85%)  jaccard=0.47
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black car door lock with a silver
+    -> UPGRADED to LIKELY (80%)
+[145/200] Row 973: DORMAN 931-695 vs SKP SK931695
+    Images: https://www.rockauto.com/info/42/931-695-007.jpg
+            https://www.rockauto.com/info/983/SK931695_1.jpg
+    Local CV: 0.430  {'phash': np.float64(0.5), 'orb': 0.084, 'hist': 0.981}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (28 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a silver door lock with black screws and red knobs on the front 
+[LocalVision]   SKP: The image shows a white car door lock with a black handle and silver screws on t
+[LocalVision] Jaccard similarity: 0.42  shared={'front', 'attached', 'silver', 'door', 'panel', 'shows', 'image', 'lock', 'screws', 'black', 'using'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.42
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver door lock with black screw
+    -> UPGRADED to LIKELY (70%)
+[146/200] Row 1002: DORMAN 264-581 vs SKP SK264581
+    Images: https://www.rockauto.com/info/42/264-581-007.jpg
+            https://www.rockauto.com/info/983/SK264581_1.jpg
+    Local CV: 0.430  {'phash': np.float64(0.531), 'orb': 0.054, 'hist': 0.978}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (27 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a black oil pan with a circular hole at the center. The oil pan 
+[LocalVision]   SKP: The image shows a rectangular engine oil pan with a silver color and a black lid
+[LocalVision] Jaccard similarity: 0.24  shared={'oil', 'pan', 'image', 'shows', 'black', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.24
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black oil pan with a circular hol
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[147/200] Row 1007: DORMAN 937-513 vs SKP SKSM2444
+    Images: https://www.rockauto.com/info/42/937-513-007.jpg
+            https://www.rockauto.com/info/983/SKSM2444_1.jpg
+    Local CV: 0.448  {'phash': np.float64(0.531), 'orb': 0.092, 'hist': 0.995}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (33 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows the front panel of a car door lock. It has a black plastic body 
+[LocalVision]   SKP: The image shows a white car door lock assembly with black screws and bolts. It h
+[LocalVision] Jaccard similarity: 0.31  shared={'door', 'car', 'shows', 'image', 'lock', 'screws', 'black', 'using', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.31
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front panel of a car door lock.
+    -> UPGRADED to LIKELY (70%)
+[148/200] Row 1011: DORMAN 620-196 vs SKP SK624520
+    Images: https://www.rockauto.com/info/167/620-196-007.jpg
+            https://www.rockauto.com/info/983/SK624520_1.jpg
+    Local CV: 0.491  {'phash': np.float64(0.625), 'orb': 0.104, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows a black engine cooling fan assembly with a circular base featuri
+[LocalVision]   SKP: The image shows the front panel of a car engine with a black fan assembly attach
+[LocalVision] Jaccard similarity: 0.25  shared={'fan', 'assembly', 'image', 'shows', 'black', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.25
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine cooling fan assembly
+    -> UPGRADED to LIKELY (70%)
+[149/200] Row 1017: DORMAN 264-978 vs SKP SK264978
+    Images: https://www.rockauto.com/info/42/264-978-007.jpg
+            https://www.rockauto.com/info/983/SK264978_1.jpg
+    Local CV: 0.391  {'phash': np.float64(0.469), 'orb': 0.03, 'hist': 0.959}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   DORMAN: The image shows a silver engine cover with four holes evenly spaced along the to
+[LocalVision]   SKP: The image shows a silver engine cover with black rivets on the sides and bottom,
+[LocalVision] Jaccard similarity: 0.19  shared={'attached', 'silver', 'bottom', 'shows', 'image', 'using', 'engine', 'cover'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.19
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a silver engine cover with four hol
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[150/200] Row 1061: DORMAN 264-330 vs SKP SK264330
+    Images: https://www.rockauto.com/info/42/264-330-007.jpg
+            https://www.rockauto.com/info/983/SK264330_1.jpg
+    Local CV: 0.458  {'phash': np.float64(0.531), 'orb': 0.118, 'hist': 0.991}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (30 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows a silver engine oil pan with a rectangular shape and six holes o
+[LocalVision]   SKP: The image shows a silver engine oil pan with a curved top and bottom. The pan ha
+[LocalVision] Jaccard similarity: 0.50  shared={'hoses', 'oil', 'silver', 'sides', 'attaching', 'pan', 'shows', 'image', 'engine', 'holes'}
+[LocalVision] Result: YES (85%)  jaccard=0.50
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a silver engine oil pan with a rect
+    -> UPGRADED to LIKELY (80%)
+[151/200] Row 1062: DORMAN 264-333 vs SKP SK264333
+    No image for: SKP SK264333 — skipping
+[152/200] Row 1072: DORMAN 749-322 vs SKP SK749322
+    Images: https://www.rockauto.com/info/167/749-322-001.jpg
+            https://www.rockauto.com/info/983/SK749322_1.jpg
+    Local CV: 0.452  {'phash': np.float64(0.594), 'orb': 0.05, 'hist': 0.972}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.1s
+[LocalVision]   DORMAN: The image shows the front left side view of a car window, with a silver metal fr
+[LocalVision]   SKP: The image shows a silver metal window regulator with six screws for attachment t
+[LocalVision] Jaccard similarity: 0.29  shared={'silver', 'window', 'metal', 'car', 'shows', 'image', 'front', 'side'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.29
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of a car w
+    -> UPGRADED to LIKELY (70%)
+[153/200] Row 1081: DORMAN 620-258 vs SKP SK620258
+    Images: https://www.rockauto.com/info/42/620-258-001.jpg
+            https://www.rockauto.com/info/983/SK620258_1.jpg
+    Local CV: 0.464  {'phash': np.float64(0.531), 'orb': 0.132, 'hist': 0.995}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (36 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.9s
+[LocalVision]   DORMAN: The image shows a black fan assembly with four blades, mounted on a black basepl
+[LocalVision]   SKP: The image shows the front left side view of a black engine cooling fan assembly 
+[LocalVision] Jaccard similarity: 0.31  shared={'fan', 'assembly', 'four', 'metal', 'shows', 'image', 'black', 'center', 'blades', 'motor', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.31
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black fan assembly with four blad
+    -> UPGRADED to LIKELY (70%)
+[154/200] Row 1083: DORMAN 620-973 vs SKP SK620973
+    No image for: SKP SK620973 — skipping
+[155/200] Row 1133: DORMAN 740-709 vs SKP SK740709
+    No image for: SKP SK740709 — skipping
+[156/200] Row 1141: DORMAN 937-656 vs SKP SK937656
+    Images: https://www.rockauto.com/info/42/937-656-007.jpg
+            https://www.rockauto.com/info/983/983_SK937656_putaway_1.jpg
+    Local CV: 0.345  {'phash': np.float64(0.688), 'orb': 0.082, 'hist': 0.184}
+    LOW visual similarity (0.345) — keeping UNCERTAIN
+[157/200] Row 1147: DORMAN 620-003 vs SKP SK620003
+    No image for: SKP SK620003 — skipping
+[158/200] Row 1148: DORMAN 620-240 vs SKP SK620240
+    No image for: SKP SK620240 — skipping
+[159/200] Row 1201: DORMAN 937-604 vs SKP SK937604
+    Images: https://www.rockauto.com/info/42/937-604-007.jpg
+            https://www.rockauto.com/info/983/SK937604_1.jpg
+    Local CV: 0.488  {'phash': np.float64(0.625), 'orb': 0.098, 'hist': 0.995}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (31 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 6.0s
+[LocalVision]   DORMAN: The image shows the interior of an engine compartment with a black metal door lo
+[LocalVision]   SKP: The image shows a black car door lock assembly with a gold border on the front. 
+[LocalVision] Jaccard similarity: 0.18  shared={'door', 'shows', 'black', 'image', 'screws', 'lock'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.18
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows the interior of an engine compartme
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[160/200] Row 1207: DORMAN 620-038 vs SKP SK620038F
+    Images: https://www.rockauto.com/info/42/620-038-001.jpg
+            https://www.rockauto.com/info/983/SK620038F1.jpg
+    Local CV: 0.473  {'phash': np.float64(0.562), 'orb': 0.122, 'hist': 0.995}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (37 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a black car engine cooling fan with five blades arranged in a ci
+[LocalVision]   SKP: The image shows the front panel of a car engine cooling fan assembly. It is blac
+[LocalVision] Jaccard similarity: 0.22  shared={'fan', 'attached', 'cooling', 'car', 'shows', 'image', 'black', 'blades', 'engine'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.22
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black car engine cooling fan with
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[161/200] Row 1210: DORMAN 621-360 vs SKP SK621360
+    Images: https://www.rockauto.com/info/42/621-360-001.jpg
+            https://www.rockauto.com/info/983/SK621360_1.jpg
+    Local CV: 0.463  {'phash': np.float64(0.531), 'orb': 0.134, 'hist': 0.982}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 2.0s
+[LocalVision] Composite image created (37 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows a black fan assembly with a white circular blade at the center. 
+[LocalVision]   SKP: The image shows a black fan assembly with a white motor at the center. It is mou
+[LocalVision] Jaccard similarity: 0.54  shared={'white', 'fan', 'assembly', 'compartment', 'mounted', 'metal', 'shows', 'image', 'black', 'screws', 'center', 'engine', 'frame'}
+[LocalVision] Result: YES (85%)  jaccard=0.54
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black fan assembly with a white c
+    -> UPGRADED to LIKELY (80%)
+[162/200] Row 1258: DORMAN 264-884 vs SKP SK264884
+    Images: https://www.rockauto.com/info/167/264-884-007.jpg
+            https://www.rockauto.com/info/983/SK264884_1.jpg
+    Local CV: 0.429  {'phash': np.float64(0.5), 'orb': 0.082, 'hist': 0.982}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 2.1s
+[LocalVision] Composite image created (25 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows a black engine oil pan with a silver bolt on the front. It has a
+[LocalVision]   SKP: The image shows a black engine oil pan with a curved edge and a hole for the oil
+[LocalVision] Jaccard similarity: 0.25  shared={'oil', 'silver', 'metal', 'pan', 'shows', 'image', 'black', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.25
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine oil pan with a silve
+    -> UPGRADED to LIKELY (70%)
+[163/200] Row 1264: DORMAN 749-178 vs SKP SK749178
+    No image for: SKP SK749178 — skipping
+[164/200] Row 1266: DORMAN 752-193 vs SKP SK752193
+    No image for: SKP SK752193 — skipping
+[165/200] Row 1289: DORMAN 620-610 vs SKP SK620610
+    No image for: SKP SK620610 — skipping
+[166/200] Row 1290: DORMAN 621-091 vs SKP SK621091
+    No image for: SKP SK621091 — skipping
+[167/200] Row 1291: DORMAN 621-975 vs SKP SKF601560
+    Images: https://www.rockauto.com/info/167/621-975-007.jpg
+            https://www.rockauto.com/info/983/SKF601560_1.jpg
+    Local CV: 0.413  {'phash': np.float64(0.438), 'orb': 0.096, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (31 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a black fan assembly with a white blade at the center, mounted o
+[LocalVision]   SKP: The image shows a black engine cooling fan assembly with four blades mounted on 
+[LocalVision] Jaccard similarity: 0.22  shared={'fan', 'assembly', 'four', 'image', 'shows', 'black', 'center', 'mounted'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.22
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black fan assembly with a white b
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[168/200] Row 1336: DORMAN 264-334 vs SKP SK264334
+    Images: https://www.rockauto.com/info/42/264-334-007.jpg
+            https://www.rockauto.com/info/983/SK264334_1.jpg
+    Local CV: 0.233  {'phash': np.float64(0.531), 'orb': 0.028, 'hist': 0.044}
+    LOW visual similarity (0.233) — keeping UNCERTAIN
+[169/200] Row 1337: DORMAN 264-542 vs SKP SK313584
+    Images: https://www.rockauto.com/info/167/264-542-007.jpg
+            https://www.rockauto.com/info/983/SK313584_1.jpg
+    Local CV: 0.454  {'phash': np.float64(0.625), 'orb': 0.059, 'hist': 0.904}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.5s
+[LocalVision] Composite image created (24 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.8s
+[LocalVision]   DORMAN: The image shows a black oil pan with a rectangular shape and six holes evenly sp
+[LocalVision]   SKP: The image shows a black oil pan with a silver bolt on the top right corner. The 
+[LocalVision] Jaccard similarity: 0.43  shared={'use', 'made', 'appears', 'rectangular', 'oil', 'shape', 'designed', 'metal', 'pan', 'image', 'shows', 'black', 'engine'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.43
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black oil pan with a rectangular 
+    -> UPGRADED to LIKELY (70%)
+[170/200] Row 1345: DORMAN 740-924 vs SKP SK740924
+    No image for: SKP SK740924 — skipping
+[171/200] Row 1346: DORMAN 749-074 vs SKP SK749074
+    No image for: SKP SK749074 — skipping
+[172/200] Row 1350: DORMAN 749-587 vs SKP SK749587
+    No image for: SKP SK749587 — skipping
+[173/200] Row 1369: DORMAN 620-187 vs SKP SK624120
+    Images: https://www.rockauto.com/info/167/620-187-007.jpg
+            https://www.rockauto.com/info/983/SK624120_1.jpg
+    Local CV: 0.486  {'phash': np.float64(0.594), 'orb': 0.124, 'hist': 0.997}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.3s
+[LocalVision] Composite image created (30 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows a black engine cooling fan assembly with a silver center plate. 
+[LocalVision]   SKP: The image shows a black fan assembly with a white center, mounted on the front o
+[LocalVision] Jaccard similarity: 0.33  shared={'bracket', 'fan', 'assembly', 'metal', 'shows', 'image', 'black', 'center', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.33
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black engine cooling fan assembly
+    -> UPGRADED to LIKELY (70%)
+[174/200] Row 1437: DORMAN 749-586 vs SKP SK749586
+    No image for: SKP SK749586 — skipping
+[175/200] Row 1447: DORMAN 931-694 vs SKP SK931694
+    Images: https://www.rockauto.com/info/42/931-694-007.jpg
+            https://www.rockauto.com/info/983/SK931694_1.jpg
+    Local CV: 0.473  {'phash': np.float64(0.594), 'orb': 0.094, 'hist': 0.988}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (32 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows a silver door lock with a black handle attached to it.
+[LocalVision]   SKP: The image shows a white car door lock with a silver metal frame. The lock has a 
+[LocalVision] Jaccard similarity: 0.35  shared={'attached', 'silver', 'door', 'shows', 'image', 'lock'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.35
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a silver door lock with a black han
+    -> UPGRADED to LIKELY (70%)
+[176/200] Row 1464: DORMAN 620-204 vs SKP SK620204
+    No image for: SKP SK620204 — skipping
+[177/200] Row 1465: DORMAN 620-428 vs SKP SK620428
+    No image for: SKP SK620428 — skipping
+[178/200] Row 1466: DORMAN 621-441 vs SKP SK621441
+    Images: https://www.rockauto.com/info/42/621-441-001.jpg
+            https://www.rockauto.com/info/983/SK621441_1.jpg
+    Local CV: 0.487  {'phash': np.float64(0.594), 'orb': 0.138, 'hist': 0.971}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 2.0s
+[LocalVision] Composite image created (37 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black car engine cooling fan assembly with four large circular
+[LocalVision]   SKP: The image shows the front left side view of a black engine cooling fan assembly 
+[LocalVision] Jaccard similarity: 0.50  shared={'front', 'fan', 'assembly', 'cooling', 'four', 'metal', 'shows', 'image', 'black', 'blades', 'using', 'engine', 'mounted'}
+[LocalVision] Result: YES (85%)  jaccard=0.50
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black car engine cooling fan asse
+    -> UPGRADED to LIKELY (80%)
+[179/200] Row 1531: DORMAN 740-761 vs SKP SK740761
+    No image for: SKP SK740761 — skipping
+[180/200] Row 1532: DORMAN 740-925 vs SKP SK740925
+    No image for: SKP SK740925 — skipping
+[181/200] Row 1533: DORMAN 749-007 vs SKP SK749007
+    No image for: SKP SK749007 — skipping
+[182/200] Row 1534: DORMAN 752-027 vs SKP SK752027
+    Images: https://www.rockauto.com/info/42/752-027-52891-001.jpg
+            https://www.rockauto.com/info/983/SK752027_1.jpg
+    Local CV: 0.413  {'phash': np.float64(0.469), 'orb': 0.064, 'hist': 0.999}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.9s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows the front window regulator (windshield wiper) of a car. It has a
+[LocalVision]   SKP: The image shows a silver windscreen wiper blade with a black metal bracket attac
+[LocalVision] Jaccard similarity: 0.21  shared={'attached', 'silver', 'shows', 'wiper', 'image', 'black'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.21
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows the front window regulator (windshi
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[183/200] Row 1635: DORMAN 698-244 vs SKP SK698244
+    Images: https://www.rockauto.com/info/42/698-244-007.jpg
+            https://www.rockauto.com/info/983/SK698244_1.jpg
+    Local CV: 0.435  {'phash': np.float64(0.562), 'orb': 0.026, 'hist': 1.0}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (26 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a black steering knuckle with silver hardware on the front end. 
+[LocalVision]   SKP: The image shows a black steering knuckle with six holes on the front side. It ap
+[LocalVision] Jaccard similarity: 0.38  shared={'made', 'six', 'knuckle', 'metal', 'shows', 'image', 'black', 'front', 'holes', 'steering'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.38
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black steering knuckle with silve
+    -> UPGRADED to LIKELY (70%)
+[184/200] Row 1638: DORMAN 740-505 vs SKP SK740505
+    No image for: SKP SK740505 — skipping
+[185/200] Row 1674: DORMAN 620-350 vs SKP SK620350
+    No image for: SKP SK620350 — skipping
+[186/200] Row 1675: DORMAN 620-453 vs SKP SK620453
+    No image for: SKP SK620453 — skipping
+[187/200] Row 1679: DORMAN 621-576 vs SKP SK621576
+    Images: https://www.rockauto.com/info/42/621-576-001.jpg
+            https://www.rockauto.com/info/983/SK621576_1.jpg
+    Local CV: 0.466  {'phash': np.float64(0.562), 'orb': 0.11, 'hist': 0.983}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (32 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows the front left side view of an engine cooling fan assembly with 
+[LocalVision]   SKP: The image shows a black engine cooling fan assembly with four blades mounted on 
+[LocalVision] Jaccard similarity: 0.39  shared={'plastic', 'bracket', 'fan', 'assembly', 'cooling', 'metal', 'shows', 'image', 'black', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.39
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of an engi
+    -> UPGRADED to LIKELY (70%)
+[188/200] Row 1778: DORMAN 264-442 vs SKP SK264442
+    No image for: SKP SK264442 — skipping
+[189/200] Row 1783: DORMAN 264-594 vs SKP SK264594
+    No image for: SKP SK264594 — skipping
+[190/200] Row 1787: DORMAN 698-150 vs SKP SK698150
+    Images: https://www.rockauto.com/info/42/698-150-007.jpg
+            https://www.rockauto.com/info/983/SK6981501.jpg
+    Local CV: 0.400  {'phash': np.float64(0.469), 'orb': 0.032, 'hist': 1.0}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (18 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.6s
+[LocalVision]   DORMAN: The image shows a black steering knuckle with silver hardware attached to it. It
+[LocalVision]   SKP: The image shows a black steering knuckle with silver accents on the front end. I
+[LocalVision] Jaccard similarity: 0.54  shared={'made', 'appears', 'vehicle', 'silver', 'attached', 'knuckle', 'metal', 'shows', 'image', 'black', 'using', 'front', 'steering'}
+[LocalVision] Result: YES (85%)  jaccard=0.54
+    [LOCAL] YES (85%) — Image descriptions: [DORMAN] The image shows a black steering knuckle with silve
+    -> UPGRADED to LIKELY (80%)
+[191/200] Row 1809: DORMAN 937-644 vs SKP SK937644
+    Images: https://www.rockauto.com/info/42/937-644-007.jpg
+            https://www.rockauto.com/info/983/SK937644_1.jpg
+    Local CV: 0.455  {'phash': np.float64(0.594), 'orb': 0.046, 'hist': 0.993}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.4s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows a black and silver door lock attached to a vehicle using screws.
+[LocalVision]   SKP: The image shows a black door lock with a silver metal frame. It has four screws 
+[LocalVision] Jaccard similarity: 0.41  shared={'silver', 'door', 'shows', 'image', 'black', 'screws', 'lock'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.41
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black and silver door lock attach
+    -> UPGRADED to LIKELY (70%)
+[192/200] Row 1811: DORMAN 937-989 vs SKP SK937989
+    Images: https://www.rockauto.com/info/167/937-989-007.jpg
+            https://www.rockauto.com/info/983/SK937989_1.jpg
+    Local CV: 0.487  {'phash': np.float64(0.562), 'orb': 0.156, 'hist': 1.0}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.8s
+[LocalVision] Composite image created (22 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows a door lock actuating with a black wire attached to the front le
+[LocalVision]   SKP: The image shows a black door lock with silver accents on the front. The lock has
+[LocalVision] Jaccard similarity: 0.37  shared={'attached', 'door', 'lock', 'image', 'shows', 'black', 'front'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.37
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a door lock actuating with a black 
+    -> UPGRADED to LIKELY (70%)
+[193/200] Row 1862: DORMAN 620-592 vs SKP SK622760
+    Images: https://www.rockauto.com/info/42/620-592-001.jpg
+            https://www.rockauto.com/info/983/SK622760_1.jpg
+    Local CV: 0.434  {'phash': np.float64(0.5), 'orb': 0.09, 'hist': 0.99}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (37 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows a black and white car engine cooling fan with four large circula
+[LocalVision]   SKP: The image shows the front left side view of a black engine cooling fan assembly 
+[LocalVision] Jaccard similarity: 0.37  shared={'fan', 'assembly', 'large', 'cooling', 'shows', 'image', 'black', 'front', 'engine', 'mounted'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.37
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a black and white car engine coolin
+    -> UPGRADED to LIKELY (70%)
+[194/200] Row 1863: DORMAN 620-784 vs SKP SK620784
+    No image for: SKP SK620784 — skipping
+[195/200] Row 1866: DORMAN 621-356 vs SKP SK621356
+    No image for: SKP SK621356 — skipping
+[196/200] Row 1876: DORMAN 264-977 vs SKP SK264977
+    Images: https://www.rockauto.com/info/42/264-977-007.jpg
+            https://www.rockauto.com/info/983/SK264977_1.jpg
+    Local CV: 0.499  {'phash': np.float64(0.719), 'orb': 0.03, 'hist': 0.998}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 2.2s
+[LocalVision] Composite image created (31 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a silver engine valve cover with four holes evenly spaced along 
+[LocalVision]   SKP: The image shows a silver engine cover with a black rubber seal on the front end.
+[LocalVision] Jaccard similarity: 0.19  shared={'silver', 'image', 'shows', 'engine', 'holes', 'cover'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.19
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a silver engine valve cover with fo
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[197/200] Row 2013: DORMAN 266-004 vs SKP SK266004
+    Images: https://www.rockauto.com/info/167/266-004-003.jpg
+            https://www.rockauto.com/info/983/SK266004_1.jpg
+    Local CV: 0.497  {'phash': np.float64(0.656), 'orb': 0.11, 'hist': 0.955}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.9s
+[LocalVision] Composite image created (29 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.7s
+[LocalVision]   DORMAN: The image shows a black oil pan with a hexagonal lid that has six holes on the s
+[LocalVision]   SKP: The image shows a black oil pan with a silver bolt on the side. It has a rectang
+[LocalVision] Jaccard similarity: 0.21  shared={'oil', 'metal', 'pan', 'shows', 'image', 'black'}
+[LocalVision] Result: UNCERTAIN (40%)  jaccard=0.21
+    [LOCAL] UNCERTAIN (40%) — Image descriptions: [DORMAN] The image shows a black oil pan with a hexagonal li
+    Not upgrading (local: UNCERTAIN, confidence 40%)
+[198/200] Row 2022: DORMAN 698-151 vs SKP SK698151
+    Images: https://www.rockauto.com/info/42/698-151-007.jpg
+            https://www.rockauto.com/info/983/SK6981511.jpg
+    Local CV: 0.456  {'phash': np.float64(0.594), 'orb': 0.046, 'hist': 1.0}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.6s
+[LocalVision] Composite image created (17 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.3s
+[LocalVision]   DORMAN: The image shows a steering knuckle made of black metal with silver accents. It h
+[LocalVision]   SKP: The image shows a black steering knuckle with silver bolts on the sides. The knu
+[LocalVision] Jaccard similarity: 0.33  shared={'made', 'attached', 'silver', 'metal', 'knuckle', 'shows', 'image', 'black', 'steering'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.33
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows a steering knuckle made of black me
+    -> UPGRADED to LIKELY (70%)
+[199/200] Row 2036: DORMAN 740-762 vs SKP SK740762
+    No image for: SKP SK740762 — skipping
+[200/200] Row 2057: DORMAN 752-589 vs SKP SK752589
+    Images: https://www.rockauto.com/info/42/752-589-001.jpg
+            https://www.rockauto.com/info/983/SK752589_1.jpg
+    Local CV: 0.435  {'phash': np.float64(0.562), 'orb': 0.03, 'hist': 0.99}
+    [LOCAL Vision] comparing...
+[LocalVision] Downloading images...
+[LocalVision] Images downloaded in 1.7s
+[LocalVision] Composite image created (33 KB b64)
+[LocalVision] Running moondream (describe-and-compare)...
+[LocalVision] Descriptions in 5.5s
+[LocalVision]   DORMAN: The image shows the front left side view of a car's windshield wiper motor cover
+[LocalVision]   SKP: The image shows a silver metal car window regulator with six screws on the botto
+[LocalVision] Jaccard similarity: 0.27  shared={'attached', 'silver', 'left', 'car', 'shows', 'image', 'using', 'screws', 'front'}
+[LocalVision] Result: LIKELY (70%)  jaccard=0.27
+    [LOCAL] LIKELY (70%) — Image descriptions: [DORMAN] The image shows the front left side view of a car's
+    -> UPGRADED to LIKELY (70%)
+
+============================================================
+  COMPLETED — Dorman Image Analysis
+============================================================
+  Rows processed:           200
+  No image available:        40
+  HIGH CV (>=0.75):           0
+  MEDIUM CV (0.35-0.75):    140
+  LOW CV (<0.35):            20
+  Gemini Vision calls:      140
+  Errors:                     9
+  --------------------------------------
+  UPGRADED to LIKELY:       110
+
+  Current counts for 'Dorman':
+    YES:            3  (0.6%)
+    LIKELY:       373  (74.6%)
+    UNCERTAIN:    102  (20.4%)
+    NO:            22  (4.4%)
+    ---------------------------------
+    Confirmed:    376  (75.2%)  [YES + LIKELY]
+    Pending:      102  (20.4%)  [UNCERTAIN]

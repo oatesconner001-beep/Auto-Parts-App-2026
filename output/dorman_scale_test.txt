@@ -1,0 +1,37 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+=== Processing sheet: Dorman | reprocess_uncertain=False | limit=10 ===
+Sheet: Dorman | Brand: DORMAN | Reprocess UNCERTAIN: False
+Loading workbook: FISHER SKP INTERCHANGE 20260302.xlsx
+Found 1595 rows for DORMAN brand
+[1/10] Row 5: ENGINE VALVE COVER | DORMAN=264-968 | SKP=SK510A05
+[Rules] 264-968 vs SK510A05: LIKELY (72%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.00×5 | visual:0.40×5
+  -> LIKELY (72%) - Shared OEM ref(s): 25198877, 55573746 | Identical category: Continue Shopping | 
+[2/10] Row 53: ENGINE OIL PAN | DORMAN=264-260 | SKP=SK264260
+[Rules] 264-260 vs SK264260: LIKELY (72%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.00×5 | visual:0.40×5
+  -> LIKELY (72%) - Shared OEM ref(s): 4893207AA, 53021334AF | Identical category: Continue Shopping
+[3/10] Row 54: ENGINE OIL PAN | DORMAN=264-356 | SKP=SK264356
+[Rules] 264-356 vs SK264356: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 5184404AD, 5184404AE, 5184404AF | Identical category: Continu
+[4/10] Row 55: ENGINE VALVE COVER | DORMAN=264-773 | SKP=SK510022
+[Rules] 264-773 vs SK510022: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 13264JA00A, 13264JG30A, 13264JG30B, 13264JG30C | Identical ca
+[5/10] Row 57: ENGINE OIL PAN | DORMAN=264-361 | SKP=SK264361
+[Rules] 264-361 vs SK264361: LIKELY (72%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.00×5 | visual:0.40×5
+  -> LIKELY (72%) - Shared OEM ref(s): 4884665AE | Identical category: Continue Shopping | Fitment y
+[6/10] Row 58: ENGINE OIL PAN | DORMAN=264-359 | SKP=SK264359
+[Rules] 264-359 vs SK264359: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 2151025051, 2151025053, 215102G500 | Identical category: Cont
+[7/10] Row 63: ENGINE VALVE COVER | DORMAN=264-920 | SKP=SKN01016
+[Rules] 264-920 vs SKN01016: LIKELY (72%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.00×5 | visual:0.40×5
+  -> LIKELY (72%) - Shared OEM ref(s): 55564395 | Identical category: Continue Shopping | Fitment ye
+[8/10] Row 78: ENGINE OIL PAN | DORMAN=264-358 | SKP=SK264358
+[Rules] 264-358 vs SK264358: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 5184407AE, 5184407AF | Identical category: Continue Shopping 
+[9/10] Row 83: ENGINE OIL PAN | DORMAN=264-854 | SKP=SK264854
+[Rules] 264-854 vs SK264854: NO (34%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.30×5 | visual:0.40×5
+  -> NO (34%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[10/10] Row 99: WINDOW REGULATOR | DORMAN=749-508 | SKP=SK749508
+[Rules] 749-508 vs SK749508: LIKELY (74%) — oem:1.00×40 | category:1.00×20 | description:0.10×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (74%) - Shared OEM ref(s): 68030655AA | Identical category: Continue Shopping | Fitment 
+Done. Workbook saved.
+Done.

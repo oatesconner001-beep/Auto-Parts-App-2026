@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Project-specific exclusions
+.browser_profile/       # Chrome session data and cookies
+data/parts_agent.db     # SQLite database (too large)
+data/parts_agent.db-*   # SQLite database backups/temp files
+
+# Temporary files and logs
+*.tmp
+*.log
+*.bak
+backup_*
+*_backup_*
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+
+# API keys and secrets (additional protection)
+*api_key*
+*secret*
+*token*
+keys/
+secrets/
+
+# Test output and temporary scripts
+output/temp/
+temp_*
+scratch_*
+
+# Specific temporary test files (allows permanent test suite files)
+test_rockauto_live.py
+debug_rockauto.py
+select_test_parts.py
+verify_rockauto_parts.py
+
+# Claude plans (optional - contains implementation details)
+# .claude/
+
+# Playwright browsers (can be large)
+# .playwright/
+
+# Node modules if any
+node_modules/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version

@@ -1,0 +1,115 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+\n>> ENHANCED IMAGE ANALYSIS: Anchor
+=======================================================
+Target: Improve 67% -> 74%+ upgrade rate
+Method: SSIM + CLIP + Enhanced comparison
+Limit: 25
+Mode: LIVE - will update Excel
+
+Loading Anchor UNCERTAIN rows...
+Found 25 UNCERTAIN rows in Anchor
+Processing 25 UNCERTAIN rows...
+
+[1/25] Row 2: 3503 vs SKP SKM3503
+  Scraping ANCHOR 3503... SKP SKM3503... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/3503-000.jpg vs https://www.rockauto.com/info/983/983_SKM3503_1.jpg
+[Enhanced] CLIP model loaded successfully
+  -> UPGRADE to LIKELY (score: 0.60, MEDIUM)
+[2/25] Row 3: 3157 vs SKP SKM3157
+  Scraping ANCHOR 3157... SKP SKM3157... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/3157-000.jpg vs https://www.rockauto.com/info/983/SKP_SKM3157_1.jpg
+  -> UPGRADE to LIKELY (score: 0.61, MEDIUM)
+[3/25] Row 4: 9158 vs SKP SKM9158
+  Scraping ANCHOR 9158... SKP SKM9158... No SKP images
+[4/25] Row 5: 2142 vs SKP SKM2142
+  Scraping ANCHOR 2142... SKP SKM2142... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/2142-000.jpg vs https://www.rockauto.com/info/983/SKM2142 (1).jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[5/25] Row 6: 2285 vs SKP SKM2285
+  Scraping ANCHOR 2285... SKP SKM2285... No SKP images
+[6/25] Row 7: 2257 vs SKP SKM2257
+  Scraping ANCHOR 2257... SKP SKM2257... Comparing...
+  -> Keep UNCERTAIN (score: 0.00, LOW)
+[7/25] Row 8: 9400 vs SKP SKM9400
+  Scraping ANCHOR 9400... SKP SKM9400... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/9400-000.jpg vs https://www.rockauto.com/info/983/SKP_SKM9400_1.jpg
+  -> UPGRADE to LIKELY (score: 0.58, MEDIUM)
+[8/25] Row 9: 9562 vs SKP SKM9562
+  Scraping ANCHOR 9562... SKP SKM9562... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/9562-000.jpg vs https://www.rockauto.com/info/983/SKM9562 (1).jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[9/25] Row 10: 3215 vs SKP SKM3215
+  Scraping ANCHOR 3215... SKP SKM3215... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/3215-000.jpg vs https://www.rockauto.com/info/983/SKM3215_1.jpg
+  -> UPGRADE to LIKELY (score: 0.59, MEDIUM)
+[10/25] Row 11: 2395 vs SKP SKM2292
+  Scraping ANCHOR 2395... SKP SKM2292... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/2395-000.jpg vs https://www.rockauto.com/info/983/SKM2292 (1).jpg
+  -> UPGRADE to LIKELY (score: 0.59, MEDIUM)
+[11/25] Row 12: 2250 vs SKP SKM2250
+  Scraping ANCHOR 2250... SKP SKM2250... No SKP images
+[12/25] Row 13: 9528 vs SKP SKM9528
+  Scraping ANCHOR 9528... SKP SKM9528... No SKP images
+[13/25] Row 14: 3253 vs SKP SKMA4426
+  Scraping ANCHOR 3253... SKP SKMA4426... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/3253-000.jpg vs https://www.rockauto.com/info/983/SKMA4426_1.jpg
+  -> UPGRADE to LIKELY (score: 0.62, MEDIUM)
+[14/25] Row 15: 9524 vs SKP SKMA4323
+  Scraping ANCHOR 9524... SKP SKMA4323... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/9524-000.jpg vs https://www.rockauto.com/info/983/SKMA4323_1.jpg
+  -> UPGRADE to LIKELY (score: 0.56, MEDIUM)
+[15/25] Row 16: 9244 vs SKP SKM9244
+  Scraping ANCHOR 9244... SKP SKM9244... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/9244-000.jpg vs https://www.rockauto.com/info/983/SKM9244 (5).jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[16/25] Row 17: 9223 vs SKP SKM9223
+  Scraping ANCHOR 9223... SKP SKM9223... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/9223-000.jpg vs https://www.rockauto.com/info/983/SKM9223_1.jpg
+  -> UPGRADE to LIKELY (score: 0.57, MEDIUM)
+[17/25] Row 18: 9727 vs SKP SKM80770
+  Scraping ANCHOR 9727... SKP SKM80770... No SKP images
+[18/25] Row 19: 9625 vs SKP SKMA4354HY
+  Scraping ANCHOR 9625... SKP SKMA4354HY... No SKP images
+[19/25] Row 20: 9185 vs SKP SKM9185
+  Scraping ANCHOR 9185... SKP SKM9185... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/9185-000.jpg vs https://www.rockauto.com/info/983/SKM9185_1.jpg
+  -> UPGRADE to LIKELY (score: 0.55, MEDIUM)
+[20/25] Row 21: 9713 vs SKP SKM9713
+  Scraping ANCHOR 9713... SKP SKM9713... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/9713-000.jpg vs https://www.rockauto.com/info/983/SKP_SKM9713_1.jpg
+  -> UPGRADE to LIKELY (score: 0.51, MEDIUM)
+[21/25] Row 22: 9957 vs SKP SKMA45004
+  Scraping ANCHOR 9957... SKP SKMA45004... No SKP images
+[22/25] Row 23: 2710 vs SKP SKM2710
+  Scraping ANCHOR 2710... SKP SKM2710... Comparing...
+  -> Keep UNCERTAIN (score: 0.00, LOW)
+[23/25] Row 24: 3441 vs SKP SKM3441
+  Scraping ANCHOR 3441... SKP SKM3441... No SKP images
+[24/25] Row 25: 9903 vs SKP SKM9903
+  Scraping ANCHOR 9903... SKP SKM9903... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/9903-000.jpg vs https://www.rockauto.com/info/983/SKM9903_1.jpg
+  -> UPGRADE to LIKELY (score: 0.62, MEDIUM)
+[25/25] Row 26: 8845 vs SKP SKM8845
+  Scraping ANCHOR 8845... SKP SKM8845... Comparing...
+[Enhanced] Comparing: https://www.rockauto.com/info/28/8845-000.jpg vs https://www.rockauto.com/info/983/SKM8845_1.jpg
+  -> UPGRADE to LIKELY (score: 0.59, MEDIUM)
+
+=======================================================
+ENHANCED ANALYSIS RESULTS
+=======================================================
+Processing time: 807.1s (32.3s per row)
+Total processed: 25
+
+Results breakdown:
+  Upgrade to LIKELY:  15 (60.0%)
+  Keep UNCERTAIN:      2 ( 8.0%)
+  No images:           8 (32.0%)
+  Errors:              0 ( 0.0%)
+
+Success rate: 88.2% of processable rows upgraded to LIKELY
+(Baseline moondream: ~67%, Enhanced target: 74%+)
+\n>> TARGET ACHIEVED! Enhanced system performing at 88.2% vs 67% baseline
+\nApplying 15 upgrades to Excel...
+Opening Excel file for updates...
+Excel update failed: Bad magic number for central directory
+[ERROR] Failed to update Excel

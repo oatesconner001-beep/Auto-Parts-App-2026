@@ -1,0 +1,210 @@
+warning: The `tool.uv.dev-dependencies` field (used in `pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+=== Processing sheet: Anchor | reprocess_uncertain=False | limit=None ===
+Sheet: Anchor | Brand: ANCHOR | Reprocess UNCERTAIN: False
+Loading workbook: FISHER SKP INTERCHANGE 20260302.xlsx
+Found 495 rows for ANCHOR brand
+[1/495] Row 10: LIKELY — skipping
+[2/495] Row 16: NO — skipping
+[3/495] Row 19: YES — skipping
+[4/495] Row 20: YES — skipping
+[5/495] Row 21: YES — skipping
+[6/495] Row 25: YES — skipping
+[7/495] Row 32: YES — skipping
+[8/495] Row 42: YES — skipping
+[9/495] Row 45: LIKELY — skipping
+[10/495] Row 47: LIKELY — skipping
+[11/495] Row 48: YES — skipping
+[12/495] Row 67: UNCERTAIN — skipping (reprocess not enabled)
+[13/495] Row 71: UNCERTAIN — skipping (reprocess not enabled)
+[14/495] Row 73: UNCERTAIN — skipping (reprocess not enabled)
+[15/495] Row 74: UNCERTAIN — skipping (reprocess not enabled)
+[16/495] Row 87: UNCERTAIN — skipping (reprocess not enabled)
+[17/495] Row 88: YES — skipping
+[18/495] Row 92: YES — skipping
+[19/495] Row 97: LIKELY — skipping
+[20/495] Row 111: YES — skipping
+[21/495] Row 120: YES — skipping
+[22/495] Row 131: LIKELY — skipping
+[23/495] Row 134: LIKELY — skipping
+[24/495] Row 135: LIKELY — skipping
+[25/495] Row 138: ENGINE MOUNT | ANCHOR=9809 | SKP=SKM9809
+[Rules] 9809 vs SKM9809: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 112103JV0A | Identical category: Continue Shopping | Fitment 
+[26/495] Row 139: ENGINE MOUNT | ANCHOR=3262 | SKP=SKM3262
+[Rules] 3262 vs SKM3262: UNCERTAIN (35%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+[Gemini] Comparing 3262 vs SKM3262...
+[Gemini] Result: YES (95%)
+  -> YES (95%) - SKP part number SKM3262 is the direct equivalent to Anchor part number 3262, and
+[27/495] Row 141: ENGINE MOUNT | ANCHOR=3208 | SKP=SKM3208
+[Rules] 3208 vs SKM3208: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 25840450 | Identical category: Continue Shopping | Fitment ye
+[28/495] Row 148: ENGINE MOUNT | ANCHOR=3232 | SKP=SKM3232
+[Rules] 3232 vs SKM3232: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 15829207 | Identical category: Continue Shopping | Fitment ye
+[29/495] Row 151: ENGINE MOUNT | ANCHOR=3503 | SKP=SKM3503
+[Rules] 3503 vs SKM3503: UNCERTAIN (49%) — oem:0.30×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+[Gemini] Comparing 3503 vs SKM3503...
+[Gemini] Daily quota exhausted — switching to rules-only for this session.
+[Rules] Gemini returned no result — keeping rule result
+  -> UNCERTAIN (49%) - Identical category: Continue Shopping | No OEM refs available for: SKP | Fitment
+[30/495] Row 154: ENGINE MOUNT | ANCHOR=2802 | SKP=SKM2802
+[Rules] 2802 vs SKM2802: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): 22173023 | Identical category: Continue Shopping | Fitment ye
+[31/495] Row 165: ENGINE MOUNT | ANCHOR=9441 | SKP=SKM9441
+[Rules] 9441 vs SKM9441: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 50800S3VA82 | Identical category: Continue Shopping | Fitment
+[32/495] Row 179: ENGINE MOUNT | ANCHOR=3148 | SKP=SKM3148
+[Rules] 3148 vs SKM3148: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 15910501 | Identical category: Continue Shopping | Fitment ye
+[33/495] Row 186: ENGINE MOUNT | ANCHOR=9897 | SKP=SKMA65054
+[Rules] 9897 vs SKMA65054: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): 50820T2FA01 | Identical category: Continue Shopping | Fitment
+[34/495] Row 188: ENGINE MOUNT | ANCHOR=9885 | SKP=SKM9885
+[Rules] 9885 vs SKM9885: UNCERTAIN (37%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> UNCERTAIN (37%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[35/495] Row 189: ENGINE MOUNT | ANCHOR=2564 | SKP=SKM2564
+[Rules] 2564 vs SKM2564: UNCERTAIN (37%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> UNCERTAIN (37%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[36/495] Row 195: ENGINE MOUNT | ANCHOR=3378 | SKP=SKM3378
+[Rules] 3378 vs SKM3378: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): 4877788AF | Identical category: Continue Shopping | Fitment y
+[37/495] Row 197: ENGINE MOUNT | ANCHOR=3102 | SKP=SKM3102
+[Rules] 3102 vs SKM3102: UNCERTAIN (37%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> UNCERTAIN (37%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[38/495] Row 198: ENGINE MOUNT | ANCHOR=9238 | SKP=SKM9238
+[Rules] 9238 vs SKM9238: UNCERTAIN (55%) — oem:0.50×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> UNCERTAIN (55%) - OEM numbers very similar (90%): 123620P090 vs 123620P050 | Identical category: C
+[39/495] Row 210: ENGINE MOUNT | ANCHOR=3274 | SKP=SKM3274
+[Rules] 3274 vs SKM3274: UNCERTAIN (49%) — oem:0.30×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> UNCERTAIN (49%) - Identical category: Continue Shopping | No OEM refs available for: SKP | Fitment
+[40/495] Row 211: ENGINE MOUNT | ANCHOR=9212 | SKP=SKM9212
+[Rules] 9212 vs SKM9212: UNCERTAIN (35%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> UNCERTAIN (35%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[41/495] Row 221: ENGINE MOUNT | ANCHOR=3167 | SKP=SKM3167
+[Rules] 3167 vs SKM3167: UNCERTAIN (35%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> UNCERTAIN (35%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[42/495] Row 228: ENGINE MOUNT | ANCHOR=3304 | SKP=SKMA5661
+[Rules] 3304 vs SKMA5661: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): EJ7Z6038A | Identical category: Continue Shopping | Fitment y
+[43/495] Row 229: ENGINE MOUNT | ANCHOR=3131 | SKP=SKM3131
+[Rules] 3131 vs SKM3131: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): MN184355 | Identical category: Continue Shopping | Fitment ye
+[44/495] Row 230: ENGINE MOUNT | ANCHOR=9066 | SKP=SKMA6597
+[Rules] 9066 vs SKMA6597: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 50840SCVA81 | Identical category: Continue Shopping | Fitment
+[45/495] Row 231: ENGINE MOUNT | ANCHOR=10019 | SKP=SKM9280
+[Rules] 10019 vs SKM9280: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): 50820SNAP01 | Identical category: Continue Shopping | Fitment
+[46/495] Row 233: ENGINE MOUNT | ANCHOR=3157 | SKP=SKM3157
+[Rules] 3157 vs SKM3157: UNCERTAIN (35%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> UNCERTAIN (35%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[47/495] Row 236: ENGINE MOUNT | ANCHOR=9237 | SKP=SKM9237
+[Rules] 9237 vs SKM9237: UNCERTAIN (37%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> UNCERTAIN (37%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[48/495] Row 237: ENGINE MOUNT | ANCHOR=3130 | SKP=SKM3130
+[Rules] 3130 vs SKM3130: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): MN184372 | Identical category: Continue Shopping | Fitment ye
+[49/495] Row 238: ENGINE MOUNT | ANCHOR=9280 | SKP=SKM9280
+[Rules] 9280 vs SKM9280: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): 50820SVAA05 | Identical category: Continue Shopping | Fitment
+[50/495] Row 239: ENGINE MOUNT | ANCHOR=2796 | SKP=SKM2796
+[Rules] 2796 vs SKM2796: UNCERTAIN (35%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> UNCERTAIN (35%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[51/495] Row 250: ENGINE MOUNT | ANCHOR=2637 | SKP=SKM2637
+[Rules] 2637 vs SKM2637: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): 15592505, 15732188 | Identical category: Continue Shopping | 
+[52/495] Row 258: ENGINE MOUNT | ANCHOR=8974 | SKP=SKM8974
+[Rules] 8974 vs SKM8974: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 50820S87A81 | Identical category: Continue Shopping | Fitment
+[53/495] Row 265: ENGINE MOUNT | ANCHOR=9158 | SKP=SKM9158
+[Rules] 9158 vs SKM9158: UNCERTAIN (29%) — oem:0.30×40 | category:0.30×20 | description:0.10×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (29%) - SKP SKM9158 not found on RockAuto ? No OEM refs available for: SKP | Category no
+[54/495] Row 266: ENGINE MOUNT | ANCHOR=9449 | SKP=SKM9449
+[Rules] 9449 vs SKM9449: UNCERTAIN (35%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> UNCERTAIN (35%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[55/495] Row 267: ENGINE MOUNT | ANCHOR=9991 | SKP=SKM9808
+[Rules] 9991 vs SKM9808: UNCERTAIN (35%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> UNCERTAIN (35%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[56/495] Row 271: ENGINE MOUNT | ANCHOR=2142 | SKP=SKM2142
+[Rules] 2142 vs SKM2142: UNCERTAIN (35%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> UNCERTAIN (35%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[57/495] Row 274: ENGINE MOUNT | ANCHOR=9451 | SKP=SKM9451
+[Rules] 9451 vs SKM9451: UNCERTAIN (35%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> UNCERTAIN (35%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[58/495] Row 284: ENGINE MOUNT | ANCHOR=3210 | SKP=SKM3210
+[Rules] 3210 vs SKM3210: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): 6L8Z6068CA | Identical category: Continue Shopping | Fitment 
+[59/495] Row 288: ENGINE MOUNT | ANCHOR=9457 | SKP=SKMA4572
+[Rules] 9457 vs SKMA4572: UNCERTAIN (29%) — oem:0.30×40 | category:0.30×20 | description:0.10×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (29%) - ANCHOR 9457 not found on RockAuto ? No OEM refs available for: Anchor | Category
+[60/495] Row 290: ENGINE MOUNT | ANCHOR=2621 | SKP=SKM2621
+[Rules] 2621 vs SKM2621: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): 22188659 | Identical category: Continue Shopping | Fitment ye
+[61/495] Row 291: ENGINE MOUNT | ANCHOR=2436 | SKP=SKM2436
+[Rules] 2436 vs SKM2436: UNCERTAIN (35%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> UNCERTAIN (35%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[62/495] Row 296: ENGINE MOUNT | ANCHOR=9662 | SKP=SKMA65017EL
+[Rules] 9662 vs SKMA65017EL: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): 50810TK8A01 | Identical category: Continue Shopping | Fitment
+[63/495] Row 306: ENGINE MOUNT | ANCHOR=2285 | SKP=SKM2285
+[Rules] 2285 vs SKM2285: UNCERTAIN (29%) — oem:0.30×40 | category:0.30×20 | description:0.10×15 | fitment:0.40×15 | specs:0.40×5 | visual:0.40×5
+  -> UNCERTAIN (29%) - SKP SKM2285 not found on RockAuto ? No OEM refs available for: SKP | Category no
+[64/495] Row 307: ENGINE MOUNT | ANCHOR=9168 | SKP=SKM9168
+[Rules] 9168 vs SKM9168: UNCERTAIN (37%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> UNCERTAIN (37%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[65/495] Row 315: ENGINE MOUNT | ANCHOR=9299 | SKP=SKM9299
+[Rules] 9299 vs SKM9299: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): 50820STWA00 | Identical category: Continue Shopping | Fitment
+[66/495] Row 319: ENGINE MOUNT | ANCHOR=9680 | SKP=SKM9680
+[Rules] 9680 vs SKM9680: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 123610H100 | Identical category: Continue Shopping | Fitment 
+[67/495] Row 321: ENGINE MOUNT | ANCHOR=9194 | SKP=SKM9194
+[Rules] 9194 vs SKM9194: UNCERTAIN (37%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> UNCERTAIN (37%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[68/495] Row 322: ENGINE MOUNT | ANCHOR=9431 | SKP=SKM9431
+[Rules] 9431 vs SKM9431: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 50810SHJA00 | Identical category: Continue Shopping | Fitment
+[69/495] Row 325: ENGINE MOUNT | ANCHOR=3247 | SKP=SKM3247
+[Rules] 3247 vs SKM3247: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): BB5Z6038F | Identical category: Continue Shopping | Fitment y
+[70/495] Row 331: ENGINE MOUNT | ANCHOR=3565 | SKP=SKMA5739
+[Rules] 3565 vs SKMA5739: UNCERTAIN (37%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> UNCERTAIN (37%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[71/495] Row 332: ENGINE MOUNT | ANCHOR=3149 | SKP=SKM3149
+[Rules] 3149 vs SKM3149: UNCERTAIN (35%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> UNCERTAIN (35%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[72/495] Row 338: ENGINE MOUNT | ANCHOR=2257 | SKP=SKM2257
+[Rules] 2257 vs SKM2257: UNCERTAIN (37%) — oem:0.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> UNCERTAIN (37%) - Identical category: Continue Shopping | Fitment year/make data not found in scra
+[73/495] Row 340: ENGINE MOUNT | ANCHOR=9808 | SKP=SKM9808
+[Rules] 9808 vs SKM9808: LIKELY (75%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:0.50×5 | visual:0.40×5
+  -> LIKELY (75%) - Shared OEM ref(s): 11270JA10A | Identical category: Continue Shopping | Fitment 
+[74/495] Row 343: ENGINE MOUNT | ANCHOR=9797 | SKP=SKM9797
+[Rules] 9797 vs SKM9797: UNCERTAIN (49%) — oem:0.30×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> UNCERTAIN (49%) - Identical category: Continue Shopping | No OEM refs available for: SKP | Fitment
+[75/495] Row 344: ENGINE MOUNT | ANCHOR=3180 | SKP=SKM3180
+[Rules] 3180 vs SKM3180: LIKELY (77%) — oem:1.00×40 | category:1.00×20 | description:0.30×15 | fitment:0.40×15 | specs:1.00×5 | visual:0.40×5
+  -> LIKELY (77%) - Shared OEM ref(s): 8G1Z6038A, DG1Z6038C | Identical category: Continue Shopping 
+Traceback (most recent call last):
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\src\excel_handler.py", line 283, in process_rows
+    os.replace(tmp, filepath)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'FISHER SKP INTERCHANGE 20260302.xlsx.tmp' -> 'FISHER SKP INTERCHANGE 20260302.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\src\excel_handler.py", line 315, in <module>
+    process_rows(
+    ~~~~~~~~~~~~^
+        filepath,
+        ^^^^^^^^^
+    ...<3 lines>...
+        limit=limit,
+        ^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Owner\Desktop\Parts Agent 20260313\src\excel_handler.py", line 294, in process_rows
+    os.replace(tmp, filepath)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^
+PermissionError: [WinError 5] Access is denied: 'FISHER SKP INTERCHANGE 20260302.xlsx.tmp' -> 'FISHER SKP INTERCHANGE 20260302.xlsx'
