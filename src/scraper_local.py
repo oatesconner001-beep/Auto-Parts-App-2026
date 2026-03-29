@@ -237,6 +237,21 @@ def _scrape_search(page, part_number: str) -> str:
     # Wait for JS to render results
     page.wait_for_timeout(SEARCH_WAIT)
 
+    # Wait specifically for price elements to have content
+    try:
+        page.wait_for_function(
+            """() => {
+                const elems = document.querySelectorAll(
+                    "span[id*='dprice'][id*='[v]']"
+                );
+                return elems.length > 0 &&
+                       elems[0].textContent.trim().length > 0;
+            }""",
+            timeout=10000
+        )
+    except Exception:
+        pass  # Continue even if timeout - price may still be extractable
+
     if not _wait_past_captcha(page):
         return "__CAPTCHA__"
 
@@ -757,10 +772,16 @@ def scrape_rockauto(part_number: str, brand: str = "ANCHOR") -> dict:
         extracted_category = None
 
         try:
-            # Extract price from verified HTML structure: span[id*="dprice"][id*="[v]"]
+            # Extract price using multiple fallback selectors for reliability
+            # Try primary selector first (existing approach)
             price_elems = page.query_selector_all("span[id*='dprice'][id*='[v]']")
-            if price_elems:
+            if price_elems and price_elems[0].inner_text().strip():
                 extracted_price = sanitize_unicode_text(price_elems[0].inner_text().strip())
+            else:
+                # Fallback to class-based selector (more reliable from DOM inspection)
+                price_elems = page.query_selector_all("span.ra-formatted-amount.listing-price")
+                if price_elems and price_elems[0].inner_text().strip():
+                    extracted_price = sanitize_unicode_text(price_elems[0].inner_text().strip())
 
             # Extract core charge: span[id*="dcore"][id*="[v]"]
             core_elems = page.query_selector_all("span[id*='dcore'][id*='[v]']")
@@ -845,6 +866,50 @@ def scrape_rockauto(part_number: str, brand: str = "ANCHOR") -> dict:
                 # Category from moreinfo page title (e.g. "Motor Mount | RockAuto")
                 if (not result["category"] or result["category"] == "Continue Shopping") and info.get("category"):
                     result["category"] = info["category"]
+
+                # FALLBACK: Extract price from description if DOM extraction failed
+                if not result.get("price") and result.get("description"):
+                    import re
+                    m = re.search(r'\$(\d+\.\d{2})', result.get("description", ""))
+                    if m:
+                        result["price"] = f"${m.group(1)}"
+
+                # FALLBACK: Extract category from description using comprehensive mapping
+                if not result.get("category") and result.get("description"):
+                    desc = result.get("description", "").lower()
+                    # Map common description phrases to categories (ordered most specific first)
+                    category_map = [
+                        ('door lock actuator motor', 'DOOR LOCK ACTUATOR MOTOR'),
+                        ('door lock motor', 'DOOR LOCK ACTUATOR MOTOR'),
+                        ('actuator motor', 'DOOR LOCK ACTUATOR MOTOR'),
+                        ('door lock actuator', 'DOOR LOCK ACTUATOR'),
+                        ('lock actuator', 'DOOR LOCK ACTUATOR'),
+                        ('door lock', 'DOOR LOCK ACTUATOR'),
+                        ('engine cooling fan', 'ENGINE COOLING FAN ASSEMBLY'),
+                        ('cooling fan assembly', 'ENGINE COOLING FAN ASSEMBLY'),
+                        ('radiator fan', 'ENGINE COOLING FAN ASSEMBLY'),
+                        ('cooling fan', 'ENGINE COOLING FAN ASSEMBLY'),
+                        ('fan assembly', 'ENGINE COOLING FAN ASSEMBLY'),
+                        ('engine mount', 'ENGINE MOUNT'),
+                        ('motor mount', 'ENGINE MOUNT'),
+                        ('transmission mount', 'ENGINE MOUNT'),
+                        ('engine oil pan', 'ENGINE OIL PAN'),
+                        ('oil pan', 'ENGINE OIL PAN'),
+                        ('valve cover', 'ENGINE VALVE COVER'),
+                        ('rocker cover', 'ENGINE VALVE COVER'),
+                        ('water pump', 'ENGINE WATER PUMP'),
+                        ('coolant pump', 'ENGINE WATER PUMP'),
+                        ('hvac blower motor', 'HVAC BLOWER MOTOR'),
+                        ('heater blower motor', 'HVAC BLOWER MOTOR'),
+                        ('blower motor', 'HVAC BLOWER MOTOR'),
+                        ('steering knuckle', 'STEERING KNUCKLE'),
+                        ('window regulator', 'WINDOW REGULATOR'),
+                        ('regulator', 'WINDOW REGULATOR'),
+                    ]
+                    for keyword, category in category_map:
+                        if keyword in desc:
+                            result["category"] = category
+                            break
 
             # CHANGE 5: Parse alternate OEM references from moreinfo page
             alternate_oems = _parse_alternate_oem_refs(page)
