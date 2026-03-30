@@ -84,8 +84,9 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 ✅ **GitHub Integration COMPLETE** - Repository connected: https://github.com/oatesconner001-beep/Auto-Parts-App-2026, initial commit pushed (15684ff)
 
 **Active TODO for Next Session:**
-1. **PartsGeek Scraper** - Begin implementation with Cloudflare bypass (stealth techniques required)
-2. **ShowMeTheParts Scraper** - Implement with Incapsula WAF bypass (cross-reference focus)
+1. **Full Project Audit** - Scheduled before PartsGeek implementation begins
+2. **PartsGeek Scraper** - IN PROGRESS: HTML structure analyzed, search URL confirmed (`/ss/?i=1&ssq={part}`), no bot protection (Cloudflare analytics only), CSS selectors documented (`.product`, `.product-price`, `.product-title`, `.fitment-container`, `.product-stock`, `.product-attribute-heading`), scraper file not yet implemented
+3. **ShowMeTheParts Scraper** - Implement with Incapsula WAF bypass (cross-reference focus)
 
 **Quality Benchmark**: All scrapers must meet ACDelco standard - all 6 tables populated, 219+ fitment records where applicable, zero Unicode crashes, 100% success rate
 

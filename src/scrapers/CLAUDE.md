@@ -101,10 +101,22 @@ Creates individual fitment records:
 **Status**: ⏸️ **PAUSED** - Shifted to manufacturer sites phase
 **Site Details**: `moogparts.com` - No protection detected, accessible
 
-### 🚧 PartsGeek Scraper
+### 🔄 PartsGeek Scraper
 
-**Status**: PENDING - Cloudflare bypass needed
-**Site Details**: `partsgeek.com` - Light protection
+**Status**: IN PROGRESS - HTML structure analyzed, scraper file not yet implemented
+**Site Details**: `partsgeek.com` - No bot protection (Cloudflare analytics only, no challenge/WAF)
+**Search URL**: `https://www.partsgeek.com/ss/?i=1&ssq={part_number}`
+**CSS Selectors Documented**:
+- `.product` - Result container (~20 per page)
+- `.product-price` - Price (e.g., `$116.97`)
+- `.product-title` - Description with vehicle/part info
+- `.product-attribute-heading` + sibling - Part number, brand, specs
+- `.product-stock` - Stock status with quantity (e.g., `(63) In Stock`)
+- `.product-image img[data-image]` - Full-size product images
+- `.fitment-container table tbody tr` - Fitment rows with `.application-content` cells
+- Fitment format: `YYYY-YYYY Make Model` + engine column
+**Verified Working Parts**: GMB 130-7340AT, ANCHOR 3217, FOUR SEASONS 75788
+**Next**: Full project audit scheduled before implementation begins
 
 ### ⏸️ Dorman Scraper
 
