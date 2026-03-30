@@ -82,16 +82,18 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 ✅ **Unicode Safety System** - Shared protection prevents crashes across all scrapers
 ✅ **RockAuto Scraper COMPLETE** - All fields working: price, category, OEM refs, images, brand matching (tested: ANCHOR 3217 ENGINE MOUNT $20.79, GMB 130-7340AT ENGINE WATER PUMP $86.79)
 ✅ **GitHub Integration COMPLETE** - Repository connected: https://github.com/oatesconner001-beep/Auto-Parts-App-2026, initial commit pushed (15684ff)
-✅ **Full Project Audit COMPLETE** (2026-03-30) - 3 HIGH, 4 MEDIUM, 6 LOW issues identified. HIGH fixes required before new development.
+✅ **Full Project Audit COMPLETE** (2026-03-30) - 3 HIGH, 4 MEDIUM, 6 LOW issues identified.
+✅ **HIGH Audit Fixes COMPLETE** (2026-03-30) - All 3 HIGH priority issues resolved:
+   * OEM reference parsing fixed — `_is_valid_oem_ref()` validator, warranty text stripping, blacklist filtering
+   * `listing_id`/`core_charge` data flow fixed — key mismatches corrected in `_store_site_result`, core_charge propagated to all listings
+   * ShowMeTheParts documentation corrected across 6 files — stealth scraper acknowledged
+   * `schema.sql` synced — `listing_id`, `core_charge`, `reference_type` columns added
+   * Database cleaned — 10 corrupted OEM reference rows removed, `89018166` re-added clean (39 clean refs remaining)
 
 **Active TODO for Next Session:**
-1. **Fix HIGH Priority Issues (from 2026-03-30 audit)** - Must complete before any new development:
-   * OEM reference parsing corrupted in `scraper_local.py` — warranty text, UI strings ("INCLUDES", "THERMOSTAT"), and split OEM numbers stored as references
-   * `listing_id`/`core_charge` never reach database — scraper extracts values at top level but `_store_site_result` reads from `listings` sub-array where they are None
-   * ShowMeTheParts incorrectly documented as "permanently blocked" in 5+ files — 446-line stealth scraper exists at `src/scrapers/showmetheparts_scraper.py`
-   * `schema.sql` missing `listing_id`, `core_charge`, `reference_type` columns (out of sync with live DB)
-2. **PartsGeek Scraper** - BLOCKED until HIGH fixes complete. HTML structure analyzed, CSS selectors documented, placeholder file exists at `src/scrapers/partsgeek_scraper.py`
-3. **ShowMeTheParts Scraper** - Stealth scraper exists, needs testing and validation
+1. **PartsGeek Scraper** - Ready for implementation. HTML structure analyzed, CSS selectors documented, placeholder file exists at `src/scrapers/partsgeek_scraper.py`
+2. **ShowMeTheParts Scraper** - Stealth scraper exists at `src/scrapers/showmetheparts_scraper.py`, needs testing and validation
+3. **MEDIUM/LOW Audit Issues** - 4 MEDIUM, 6 LOW issues remain from 2026-03-30 audit
 
 **Quality Benchmark**: All scrapers must meet ACDelco standard - all 6 tables populated, 219+ fitment records where applicable, zero Unicode crashes, 100% success rate
 
