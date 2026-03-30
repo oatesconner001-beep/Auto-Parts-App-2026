@@ -401,13 +401,13 @@ class MultiSiteScraperManager:
                 listing_success = self.db_manager.add_part_source(
                     part_id=part_id,
                     site_name=site_name,
-                    listing_id=listing.get('listing_id'),  # NEW FIELD
-                    availability_status=listing.get('availability'),
+                    listing_id=listing.get('listing_id'),
+                    availability_status=listing.get('availability') or listing.get('availability_status'),
                     price=self._parse_price(listing.get('price')),
-                    core_charge=self._parse_price(listing.get('core_charge')),  # NEW FIELD
+                    core_charge=self._parse_price(listing.get('core_charge')),
                     stock_quantity=listing.get('stock_quantity'),
-                    product_url=listing.get('product_url'),
-                    scrape_success=listing.get('success', False),
+                    product_url=listing.get('product_url') or listing.get('moreinfo_url'),
+                    scrape_success=listing.get('success', listing.get('found', False)),
                     scrape_error=listing.get('error')
                 )
                 if listing_success:

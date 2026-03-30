@@ -28,6 +28,8 @@ CREATE TABLE IF NOT EXISTS part_sources (
     last_scraped TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     scrape_success BOOLEAN DEFAULT TRUE,
     scrape_error VARCHAR(500),
+    listing_id VARCHAR(50),
+    core_charge DECIMAL(10,2),
     FOREIGN KEY (part_id) REFERENCES parts(id) ON DELETE CASCADE
 );
 
@@ -67,6 +69,7 @@ CREATE TABLE IF NOT EXISTS oem_references (
     oem_brand VARCHAR(100),
     source_site VARCHAR(100),
     confidence DECIMAL(3,2) DEFAULT 1.00,
+    reference_type VARCHAR(50) DEFAULT 'OEM',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (part_id) REFERENCES parts(id) ON DELETE CASCADE
 );

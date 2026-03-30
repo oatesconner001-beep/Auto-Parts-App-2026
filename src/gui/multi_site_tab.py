@@ -224,7 +224,7 @@ class MultiSiteTab:
             current_config = self.manager.site_configs.get(site_name, {})
             if current_config.get('status') == 'blocked':
                 messagebox.showwarning("Warning",
-                    f"{site_name} is permanently blocked and cannot be activated")
+                    f"{site_name} requires stealth bypass testing before activation — see src/scrapers/ for scraper")
                 return
 
             # Toggle active status

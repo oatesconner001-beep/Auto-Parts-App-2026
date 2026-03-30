@@ -302,6 +302,25 @@ def _extract_fitment_from_url(url: str) -> dict:
     return sanitize_unicode_dict(fitment)
 
 
+# OEM reference validation — filters out warranty text, UI strings, and garbage
+_OEM_BLACKLIST = {"INCLUDES", "THERMOSTAT", "WARRANTY", "INFORMATION", "DETAILS",
+                  "MONTHS", "MILES", "LIMITED", "LIFETIME", "PLEASE", "CONTACT",
+                  "NUMBER", "RETURN", "POLICY"}
+
+def _is_valid_oem_ref(ref: str) -> bool:
+    """Validate that a string looks like a real OEM part number (6-15 alphanumeric chars, no spaces)."""
+    ref = ref.strip()
+    if not ref or ' ' in ref:
+        return False
+    if len(ref) < 6 or len(ref) > 15:
+        return False
+    if not re.match(r'^[A-Z0-9\-]+$', ref, re.IGNORECASE):
+        return False
+    if ref.upper() in _OEM_BLACKLIST:
+        return False
+    return True
+
+
 def _parse_alternate_oem_refs(page) -> list:
     """
     Parse OEM references from verified HTML structure:
@@ -478,12 +497,16 @@ def _parse_listing(text: str, brand: str, part_number: str, extracted_data: dict
     # OEM / interchange refs — alphanumeric tokens 6+ chars after the category line
     if not data.get("oem_refs"):
         oem_block = block[:500]
+        # Strip anything after Warranty keyword to avoid warranty text as OEM refs
+        warranty_idx = oem_block.upper().find("WARRANTY")
+        if warranty_idx > 0:
+            oem_block = oem_block[:warranty_idx]
         refs = re.findall(r"\b([A-Z0-9]{6,})\b", oem_block)
         # Filter: not the part number itself, not common words
         skip = {pnum_clean, brand_upper, "SEARCH", "RESULT", "ANCHOR", "DORMAN",
                 "FILTER", "SORTBY", "VEHICLE", "CATALOG"}
         data["oem_refs"] = [{"oem_number": sanitize_unicode_text(r), "reference_type": "OEM"}
-                           for r in refs if r not in skip and not r.startswith("SK")][:8]
+                           for r in refs if r not in skip and not r.startswith("SK") and _is_valid_oem_ref(r)][:8]
 
     # Price fallback if not extracted at page level
     if not data["price"]:
@@ -541,11 +564,12 @@ def _parse_all_listings_html(page, brand: str, part_number: str, extracted_data:
                     "is_popular": False,
                 }
 
-                # Use extracted data as overrides if this is the first listing
-                if i == 0 and extracted_data:
-                    listing_data["price"] = extracted_data.get("price") or listing_data["price"]
+                # Use extracted data as overrides (price/category for first listing, core_charge for all)
+                if extracted_data:
+                    if i == 0:
+                        listing_data["price"] = extracted_data.get("price") or listing_data["price"]
+                        listing_data["category"] = extracted_data.get("category") or listing_data["category"]
                     listing_data["core_charge"] = extracted_data.get("core_charge") or listing_data["core_charge"]
-                    listing_data["category"] = extracted_data.get("category") or listing_data["category"]
 
                 # Set moreinfo URL
                 if href.startswith("/"):
@@ -555,10 +579,15 @@ def _parse_all_listings_html(page, brand: str, part_number: str, extracted_data:
 
                 # Extract OEM refs and price from the container text if not already set
                 if not listing_data.get("oem_refs"):
-                    refs = re.findall(r"\b([A-Z0-9]{6,})\b", parent_text)
+                    # Strip anything after Warranty keyword
+                    clean_text = parent_text
+                    warranty_idx = clean_text.find("WARRANTY")
+                    if warranty_idx > 0:
+                        clean_text = clean_text[:warranty_idx]
+                    refs = re.findall(r"\b([A-Z0-9]{6,})\b", clean_text)
                     skip = {brand_upper, pnum_norm, "SEARCH", "MOREINFO", "FILTER", "VEHICLE", "CATALOG"}
                     listing_data["oem_refs"] = [{"oem_number": sanitize_unicode_text(r), "reference_type": "OEM"}
-                                               for r in refs if r not in skip][:8]
+                                               for r in refs if r not in skip and _is_valid_oem_ref(r)][:8]
 
                 # Extract price if not already set
                 if not listing_data["price"]:
@@ -658,9 +687,14 @@ def _parse_moreinfo_text(text: str) -> dict:
     # OEM / Interchange numbers
     m = re.search(r"OEM\s*/?\s*Interchange Numbers?:?\s*([^\n|]+)", text, re.IGNORECASE)
     if m:
-        refs = [r.strip() for r in re.split(r"[,;]", m.group(1))]
+        raw = m.group(1)
+        # Strip anything after Warranty keyword
+        warranty_idx = raw.upper().find("WARRANTY")
+        if warranty_idx > 0:
+            raw = raw[:warranty_idx]
+        refs = [r.strip() for r in re.split(r"[,;]", raw)]
         data["oem_refs"] = [{"oem_number": sanitize_unicode_text(r), "reference_type": "OEM"}
-                           for r in refs if r and len(r) >= 4]
+                           for r in refs if r and _is_valid_oem_ref(r)]
 
     # Warranty
     m = re.search(r"Warranty Information:?\s*([^\n|]+)", text, re.IGNORECASE)

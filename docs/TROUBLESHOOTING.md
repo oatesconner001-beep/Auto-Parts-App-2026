@@ -188,19 +188,19 @@ print('Test result:', result['found'], result.get('error', 'No error'))
 3. **Browser Restart:** Kill Chrome processes and retry
 4. **Reduce Batch Size:** Use smaller limits to avoid rate limiting
 
-#### ShowMeTheParts Blocked (Permanent)
-**Status:** Site is permanently blocked by Incapsula WAF (hardware ban)
+#### ShowMeTheParts (Stealth Bypass Required)
+**Status:** Requires Incapsula WAF stealth bypass — 446-line scraper exists at `src/scrapers/showmetheparts_scraper.py`
 
-**Error Messages:**
+**Error Messages (without stealth):**
 ```
 Access denied (16)
 Request ID: [various]
 ```
 
 **Solution:**
-- Do not attempt to access ShowMeTheParts.com
-- All scraping uses RockAuto.com exclusively
-- Old scraper files are deprecated (`scraper_anchor.py`)
+- Use stealth scraper at `src/scrapers/showmetheparts_scraper.py` (Playwright stealth with Incapsula bypass)
+- Scraper needs testing and validation before production use
+- Old `scraper_anchor.py` is deprecated dead code
 
 ### Processing Performance Issues
 

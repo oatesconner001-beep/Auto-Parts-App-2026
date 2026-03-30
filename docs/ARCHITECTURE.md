@@ -27,7 +27,7 @@ The Parts Agent is a sophisticated Python automation platform built around a cor
 - **Session Persistence**: `.browser_profile/` directory for cookie accumulation
 - **Multi-Site Coordination**: `src/scrapers/multi_site_manager.py` coordinates across 6 target sites
 - **Active Sites**: RockAuto.com (fully implemented), 4 sites configured (PartsGeek, ACDelco, Dorman, Moog)
-- **Blocked Sites**: ShowMeTheParts.com permanently blocked by Incapsula WAF
+- **ShowMeTheParts**: Requires Incapsula WAF stealth bypass — 446-line scraper exists at `src/scrapers/showmetheparts_scraper.py`
 
 ### AI/ML Stack
 - **Text AI**: Gemini API (`gemini-3-flash-preview` - only working model on free tier)

@@ -414,12 +414,12 @@ def initialize_multi_site_database():
             {
                 'site_name': 'ShowMeTheParts',
                 'base_url': 'https://www.showmetheparts.com',
-                'is_active': False,  # Permanently blocked
-                'rate_limit_delay': 0.0,
-                'max_retries': 0,
-                'timeout_seconds': 0,
+                'is_active': False,  # Requires stealth bypass - not yet tested
+                'rate_limit_delay': 3.0,
+                'max_retries': 2,
+                'timeout_seconds': 30,
                 'status': 'blocked',
-                'notes': 'Permanently blocked by Incapsula WAF - do not attempt'
+                'notes': 'Requires Incapsula WAF stealth bypass - 446-line scraper exists at src/scrapers/showmetheparts_scraper.py'
             }
         ]
 

@@ -15,11 +15,11 @@
 
 ### Anti-Bot Findings — CRITICAL
 
-#### ShowMeTheParts.com — PERMANENTLY BLOCKED
-- Site uses **Imperva Incapsula WAF** (hardware/IP-level ban)
+#### ShowMeTheParts.com — STEALTH BYPASS REQUIRED
+- Site uses **Imperva Incapsula WAF** (JavaScript challenge, not hardware ban)
 - Tried: plain HTTP, Playwright headless, Playwright visible, Firefox, real Chrome, stealth patches
-- ALL return HTTP 403 — even opening in Chrome browser returns 403
-- **Decision: Drop ShowMeTheParts entirely. Not scraping it.**
+- Standard approaches return HTTP 403
+- **Status: 446-line stealth scraper exists at `src/scrapers/showmetheparts_scraper.py` — needs testing**
 
 #### RockAuto.com — Solved with Firecrawl (Session 1) then Local Chrome (Session 2)
 - Direct URL navigation triggers CAPTCHA redirect
@@ -362,7 +362,7 @@ excel_handler.py  --> writes results (J-P columns) + color coding
 | `image_compare.py` | ✅ Working | Local CV only (phash/ORB/histogram) |
 | `scraper_rockauto.py` | ⚠️ Deprecated | Old Firecrawl version (credits gone) |
 | `ai_compare.py` | ⚠️ Unused | Anthropic API (needs paid credits) |
-| `scraper_anchor.py` | 🗑️ Dead code | ShowMeTheParts (permanently blocked) |
+| `scraper_anchor.py` | 🗑️ Dead code | ShowMeTheParts (stealth scraper at `src/scrapers/showmetheparts_scraper.py`) |
 
 ### System Hardware (confirmed)
 - RAM: 32 GB
