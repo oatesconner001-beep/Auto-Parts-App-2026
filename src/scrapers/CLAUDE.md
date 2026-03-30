@@ -69,29 +69,28 @@ Creates individual fitment records:
 
 ### ✅ RockAuto Scraper
 
-**Status**: ✅ **COMPLETE** - All fields working: price, category, OEM refs, images, brand matching
+**Status**: ✅ **PARTIAL** - Price and category working, OEM parsing and data flow have HIGH priority bugs
 **Site Details**: Chrome-based, bot detection bypass working perfectly
 **Price**: Extracted via description fallback ($20.79, $86.79 confirmed working)
 **Category**: Mapped from description using 10-part-type category_map (ENGINE MOUNT, ENGINE WATER PUMP confirmed)
 **Brand matching**: Confirmed working correctly (filters by brand after multi-brand search results)
 
-**Live Test Results (5/5 parts)**:
-- ✅ GMB 130-7340AT, ANCHOR 3217, FOUR SEASONS 75788, SMP DLA1005, DORMAN 746-259
-- ✅ 34 OEM references captured, 5 product images stored
-- ✅ All database tables populated (parts, part_sources, oem_references, part_images, etc.)
-- ✅ Zero CAPTCHA blocks, consistent 12-16s performance
+**Live Test Results (2026-03-30 audit)**:
+- ✅ ANCHOR 3217: found=True, category=ENGINE MOUNT, price=$20.79, image present
+- ✅ GMB 130-7340AT: found=True, category=ENGINE WATER PUMP, price=$86.79, image present
+- ⚠️ OEM refs contain corrupted data (warranty text, UI strings parsed as OEM numbers)
+- ⚠️ fitment_data always empty [] for RockAuto (all 657 fitment rows are from ACDelco)
+- ⚠️ listing_id and core_charge never reach database (data flow broken in _store_site_result)
+- ⚠️ specs parsing splits incorrectly on colons within values
 
-**Enhanced Features Implemented**:
+**Known Issues Requiring Fixes**:
+- ❌ OEM parsing corrupted: "7B0199279A Warranty Information: 12 Months" stored as single OEM ref, "INCLUDES"/"THERMOSTAT" stored as OEM refs
+- ❌ listing_id/core_charge: scraper extracts at top level but _store_site_result reads from listings sub-array where values are None
+- ❌ fitment_data: URL-based fitment parsing returns empty results
 - ✅ DOM-based price extraction with description fallback (working: $20.79, $86.79)
 - ✅ Category extraction from description using comprehensive mapping (working: ENGINE MOUNT, ENGINE WATER PUMP)
-- ✅ Multiple listings per part (unique listing_ids)
-- ✅ URL fitment parsing from catalog URLs
-- ✅ Enhanced OEM reference parsing via aria-label
 - ✅ Multiple product images extraction
-- ✅ Warranty/notes capture
 - ✅ Unicode safety throughout all functions
-- ✅ Database schema updated (listing_id, core_charge, reference_type)
-- ✅ Multi-site manager integration for multiple listings
 
 **Backup**: `scraper_local_backup_20260329.py`
 **Tested**: ANCHOR 3217 ENGINE MOUNT $20.79 ✓, GMB 130-7340AT ENGINE WATER PUMP $86.79 ✓
@@ -125,8 +124,10 @@ Creates individual fitment records:
 
 ### 🚧 ShowMeTheParts Scraper
 
-**Status**: PENDING - Incapsula WAF bypass needed
-**Site Details**: `showmetheparts.com` - Incapsula WAF
+**Status**: PENDING TESTING - 446-line stealth scraper exists, NOT permanently blocked
+**File**: `src/scrapers/showmetheparts_scraper.py` (Playwright stealth with Incapsula bypass)
+**Site Details**: `showmetheparts.com` - Incapsula WAF, requires stealth techniques (not a hardware ban)
+**Note**: Multiple docs incorrectly claim "permanently blocked" — needs correction across CLAUDE.md, ARCHITECTURE.md, TROUBLESHOOTING.md, progress.md
 
 ### ❌ Firecrawl API Scraper
 

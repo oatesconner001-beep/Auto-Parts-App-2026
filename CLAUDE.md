@@ -70,7 +70,7 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 - Enhanced image analysis with CLIP semantic matching (8/8 successful upgrades in recovery)
 - Automated health monitoring and alerting systems
 - Multi-format export (JSON, charts, comprehensive reports)
-- **Multi-Site Database**: SQLite with 8 tables, 25 records, 6 site configurations (Phase 1 ✅)
+- **Multi-Site Database**: SQLite with 8 tables, 857 records, 6 site configurations (Phase 1 ✅)
 - **Cross-Site Coordination**: Multi-site manager with RockAuto integration verified
 - **GUI Multi-Site Tab**: Site management interface with search and status monitoring
 
@@ -82,11 +82,16 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 ✅ **Unicode Safety System** - Shared protection prevents crashes across all scrapers
 ✅ **RockAuto Scraper COMPLETE** - All fields working: price, category, OEM refs, images, brand matching (tested: ANCHOR 3217 ENGINE MOUNT $20.79, GMB 130-7340AT ENGINE WATER PUMP $86.79)
 ✅ **GitHub Integration COMPLETE** - Repository connected: https://github.com/oatesconner001-beep/Auto-Parts-App-2026, initial commit pushed (15684ff)
+✅ **Full Project Audit COMPLETE** (2026-03-30) - 3 HIGH, 4 MEDIUM, 6 LOW issues identified. HIGH fixes required before new development.
 
 **Active TODO for Next Session:**
-1. **Full Project Audit** - Scheduled before PartsGeek implementation begins
-2. **PartsGeek Scraper** - IN PROGRESS: HTML structure analyzed, search URL confirmed (`/ss/?i=1&ssq={part}`), no bot protection (Cloudflare analytics only), CSS selectors documented (`.product`, `.product-price`, `.product-title`, `.fitment-container`, `.product-stock`, `.product-attribute-heading`), scraper file not yet implemented
-3. **ShowMeTheParts Scraper** - Implement with Incapsula WAF bypass (cross-reference focus)
+1. **Fix HIGH Priority Issues (from 2026-03-30 audit)** - Must complete before any new development:
+   * OEM reference parsing corrupted in `scraper_local.py` — warranty text, UI strings ("INCLUDES", "THERMOSTAT"), and split OEM numbers stored as references
+   * `listing_id`/`core_charge` never reach database — scraper extracts values at top level but `_store_site_result` reads from `listings` sub-array where they are None
+   * ShowMeTheParts incorrectly documented as "permanently blocked" in 5+ files — 446-line stealth scraper exists at `src/scrapers/showmetheparts_scraper.py`
+   * `schema.sql` missing `listing_id`, `core_charge`, `reference_type` columns (out of sync with live DB)
+2. **PartsGeek Scraper** - BLOCKED until HIGH fixes complete. HTML structure analyzed, CSS selectors documented, placeholder file exists at `src/scrapers/partsgeek_scraper.py`
+3. **ShowMeTheParts Scraper** - Stealth scraper exists, needs testing and validation
 
 **Quality Benchmark**: All scrapers must meet ACDelco standard - all 6 tables populated, 219+ fitment records where applicable, zero Unicode crashes, 100% success rate
 
