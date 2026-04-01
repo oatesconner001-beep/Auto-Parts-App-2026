@@ -455,12 +455,18 @@ class MultiSiteScraperManager:
             # Store fitment data if available (CRITICAL for fitment table population)
             if result.get('fitment_data') and success:
                 for fitment in result['fitment_data']:
-                    if fitment.get('year') and fitment.get('make') and fitment.get('model'):
+                    if (fitment.get('year') or fitment.get('year_start')) and fitment.get('make') and fitment.get('model'):
+                        if fitment.get('year_start'):
+                            yr_start = fitment['year_start']
+                            yr_end = fitment.get('year_end', fitment['year_start'])
+                        else:
+                            yr_start = fitment['year']
+                            yr_end = fitment['year']
                         self.db_manager.execute_query(
                             """INSERT OR IGNORE INTO fitment
                                (part_id, year_start, year_end, make, model, engine, source_site, confidence)
                                VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
-                            (part_id, fitment['year'], fitment['year'], fitment['make'],
+                            (part_id, yr_start, yr_end, fitment['make'],
                              fitment['model'], fitment.get('engine'), site_name, 1.0)
                         )
 
