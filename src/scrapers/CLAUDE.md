@@ -143,12 +143,64 @@ Creates individual fitment records:
 **Status**: ⏸️ **PAUSED** - Shifted to daily-use sites priority
 **Site Details**: `dormanproducts.com` - ShieldSquare Captcha
 
-### 🚧 ShowMeTheParts Scraper
+### ✅ ShowMeTheParts Scraper (`showmetheparts_scraper.py`)
 
-**Status**: PENDING TESTING - 446-line stealth scraper exists, NOT permanently blocked
-**File**: `src/scrapers/showmetheparts_scraper.py` (Playwright stealth with Incapsula bypass)
-**Site Details**: `showmetheparts.com` - Incapsula WAF, requires stealth techniques (not a hardware ban)
-**Note**: Multiple docs incorrectly claim "permanently blocked" — needs correction across CLAUDE.md, ARCHITECTURE.md, TROUBLESHOOTING.md, progress.md
+**Status**: ✅ **COMPLETE** - 4/5 parts passing, 22 interchange refs captured, zero crashes, dedup applied
+
+**Site Details**:
+- URL: `showmetheparts.com` - ExtJS single-page application
+- Protection: Incapsula WAF (bypassed with persistent Chrome + stealth patches)
+- Navigation: UI-driven (tab clicks + form fill + button click, NOT URL-based)
+- Browser: Persistent Chrome via `.browser_profile/` (matches other scrapers)
+
+**Primary Value**: Cross-reference/interchange part numbers (OEM refs from multiple suppliers)
+
+**Navigation Sequence**:
+1. Load homepage, wait for ExtJS render
+2. Click "Cross Reference" tab (found by text + `x-tab-inner` class)
+3. Dismiss "Caution" dialog (click OK, handles already-dismissed case)
+4. Find input by label "Mfg. Part Number:" → fill part number
+5. Click Search button (found by text + `x-btn-inner` class)
+6. Extract data from ExtJS grid via `page.evaluate()` JavaScript
+
+**Data Fields Extracted**:
+- ✅ OEM/Interchange Part Numbers (PRIMARY VALUE - from grid column 5)
+- ✅ OEM Brand/Supplier (from grid column 1)
+- ✅ Category/Part Type (from grid column 4)
+- ✅ Description (derived from Part Type)
+- ❌ Price (not available in Cross Reference view)
+- ❌ Images (not available in Cross Reference view)
+- ❌ Fitment (not available in Cross Reference view)
+- ❌ Specs (not available in Cross Reference view)
+
+**ExtJS Grid Extraction**:
+- Grid rows are `table.x-grid-item` elements with 6 `<td>` cells each
+- Column 0: empty (checkbox), 1: Supplier, 2: Manufacturer, 3: Mfg Part Number, 4: Part Type, 5: Part Number
+- Data extracted via `page.evaluate()` JavaScript (avoids Playwright/ExtJS rendering mismatch)
+- Rows with same part number as search input are filtered out (not real cross-refs)
+- Deduplication by `oem_number` applied to final results
+
+**Stable Selectors** (no hard-coded ExtJS IDs):
+- Tabs: text content + `x-tab-inner` class
+- Buttons: text content + `x-btn-inner` class
+- Input: label `for` attribute association
+- Grid: `table.x-grid-item` class + positional column indexing
+
+**Production Test Results (2026-04-01)**: ✅ **4/5 PARTS SUCCESSFUL**
+- GMB 130-7340AT: Engine Water Pump, 5 interchange refs (Gates 45006, Melling MWP-500WT/MWP-502WT, etc.)
+- ANCHOR 3217: NOT FOUND (part not in ShowMeTheParts cross-reference database)
+- FOUR SEASONS 75788: HVAC Blower Motor, 3 unique interchange refs (Autokool 10340, BWD S8056, etc.)
+- SMP DLA1005: Door Lock Actuator, 11 interchange refs (Dorman 746-187/937-595/937-571, BWD, Wells, etc.)
+- DORMAN 264-968: Engine Valve Cover, 2 interchange refs (Skyward SK510A05, Autopart Intl 2000-653159)
+
+**Success Rate**: 80% (4/5 parts), **Zero crashes**, **Unicode-safe**
+**Integration**: Pending — multi_site_manager.py stub needs to be connected (next session)
+
+**Known Limitations**:
+- ExtJS grid does not refresh within same browser session (each search requires fresh session)
+- No batch/multi-search support — `scrape_part()` opens/closes browser per call
+- ANCHOR 3217 not found (generic number, may not have cross-reference entry)
+- Price, images, fitment, specs not available from Cross Reference tab
 
 ### ❌ Firecrawl API Scraper
 
