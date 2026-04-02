@@ -90,9 +90,13 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
    * `schema.sql` synced — `listing_id`, `core_charge`, `reference_type` columns added
    * Database cleaned — 10 corrupted OEM reference rows removed, `89018166` re-added clean (39 clean refs remaining)
 
+✅ **ShowMeTheParts Integration COMPLETE** (2026-04-02) - Stealth scraper wired into multi_site_manager, interchange refs storing with oem_brand and reference_type, site_configs activated
+✅ **PartsGeek Integration COMPLETE** (2026-04-02) - Scraper wired into multi_site_manager, standardized result format
+✅ **oem_brand Storage Fixed** (2026-04-02) - `_store_site_result()` OEM INSERT now includes oem_brand column for interchange data
+
 **Active TODO for Next Session:**
-1. **PartsGeek Scraper** - Ready for implementation. HTML structure analyzed, CSS selectors documented, placeholder file exists at `src/scrapers/partsgeek_scraper.py`
-2. **ShowMeTheParts Scraper** - Stealth scraper exists at `src/scrapers/showmetheparts_scraper.py`, needs testing and validation
+1. **src/ Directory Cleanup** - 51 clutter files need organization (deprecated scrapers, test scripts, one-off utilities)
+2. **Start Processing Real Excel Rows** - 4 working scrapers (RockAuto, ACDelco, PartsGeek, ShowMeTheParts) ready for production use across 49,534 unprocessed rows
 3. **MEDIUM/LOW Audit Issues** - 4 MEDIUM, 6 LOW issues remain from 2026-03-30 audit
 
 **Quality Benchmark**: All scrapers must meet ACDelco standard - all 6 tables populated, 219+ fitment records where applicable, zero Unicode crashes, 100% success rate
@@ -102,14 +106,14 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 - ⏸️ **Dorman Scraper** - Paused for daily-use priority
 
 ### Immediate Processing Priorities (Production Ready)
-1. **Multi-Site Testing** - Launch GUI (`main_app.py`) → Multi-Site tab → test cross-site search
+1. **Multi-Site Testing** - Launch GUI (`main_app.py`) → Multi-Site tab → test cross-site search with all 4 active scrapers
 2. **Enhanced Analysis Deployment** - Process 79 Anchor UNCERTAIN rows (expected: ~79 LIKELY upgrades)
 3. **SMP Sheet Priority** - Start fresh processing (9,930 rows at proven 66.7% success rate)
 4. **Database Population** - Use multi-site system to populate SQLite with comprehensive parts data
 
 ### Development Roadmap (Updated)
 - **Phase 1**: Multi-site scraping infrastructure ✅ **COMPLETE**
-- **Phase 2**: Individual site scrapers (PartsGeek, ACDelco, Dorman, Moog) **← CURRENT**
+- **Phase 2**: Individual site scrapers (PartsGeek, ACDelco, ShowMeTheParts done; Dorman, Moog paused) **← CURRENT**
 - **Phase 3**: Advanced cross-site part matching and normalization
 - **Phase 4**: Daily recurring pipeline automation with site health monitoring
 

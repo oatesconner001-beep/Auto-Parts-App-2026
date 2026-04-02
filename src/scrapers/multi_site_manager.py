@@ -234,7 +234,7 @@ class MultiSiteScraperManager:
             }
 
     def _scrape_partsgeek(self, part_number: str, brand: str, config: Dict) -> Dict[str, Any]:
-        """Scrape PartsGeek (placeholder - to be implemented)
+        """Scrape PartsGeek using dedicated PartsGeek scraper
 
         Args:
             part_number: Part number to search
@@ -244,13 +244,21 @@ class MultiSiteScraperManager:
         Returns:
             Dict: Scraping results
         """
-        # TODO: Implement PartsGeek scraper using Chrome/Playwright
-        return {
-            'success': False,
-            'found': False,
-            'error': 'PartsGeek scraper not yet implemented',
-            'site_name': 'PartsGeek'
-        }
+        try:
+            from scrapers.partsgeek_scraper import PartsGeekScraper
+
+            scraper = PartsGeekScraper(headless=False)
+            result = scraper.scrape_part(part_number, brand, config)
+
+            return result
+
+        except Exception as e:
+            return {
+                'success': False,
+                'found': False,
+                'error': f'PartsGeek scraper error: {str(e)}',
+                'site_name': 'PartsGeek'
+            }
 
     def _scrape_acdelco(self, part_number: str, brand: str, config: Dict) -> Dict[str, Any]:
         """Scrape ACDelco using dedicated ACDelco scraper
@@ -353,17 +361,10 @@ class MultiSiteScraperManager:
             Dict: Scraping results
         """
         try:
-            from playwright.sync_api import sync_playwright
+            from scrapers.showmetheparts_scraper import ShowMeThePartsScraper
 
-            result = {
-                'success': False,
-                'found': False,
-                'error': 'ShowMeTheParts scraper temporarily disabled - needs stealth implementation',
-                'site_name': 'ShowMeTheParts'
-            }
-
-            # TODO: Implement full stealth scraper here
-            # For now, return disabled status until stealth implementation is complete
+            scraper = ShowMeThePartsScraper(headless=False)
+            result = scraper.scrape_part(part_number, brand)
 
             return result
 
@@ -420,16 +421,18 @@ class MultiSiteScraperManager:
                     if isinstance(oem_ref, dict):
                         ref_number = oem_ref.get('oem_number')
                         ref_type = oem_ref.get('reference_type', 'OEM')
+                        ref_brand = oem_ref.get('oem_brand')
                     else:
                         ref_number = oem_ref
                         ref_type = 'OEM'
+                        ref_brand = None
 
                     if ref_number:
                         self.db_manager.execute_query(
                             """INSERT OR IGNORE INTO oem_references
-                               (part_id, oem_number, source_site, confidence, reference_type)
-                               VALUES (?, ?, ?, ?, ?)""",
-                            (part_id, ref_number, site_name, 1.0, ref_type)
+                               (part_id, oem_number, oem_brand, source_site, confidence, reference_type)
+                               VALUES (?, ?, ?, ?, ?, ?)""",
+                            (part_id, ref_number, ref_brand, site_name, 1.0, ref_type)
                         )
 
             # Store image URL if available
