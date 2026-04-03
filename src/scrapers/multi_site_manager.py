@@ -395,6 +395,18 @@ class MultiSiteScraperManager:
             except Exception as e:
                 self.logger.error(f"Unicode sanitization failed: {e}")
                 # Continue with original data if sanitization fails
+
+            # Update parts.category and part_name if currently NULL
+            if result.get('category') or result.get('description'):
+                self.db_manager.execute_query(
+                    """UPDATE parts SET
+                       category = COALESCE(category, ?),
+                       part_name = COALESCE(part_name, ?),
+                       updated_at = CURRENT_TIMESTAMP
+                       WHERE id = ?""",
+                    (result.get('category'), result.get('description'), part_id)
+                )
+
             # Handle multiple listings per part (new approach)
             listings = result.get('listings', [result])  # Backward compatibility
             success = False

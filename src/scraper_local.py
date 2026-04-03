@@ -706,10 +706,15 @@ def _parse_moreinfo_text(text: str) -> dict:
         r"([A-Z][A-Za-z ]{3,40})\s*[:\|]\s*(Yes|No|[0-9][^\n\|]{0,30})",
         text, re.IGNORECASE,
     )
+    _SPEC_BLOCKLIST = {"interchange numbers", "warranty information",
+                       "alternate inventory numbers", "show all warranty information",
+                       "information"}
     for key, val in spec_matches:
         key = _clean(key)
         val = _clean(val)
-        if key and val and len(key) < 60:
+        if (key and val and len(key) < 60
+                and key.lower() not in _SPEC_BLOCKLIST
+                and "continue shopping" not in val.lower()):
             data["specs"][sanitize_unicode_text(key)] = sanitize_unicode_text(val)
 
     # Category — from page title "Motor Mount | RockAuto" or first heading
@@ -732,6 +737,40 @@ def _parse_moreinfo_text(text: str) -> dict:
     lines = [l.strip() for l in text.splitlines() if len(l.strip()) > 40]
     if lines:
         data["description"] = sanitize_unicode_text(lines[0][:500])
+
+    # Fitment — year-range make model patterns like "2011-2024 Buick Enclave"
+    fitment_matches = re.findall(
+        r"(\d{4})\s*-\s*(\d{4})\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+([A-Z][A-Za-z0-9 \-]+)",
+        text
+    )
+    fitment_data = []
+    seen = set()
+    for yr_start, yr_end, make, model in fitment_matches:
+        key = (yr_start, yr_end, make.strip(), model.strip())
+        if key not in seen:
+            seen.add(key)
+            fitment_data.append({
+                "year_start": int(yr_start),
+                "year_end": int(yr_end),
+                "make": sanitize_unicode_text(make.strip()),
+                "model": sanitize_unicode_text(model.strip().rstrip('.')),
+            })
+    # Also catch single-year patterns like "2016 Chevrolet Cruze"
+    single_yr_matches = re.findall(
+        r"(?<!\d)(\d{4})\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+([A-Z][A-Za-z0-9 \-]+?)(?:\s*[,;|\n]|$)",
+        text
+    )
+    for yr, make, model in single_yr_matches:
+        key = (yr, yr, make.strip(), model.strip())
+        if key not in seen:
+            seen.add(key)
+            fitment_data.append({
+                "year_start": int(yr),
+                "year_end": int(yr),
+                "make": sanitize_unicode_text(make.strip()),
+                "model": sanitize_unicode_text(model.strip().rstrip('.')),
+            })
+    data["fitment_data"] = fitment_data[:50]
 
     return sanitize_unicode_dict(data)
 
@@ -861,12 +900,6 @@ def scrape_rockauto(part_number: str, brand: str = "ANCHOR") -> dict:
         listing = all_listings[0]
         result["listings"] = all_listings  # Store ALL listings
 
-        # CHANGE 4: Extract fitment from URL
-        if listing.get("moreinfo_url"):
-            fitment = _extract_fitment_from_url(listing["moreinfo_url"])
-            if fitment:
-                result["fitment_data"] = [fitment]
-
         result.update({
             "found":        True,
             "category":     listing.get("category"),
@@ -900,6 +933,10 @@ def scrape_rockauto(part_number: str, brand: str = "ANCHOR") -> dict:
                 # Category from moreinfo page title (e.g. "Motor Mount | RockAuto")
                 if (not result["category"] or result["category"] == "Continue Shopping") and info.get("category"):
                     result["category"] = info["category"]
+
+                # Fitment from moreinfo text (replaces broken URL-based approach)
+                if info.get("fitment_data"):
+                    result["fitment_data"] = info["fitment_data"]
 
                 # FALLBACK: Extract price from description if DOM extraction failed
                 if not result.get("price") and result.get("description"):
