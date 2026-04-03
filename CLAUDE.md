@@ -57,12 +57,13 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 - **Optimization Engine**: Smart prioritization, resource-aware batch processing
 - **Validation Framework**: Multi-layer quality assurance with anomaly detection
 
-### Processing Status (Post-Recovery March 25, 2026)
+### Processing Status (Updated April 3, 2026)
 - **Total Rows**: 49,650 across 6 sheets (GMB, Four Seasons, SMP, Anchor, Dorman, Master)
-- **Processed**: 116 rows (Anchor sheet only - recovered from file corruption)
-- **Confirmed Matches**: 36 (31.0% success rate)
+- **Processed**: 126 rows (116 Anchor + 10 SMP)
+- **Confirmed Matches**: 36 (Anchor sheet, 31.0% success rate)
+- **SMP First Run**: 10 rows processed, all UNCERTAIN at 43% (door lock actuators lack OEM refs on RockAuto)
 - **Ready for Enhancement**: 79 Anchor UNCERTAIN rows (100% upgrade rate expected)
-- **Unprocessed**: 49,534 rows across 5 sheets (massive opportunity)
+- **Unprocessed**: 49,524 rows across 5 sheets
 
 ### Verified Capabilities
 - Desktop GUI integration (tkinter with analytics integration)
@@ -93,11 +94,14 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 ✅ **ShowMeTheParts Integration COMPLETE** (2026-04-02) - Stealth scraper wired into multi_site_manager, interchange refs storing with oem_brand and reference_type, site_configs activated
 ✅ **PartsGeek Integration COMPLETE** (2026-04-02) - Scraper wired into multi_site_manager, standardized result format
 ✅ **oem_brand Storage Fixed** (2026-04-02) - `_store_site_result()` OEM INSERT now includes oem_brand column for interchange data
+✅ **Session 1 DB Cleanup COMPLETE** (2026-04-03) - ShowMeTheParts config fixed (rate_limit=3, retries=3, timeout=30), Dorman/Moog deactivated (stub scrapers), TEST_BRAND removed, oem_references deduplicated 44->34 with UNIQUE(part_id, oem_number, source_site) constraint
+✅ **Session 1 RockAuto Data Quality COMPLETE** (2026-04-03) - Specs blocklist filters junk (OEM refs/warranty/nav text), fitment text parsing replaces broken URL method, parts.category/part_name populated via COALESCE UPDATE
+✅ **Session 1 First SMP Production Run** (2026-04-03) - 10 rows, 0 errors, 12m34s. Pipeline proven end-to-end.
 
 **Active TODO for Next Session:**
-1. **src/ Directory Cleanup** - 51 clutter files need organization (deprecated scrapers, test scripts, one-off utilities)
-2. **Start Processing Real Excel Rows** - 4 working scrapers (RockAuto, ACDelco, PartsGeek, ShowMeTheParts) ready for production use across 49,534 unprocessed rows
-3. **MEDIUM/LOW Audit Issues** - 4 MEDIUM, 6 LOW issues remain from 2026-03-30 audit
+1. **Wire Multi-Site Pipeline into excel_handler.py** - Currently excel_handler only uses RockAuto. ACDelco/PartsGeek/ShowMeTheParts data sits in SQLite unused by matching pipeline. Connect multi-site scraper results to rule_compare for richer OEM/fitment signals.
+2. **src/ Directory Cleanup** - 51 clutter files need organization (deprecated scrapers, test scripts, one-off utilities)
+3. **Remaining Audit Issues** - 2 MEDIUM (RockAuto fitment needs live testing, specs colon edge cases), 6 LOW (stale comments, success_rate never updated, etc.)
 
 **Quality Benchmark**: All scrapers must meet ACDelco standard - all 6 tables populated, 219+ fitment records where applicable, zero Unicode crashes, 100% success rate
 
@@ -164,14 +168,14 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 - **RockAuto Scraper**: ✅ FIXED - Enhanced with DOM price/category extraction, multiple listings, fitment parsing, OEM references
 - **Excel File Locking**: Cannot run multiple Excel handlers simultaneously (learned from corruption incident)
 - **Gemini API Quota**: Daily limits on free tier (auto-disables gracefully, fallback to rules)
-- **ShowMeTheParts**: Incapsula WAF JavaScript challenge (requires stealth scraper - in development)
+- **ShowMeTheParts**: Incapsula WAF JavaScript challenge (stealth scraper COMPLETE and integrated)
 
 ### Established Workarounds
 - **Use moondream**: 828MB model works perfectly for unlimited vision tasks via Ollama
 - **OEM Compensation**: 40% weight on OEM refs matching compensates for category failures
 - **Sequential Processing**: Process one sheet at a time to prevent Excel file conflicts
 - **Local Ollama Priority**: Unlimited processing when Gemini quota exhausted
-- **Multi-Site Focus**: RockAuto enhanced and ready for testing, ShowMeTheParts requires stealth implementation
+- **Multi-Site Focus**: All 4 scrapers (RockAuto, ACDelco, PartsGeek, ShowMeTheParts) integrated and tested. Pipeline disconnected from excel_handler — next priority.
 
 ## Do Not Touch
 
