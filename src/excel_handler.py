@@ -60,6 +60,9 @@ RESULT_FILLS = {
 # Delay between rows (seconds) to avoid Firecrawl rate limiting
 ROW_DELAY = 2.5
 
+# Sites to query for multi-site enrichment (excludes RockAuto — scraped separately)
+_ENRICH_SITES = ['ACDelco', 'PartsGeek', 'ShowMeTheParts']
+
 _BLANK_VALUES = {"", "n/a", "na", "none", "-", "--", "0", ".", "tbd", "?"}
 
 
@@ -146,6 +149,109 @@ def get_valid_rows(filepath: str, sheet_name: str, supplier_filter: str = None) 
     return rows
 
 
+def _normalize_oem_ref(ref) -> str:
+    """Extract plain OEM number string from either str or dict format."""
+    if isinstance(ref, dict):
+        return ref.get('oem_number', '')
+    return str(ref)
+
+
+def _fitment_to_features(fitment_data: list) -> list:
+    """Convert structured fitment_data to text strings for rule_compare's regex matching."""
+    texts = set()
+    for f in (fitment_data or []):
+        make = f.get('make', '')
+        model = f.get('model', '')
+        yr = f.get('year') or f.get('year_start')
+        yr_end = f.get('year_end')
+        if make and yr:
+            if yr_end and yr_end != yr:
+                texts.add(f"{yr}-{yr_end} {make} {model}".strip())
+            else:
+                texts.add(f"{yr} {make} {model}".strip())
+    return list(texts)
+
+
+def _enrich_with_multi_site(part_data: dict, part_number: str, brand: str,
+                            mgr, log) -> dict:
+    """Merge OEM refs, category, fitment, specs, description from non-RockAuto sites.
+
+    Returns a new dict (same shape as part_data) with enriched fields.
+    Falls back to unmodified part_data on any error.
+    """
+    try:
+        ms_result = mgr.scrape_part_multi_site(
+            part_number, brand,
+            sites=_ENRICH_SITES,
+            store_results=True,
+        )
+    except Exception as e:
+        log(f"  Multi-site scrape failed: {e}")
+        return part_data
+
+    found_sites = ms_result.get('summary', {}).get('found_on_sites', 0)
+    if found_sites == 0:
+        return part_data
+
+    enriched = dict(part_data)  # shallow copy
+
+    # --- Merge OEM refs (deduplicated, normalized to plain strings) ---
+    existing_oems = {_normalize_oem_ref(r).upper() for r in (enriched.get('oem_refs') or []) if r}
+    merged_oems = [_normalize_oem_ref(r) for r in (enriched.get('oem_refs') or []) if r]
+
+    for site_name, site_data in ms_result.get('sites', {}).items():
+        if not site_data.get('found'):
+            continue
+        for ref in (site_data.get('oem_refs') or []):
+            norm = _normalize_oem_ref(ref)
+            if norm and norm.upper() not in existing_oems:
+                merged_oems.append(norm)
+                existing_oems.add(norm.upper())
+
+    enriched['oem_refs'] = merged_oems
+
+    # --- Best category (fill if RockAuto's is None/empty) ---
+    if not enriched.get('category'):
+        for site_name, site_data in ms_result.get('sites', {}).items():
+            if site_data.get('found') and site_data.get('category'):
+                enriched['category'] = site_data['category']
+                break
+
+    # --- Best description (fill if RockAuto's is None/empty) ---
+    if not enriched.get('description'):
+        for site_name, site_data in ms_result.get('sites', {}).items():
+            if site_data.get('found') and site_data.get('description'):
+                enriched['description'] = site_data['description']
+                break
+
+    # --- Merge specs (RockAuto keys take precedence) ---
+    for site_name, site_data in ms_result.get('sites', {}).items():
+        if not site_data.get('found'):
+            continue
+        for k, v in (site_data.get('specs') or {}).items():
+            if k not in (enriched.get('specs') or {}):
+                if enriched.get('specs') is None:
+                    enriched['specs'] = {}
+                enriched['specs'][k] = v
+
+    # --- Merge fitment into features (for rule_compare's regex-based fitment scoring) ---
+    extra_features = []
+    for site_name, site_data in ms_result.get('sites', {}).items():
+        if not site_data.get('found'):
+            continue
+        extra_features.extend(_fitment_to_features(site_data.get('fitment_data')))
+
+    if extra_features:
+        existing_features = enriched.get('features') or []
+        enriched['features'] = existing_features + extra_features
+
+    site_names = [s for s, d in ms_result.get('sites', {}).items() if d.get('found')]
+    log(f"  Enriched from {len(site_names)} site(s): {', '.join(site_names)} "
+        f"(+{len(merged_oems) - len(part_data.get('oem_refs') or [])} OEM refs)")
+
+    return enriched
+
+
 def process_rows(
     filepath: str,
     sheet_name: str = "Anchor",
@@ -186,6 +292,15 @@ def process_rows(
 
     log(f"Sheet: {sheet_name} | Brand: {brand} | Reprocess UNCERTAIN: {reprocess_uncertain}")
     log(f"Loading workbook: {filepath}")
+
+    # Initialize multi-site enrichment (graceful fallback to RockAuto-only)
+    multi_site_mgr = None
+    try:
+        from scrapers.multi_site_manager import MultiSiteScraperManager
+        multi_site_mgr = MultiSiteScraperManager()
+        log(f"Multi-site enrichment enabled ({len(_ENRICH_SITES)} sites)")
+    except Exception as e:
+        log(f"Multi-site enrichment unavailable (RockAuto-only mode): {e}")
 
     # Only load rows whose col B matches the brand
     valid_rows = get_valid_rows(filepath, sheet_name, supplier_filter=brand)
@@ -245,6 +360,12 @@ def process_rows(
                 try:
                     part_data = scrape_rockauto(part_num, brand=brand)
                     skp_data  = scrape_rockauto(skp_num,  brand="SKP")
+
+                    # Enrich with cross-site data if manager is available
+                    if multi_site_mgr is not None:
+                        part_data = _enrich_with_multi_site(part_data, part_num, brand, multi_site_mgr, log)
+                        skp_data  = _enrich_with_multi_site(skp_data, skp_num, "SKP", multi_site_mgr, log)
+
                     comparison = compare_parts(part_data, skp_data, part_type)
                     break
                 except Exception as e:

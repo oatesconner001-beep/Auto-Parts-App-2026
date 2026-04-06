@@ -47,7 +47,7 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 - **RockAuto Scraper**: COMPLETE - price, category, OEM refs, images, brand matching all working (tested: ANCHOR 3217 ENGINE MOUNT $20.79, GMB 130-7340AT ENGINE WATER PUMP $86.79)
 - **ACDelco Scraper**: COMPLETE - 100% success rate, 657 fitment records, all 6 tables populated
 - **Unicode Safety System**: Shared protection prevents crashes across all scrapers (unicode_utils.py)
-- **Multi-Site Pipeline**: Complete scraping coordination across 6 target sites with SQLite storage
+- **Multi-Site Pipeline**: Complete scraping coordination across 6 target sites with SQLite storage, wired into excel_handler.py for enriched matching
 - **Rule Engine**: 6-signal weighted matching (40% OEM refs, 20% category, 15% description, etc.)
 - **Enhanced Image Analysis**: CLIP+SSIM system with proven 100% UNCERTAIN→LIKELY upgrade rate
 - **Analytics Dashboard**: 5-tab interactive GUI with real-time charts and Grade B quality scoring
@@ -57,12 +57,12 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 - **Optimization Engine**: Smart prioritization, resource-aware batch processing
 - **Validation Framework**: Multi-layer quality assurance with anomaly detection
 
-### Processing Status (Updated April 3, 2026)
+### Processing Status (Updated April 6, 2026)
 - **Total Rows**: 49,650 across 6 sheets (GMB, Four Seasons, SMP, Anchor, Dorman, Master)
 - **Processed**: 126 rows (116 Anchor + 10 SMP)
-- **Confirmed Matches**: 36 (Anchor sheet, 31.0% success rate)
-- **SMP First Run**: 10 rows processed, all UNCERTAIN at 43% (door lock actuators lack OEM refs on RockAuto)
-- **Ready for Enhancement**: 79 Anchor UNCERTAIN rows (100% upgrade rate expected)
+- **Confirmed Matches**: 38 (36 Anchor + 2 SMP upgraded from UNCERTAIN→YES via multi-site enrichment)
+- **SMP Multi-Site Test**: 2 rows reprocessed with enrichment: UNCERTAIN 43% → YES 81-82% (PartsGeek+ShowMeTheParts OEM refs enabled matching)
+- **Ready for Enhancement**: 79 Anchor UNCERTAIN rows (100% upgrade rate expected) + 8 SMP UNCERTAIN rows
 - **Unprocessed**: 49,524 rows across 5 sheets
 
 ### Verified Capabilities
@@ -97,11 +97,15 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 ✅ **Session 1 DB Cleanup COMPLETE** (2026-04-03) - ShowMeTheParts config fixed (rate_limit=3, retries=3, timeout=30), Dorman/Moog deactivated (stub scrapers), TEST_BRAND removed, oem_references deduplicated 44->34 with UNIQUE(part_id, oem_number, source_site) constraint
 ✅ **Session 1 RockAuto Data Quality COMPLETE** (2026-04-03) - Specs blocklist filters junk (OEM refs/warranty/nav text), fitment text parsing replaces broken URL method, parts.category/part_name populated via COALESCE UPDATE
 ✅ **Session 1 First SMP Production Run** (2026-04-03) - 10 rows, 0 errors, 12m34s. Pipeline proven end-to-end.
+✅ **Post-Session 1 Audit COMPLETE** (2026-04-06) - All DB fixes verified, all code changes confirmed, 10 SMP Excel rows verified with correct data and colors. UNIQUE constraint tested and working. Dead code `_extract_fitment_from_url()` at line 283 flagged for cleanup. Minor "Anchor" label bug in SMP fitment/desc columns noted.
+✅ **Session 2 Multi-Site Pipeline Wired** (2026-04-06) - excel_handler.py enriched merge complete. 77 lines added: `_enrich_with_multi_site()` merges OEM refs, category, description, specs, fitment from ACDelco/PartsGeek/ShowMeTheParts before rule_compare. Graceful fallback to RockAuto-only on any failure. Test result: SMP rows upgraded UNCERTAIN 43% → YES 81-82%.
 
 **Active TODO for Next Session:**
-1. **Wire Multi-Site Pipeline into excel_handler.py** - Currently excel_handler only uses RockAuto. ACDelco/PartsGeek/ShowMeTheParts data sits in SQLite unused by matching pipeline. Connect multi-site scraper results to rule_compare for richer OEM/fitment signals.
-2. **src/ Directory Cleanup** - 51 clutter files need organization (deprecated scrapers, test scripts, one-off utilities)
-3. **Remaining Audit Issues** - 2 MEDIUM (RockAuto fitment needs live testing, specs colon edge cases), 6 LOW (stale comments, success_rate never updated, etc.)
+1. **Reprocess all SMP UNCERTAIN rows** - 8 remaining UNCERTAIN rows should upgrade with multi-site enrichment
+2. **Reprocess Anchor UNCERTAIN rows** - 79 rows ready for enhanced image analysis + multi-site enrichment
+3. **src/ Directory Cleanup** - 51 clutter files need organization (deprecated scrapers, test scripts, one-off utilities)
+4. **Remaining Audit Issues** - 2 MEDIUM (RockAuto fitment needs live testing, specs colon edge cases), 6 LOW (stale comments, success_rate never updated, etc.)
+5. **Dead code cleanup** - `_extract_fitment_from_url()` at scraper_local.py line 283
 
 **Quality Benchmark**: All scrapers must meet ACDelco standard - all 6 tables populated, 219+ fitment records where applicable, zero Unicode crashes, 100% success rate
 
