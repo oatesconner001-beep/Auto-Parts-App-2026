@@ -57,13 +57,14 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 - **Optimization Engine**: Smart prioritization, resource-aware batch processing
 - **Validation Framework**: Multi-layer quality assurance with anomaly detection
 
-### Processing Status (Updated April 6, 2026)
+### Processing Status (Updated April 9, 2026)
 - **Total Rows**: 49,650 across 6 sheets (GMB, Four Seasons, SMP, Anchor, Dorman, Master)
-- **Processed**: 126 rows (116 Anchor + 10 SMP)
-- **Confirmed Matches**: 38 (36 Anchor + 2 SMP upgraded from UNCERTAIN→YES via multi-site enrichment)
-- **SMP Multi-Site Test**: 2 rows reprocessed with enrichment: UNCERTAIN 43% → YES 81-82% (PartsGeek+ShowMeTheParts OEM refs enabled matching)
-- **Ready for Enhancement**: 79 Anchor UNCERTAIN rows (100% upgrade rate expected) + 8 SMP UNCERTAIN rows
-- **Unprocessed**: 49,524 rows across 5 sheets
+- **Processed**: 146 rows (116 Anchor + 10 SMP + 20 GMB)
+- **Confirmed Matches**: 48 (36 Anchor + 2 SMP + 10 GMB YES; plus 5 GMB LIKELY)
+- **GMB Fresh Run (Session 3)**: First 20 rows = 10 YES, 5 LIKELY, 5 UNCERTAIN, 0 NO (75% match rate) — strongest fresh run to date
+- **SMP Multi-Site Results**: 4 of 5 eligible UNCERTAIN rows upgraded via enrichment (rows 666/834/1378 → YES, 1538 → LIKELY). Row 1269 stayed UNCERTAIN (no OEM overlap).
+- **Anchor Reprocess (Session 3)**: 0 of 6 eligible UNCERTAIN upgraded — architectural blocker (see Known Issues: SKP OEM ref gap)
+- **Unprocessed**: 49,504 rows across 5 sheets
 
 ### Verified Capabilities
 - Desktop GUI integration (tkinter with analytics integration)
@@ -99,13 +100,18 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 ✅ **Session 1 First SMP Production Run** (2026-04-03) - 10 rows, 0 errors, 12m34s. Pipeline proven end-to-end.
 ✅ **Post-Session 1 Audit COMPLETE** (2026-04-06) - All DB fixes verified, all code changes confirmed, 10 SMP Excel rows verified with correct data and colors. UNIQUE constraint tested and working. Dead code `_extract_fitment_from_url()` at line 283 flagged for cleanup. Minor "Anchor" label bug in SMP fitment/desc columns noted.
 ✅ **Session 2 Multi-Site Pipeline Wired** (2026-04-06) - excel_handler.py enriched merge complete. 77 lines added: `_enrich_with_multi_site()` merges OEM refs, category, description, specs, fitment from ACDelco/PartsGeek/ShowMeTheParts before rule_compare. Graceful fallback to RockAuto-only on any failure. Test result: SMP rows upgraded UNCERTAIN 43% → YES 81-82%.
+✅ **Session 3 SMP Reprocess** (2026-04-08) - 3 eligible UNCERTAIN rows reprocessed: row 1378 (DLA-267 vs SKDLA58) UNCERTAIN 43% → YES 80% via shared OEM 746361; row 1538 (DLA975 vs SK746015) → LIKELY 70% via shared OEM 746015; row 1269 (DLA-1 vs SKDLA1) stayed UNCERTAIN 30% (no OEM overlap). 67% upgrade rate for eligible rows.
+✅ **Session 3 Anchor Reprocess** (2026-04-08) - 6 eligible UNCERTAIN rows reprocessed (rows 45/47/67/71/73/87) → 0 upgrades. Architectural blocker identified: PartsGeek and ShowMeTheParts return OEM refs for ANCHOR-brand parts but zero OEM refs for SKP-brand parts, so rule-engine OEM signal (40% weight) stays at 0. Scores slightly improved via category+fitment (43% → 42-53%) but no threshold crossing. Anthropic API credits exhausted blocked AI fallback.
+✅ **Session 3 GMB Fresh Run** (2026-04-08) - First 20 GMB rows processed in ~33 min (1.65 min/row). Result: 10 YES, 5 LIKELY, 5 UNCERTAIN, 0 NO = 75% match rate. Zero scraper failures, zero errors. Strongest fresh-processing result to date.
+✅ **Session 3 src/ Cleanup** (2026-04-09) - Removed 47 files (45 git-tracked, 2 untracked backups). Categories deleted: B (deprecated scrapers, 6 files), C (test/debug scripts, 25 files), D (one-off Dorman/ACDelco investigation scripts, 16 files). Category E (~8 files) left for next-session verification.
+✅ **Session 3 Dead Code Removal** (2026-04-09) - `_extract_fitment_from_url()` removed from `src/scraper_local.py` (20 lines, zero callers verified). The active method on `scrapers/multi_site_manager.py` is a different scope and untouched.
 
 **Active TODO for Next Session:**
-1. **Reprocess all SMP UNCERTAIN rows** - 8 remaining UNCERTAIN rows should upgrade with multi-site enrichment
-2. **Reprocess Anchor UNCERTAIN rows** - 79 rows ready for enhanced image analysis + multi-site enrichment
-3. **src/ Directory Cleanup** - 51 clutter files need organization (deprecated scrapers, test scripts, one-off utilities)
-4. **Remaining Audit Issues** - 2 MEDIUM (RockAuto fitment needs live testing, specs colon edge cases), 6 LOW (stale comments, success_rate never updated, etc.)
-5. **Dead code cleanup** - `_extract_fitment_from_url()` at scraper_local.py line 283
+1. **GMB scale-up run** - Process remaining 280 GMB rows (~7-8 hours at 1.65 min/row) — dedicated throughput session
+2. **Category E src/ audit** - Verify imports for ~8 remaining cleanup candidates (excel_handler_rules_only.py, excel_handler_enhanced.py, parallel_image_processor.py, optimized_image_pipeline.py + _fixed.py, bulk_image_scraper.py, batch_processor.py, enhanced_batch_processor.py, batch_excel_updater.py, chrome_worker.py, gui_enhanced_integration.py, verify_enhanced_system.py, verify_database_status.py, gui.py, run_image_analysis.py)
+3. **Unblock Anchor UNCERTAIN upgrades** - Restore Anthropic API credits OR implement local AI fallback (Ollama moondream already installed)
+4. **SKP-brand OEM ref strategy** - Decide: build custom SKP scraper OR lower rule-engine threshold for strong category+fitment-only matches
+5. **Remaining audit issues** - 2 MEDIUM (RockAuto fitment needs live testing, specs colon edge cases), 6 LOW (stale comments, success_rate never updated, etc.)
 
 **Quality Benchmark**: All scrapers must meet ACDelco standard - all 6 tables populated, 219+ fitment records where applicable, zero Unicode crashes, 100% success rate
 
@@ -172,7 +178,9 @@ Excel → Chrome Scraper → Rule Engine → AI Fallback → Excel Output
 - **RockAuto Scraper**: ✅ FIXED - Enhanced with DOM price/category extraction, multiple listings, fitment parsing, OEM references
 - **Excel File Locking**: Cannot run multiple Excel handlers simultaneously (learned from corruption incident)
 - **Gemini API Quota**: Daily limits on free tier (auto-disables gracefully, fallback to rules)
+- **Anthropic API Credits**: EXHAUSTED as of Session 3 (2026-04-08) — Claude fallback disabled, rule-engine only
 - **ShowMeTheParts**: Incapsula WAF JavaScript challenge (stealth scraper COMPLETE and integrated)
+- **SKP-brand OEM Ref Gap** (2026-04-08, discovered Session 3): SKP-brand parts return zero OEM refs from both PartsGeek and ShowMeTheParts, capping multi-site enrichment confidence at ~50-60% (category+fitment only) for Anchor sheet reprocessing. The rule engine's 40% OEM weight stays at 0 for all SKP parts, so even identical category + overlapping fitment cannot cross the YES threshold. Mitigations: (a) restore Anthropic credits for AI fallback, (b) build SKP-specific scraper, (c) lower threshold for category+fitment-only matches.
 
 ### Established Workarounds
 - **Use moondream**: 828MB model works perfectly for unlimited vision tasks via Ollama

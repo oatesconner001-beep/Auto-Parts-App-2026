@@ -280,28 +280,6 @@ def _clean(text: str) -> str:
         return sanitize_unicode_text(text or "")
 
 
-def _extract_fitment_from_url(url: str) -> dict:
-    """
-    Extract vehicle fitment from RockAuto catalog URL.
-    URL format: /catalog/make,year,model,engine,category_id,section,part_type,part_id
-    """
-    fitment = {}
-    try:
-        if '/catalog/' in url:
-            path_parts = url.split('/catalog/')[-1].split(',')
-            if len(path_parts) >= 4:
-                fitment = {
-                    "make": sanitize_unicode_text(path_parts[0].replace('+', ' ').title()),
-                    "year": int(path_parts[1]) if path_parts[1].isdigit() else None,
-                    "model": sanitize_unicode_text(path_parts[2].replace('+', ' ').title()),
-                    "engine": sanitize_unicode_text(path_parts[3].replace('+', ' ').upper()) if len(path_parts) > 3 else None
-                }
-    except Exception:
-        pass
-
-    return sanitize_unicode_dict(fitment)
-
-
 # OEM reference validation — filters out warranty text, UI strings, and garbage
 _OEM_BLACKLIST = {"INCLUDES", "THERMOSTAT", "WARRANTY", "INFORMATION", "DETAILS",
                   "MONTHS", "MILES", "LIMITED", "LIFETIME", "PLEASE", "CONTACT",
